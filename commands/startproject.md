@@ -36,12 +36,13 @@ Fields to fill:
 4. **Logline** — one sentence: who, what's at stake, what the conflict is
 5. **Format** (feature / short / pilot / series)
 6. **Theme** — deeper meaning
-7. **Target audience**
-8. **Setting**
-9. **Period**
-10. **Currency and locale** (names, place names, character language)
-11. **Runtime** in minutes
-12. **Structural model** (three-act / five-loop / other)
+7. **Seed** — one image, metaphor, or contradiction the whole story grows from. Not a summary — a root. Example: "a man who builds walls to protect himself ends up trapped inside them." If the user can't articulate it yet — leave it blank, they'll fill it in later.
+8. **Target audience**
+9. **Setting**
+10. **Period**
+11. **Currency and locale** (names, place names, character language)
+12. **Runtime** in minutes
+13. **Structural model** (three-act / five-loop / other)
 
 If a field was extracted from the file with confidence — use it, do not ask. If uncertain — ask.
 
@@ -71,6 +72,7 @@ Write `CLAUDE.md` with all actual values:
 - **Logline:** [logline]
 - **Format:** [format]
 - **Theme:** [theme]
+- **Seed:** [one image or metaphor the story grows from — or blank]
 - **Target audience:** [audience]
 - **Setting:** [setting]
 - **Period:** [period]

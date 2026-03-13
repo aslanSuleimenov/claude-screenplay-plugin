@@ -29,6 +29,8 @@ Create a new scene/block. Argument: $ARGUMENTS — number and title, e.g. `05 Ba
 
 ## Common to both types
 
-6. Check against analytics/avoid-ai-writing-tells.md — any forbidden patterns?
-7. Save as `scenes/NN_title.md`
-8. Update the scenes table and change log in CLAUDE.md
+6. **Attractor check:** Every 7–10 minutes of screen time the audience needs an emotional impact — not necessarily action, but something that shifts their state: revelation, humor, shock, sudden intimacy, reversal. Estimate where this scene falls in the overall runtime. Is there an attractor nearby? If this scene is in a zone without one — either this scene carries it, or flag the gap.
+
+7. Check against `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md` — any forbidden patterns?
+8. Save as `scenes/NN_title.md`
+9. Update the scenes table and change log in CLAUDE.md
