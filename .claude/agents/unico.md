@@ -19,12 +19,12 @@ description: Creates a UNICO pitching starter pack. Fills in the Project Passpor
 
 Прочитай analytics/compass_artifact.md если есть — референсные проекты, жанровый анализ.
 
-Прочитай нужный жанровый файл из ../compass/:
-- документальный портрет → ../compass/doc/portrait.md
-- cinema verité → ../compass/doc/verite.md
-- криминальный триллер → ../compass/fiction/thriller.md
-- чёрная комедия → ../compass/fiction/black-comedy.md
-- научная драма → ../compass/fiction/sci-drama.md
+Прочитай нужный жанровый файл из compass/:
+- документальный портрет → compass/doc/portrait.md
+- cinema verité → compass/doc/verite.md
+- криминальный триллер → compass/fiction/thriller.md
+- чёрная комедия → compass/fiction/black-comedy.md
+- научная драма → compass/fiction/sci-drama.md
 
 ## Шаг 2: Составь unico_package.md
 

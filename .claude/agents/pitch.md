@@ -19,12 +19,12 @@ description: Creates an investment pitch document for the project. Run when you 
 
 Прочитай analytics/compass_artifact.md если есть — жанровые системы, эталонные фильмы, диагностика.
 
-Затем определи жанр проекта и прочитай нужный файл из ../compass/:
-- документальный портрет → ../compass/doc/portrait.md
-- cinema verité → ../compass/doc/verite.md
-- криминальный триллер → ../compass/fiction/thriller.md
-- чёрная комедия → ../compass/fiction/black-comedy.md
-- научная драма → ../compass/fiction/sci-drama.md
+Затем определи жанр проекта и прочитай нужный файл из compass/:
+- документальный портрет → compass/doc/portrait.md
+- cinema verité → compass/doc/verite.md
+- криминальный триллер → compass/fiction/thriller.md
+- чёрная комедия → compass/fiction/black-comedy.md
+- научная драма → compass/fiction/sci-drama.md
 
 Из жанрового файла возьми: эталонные проекты, жанровые конвенции — для раздела «Референсные проекты».
 

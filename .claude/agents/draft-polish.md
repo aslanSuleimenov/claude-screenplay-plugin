@@ -103,13 +103,13 @@ description: Processes a screenplay draft through iterative passes — from anal
 Прочитай все созданные scenes/*.md.
 
 Прочитай analytics/compass_artifact.md если есть. Если нет — найди жанровый файл:
-- криминальный триллер → ../compass/fiction/thriller.md
-- чёрная комедия → ../compass/fiction/black-comedy.md
-- научная драма → ../compass/fiction/sci-drama.md
-- coming-of-age → ../compass/fiction/coming-of-age.md
-- драма → ../compass/fiction/drama.md
-- документальный портрет → ../compass/doc/portrait.md
-- cinema verité → ../compass/doc/verite.md
+- криминальный триллер → compass/fiction/thriller.md
+- чёрная комедия → compass/fiction/black-comedy.md
+- научная драма → compass/fiction/sci-drama.md
+- coming-of-age → compass/fiction/coming-of-age.md
+- драма → compass/fiction/drama.md
+- документальный портрет → compass/doc/portrait.md
+- cinema verité → compass/doc/verite.md
 
 Проверь:
 - **Хронология**: события идут в логичном порядке, нет временны́х противоречий

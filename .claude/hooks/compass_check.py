@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Хук SessionStart: проверяет возраст файлов в ../compass/
+Хук SessionStart: проверяет возраст файлов в compass/
 Если какой-то файл старше THRESHOLD_DAYS — выводит напоминание.
 Работает на Windows, macOS, Linux.
 """
@@ -17,7 +17,7 @@ THRESHOLD_DAYS = 30   # напоминать если файл не обновл
 
 def main():
     proj_dir   = Path(__file__).resolve().parent.parent.parent
-    compass_dir = proj_dir.parent / "compass"
+    compass_dir = proj_dir / "compass"
 
     if not compass_dir.exists():
         sys.exit(0)
