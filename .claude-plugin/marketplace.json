@@ -1,5 +1,9 @@
 {
   "name": "claude-screenplay-template",
+  "owner": {
+    "name": "Aslan Suleimenov",
+    "url": "https://github.com/aslanSuleimenov"
+  },
   "plugins": [
     {
       "name": "screenplay",
