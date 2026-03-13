@@ -44,8 +44,10 @@ Also check:
 - Scenes that contribute nothing — no new information, no value change
 
 **Structure — documentary (no beat map, check instead):**
-- Is there a clear POV / argument? Or just a sequence of facts?
+- Is there a clear POV / argument? Or just a sequence of facts? A documentary without a filmmaker's position is not neutral — it's empty.
 - Does each block change something — reveal, complicate, or answer?
+- If the film is interview-driven: read `${CLAUDE_PLUGIN_ROOT}/compass/doc/interview-structure.md`. Check: do any interviews function as dramatic scenes (entry → fracture → exit)? Or are they all testimony — information delivery without tension?
+- Does the opening block establish a question (not answer it)? Does the closing block land somewhere the opening didn't predict?
 
 **Format (check against CLAUDE.md scene formatting rules):**
 - Heading format violations
