@@ -9,11 +9,5 @@
   "repository": "https://github.com/aslanSuleimenov/claude-screenplay-template",
   "license": "MIT",
   "keywords": ["screenplay", "screenwriting", "documentary", "av-script", "docx", "film"],
-  "hooks": "./hooks/hooks.json",
-  "mcpServers": {
-    "playwright": {
-      "command": "npx",
-      "args": ["-y", "@microsoft/playwright-mcp@latest"]
-    }
-  }
+  "hooks": "./hooks/hooks.json"
 }
