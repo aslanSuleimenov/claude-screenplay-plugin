@@ -1,0 +1,20 @@
+# User project content — not tracked
+scenes/*.md
+!scenes/.gitkeep
+analytics/compass_artifact.md
+analytics/pitch.md
+analytics/unico_package.md
+analytics/research_*.md
+analytics/synopsis.md
+versions/
+memory/session_log.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
