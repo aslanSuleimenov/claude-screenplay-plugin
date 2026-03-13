@@ -1,77 +1,84 @@
-# Compass — Genre Reference
+# Genre Compass — Index
 
-A shared library for all projects in `scenarii/`.
-From any project: `../compass/`.
+Reference files for genre theory, structural conventions, and benchmark films. No project-specific content.
 
-Updated when a genre is consulted, or as needed.
-Each file is filled in at first use — not in advance.
+**Sources:** IMDB (27 official genres), Letterboxd (19), AFI (10 classic genres), Kinopoisk (~25), Wikipedia, MasterClass, StudioBinder, No Film School, PremiumBeat.
 
 ---
 
-## Documentary
+## Fiction — Core Genres
 
-| Style | File | Systems | Projects |
-|-------|------|---------|---------|
-| Portrait / biographical essay | `doc/portrait.md` | narrative, archive, interview, subjectivity, voice-over | ardak70 |
-| Cinema Vérité / observational | `doc/verite.md` | wordless hook, ticking clock, law of silence, sound, editing | kumaiTazy |
-
-## Fiction
-
-| Genre | File | Systems | Projects |
-|-------|------|---------|---------|
-| Crime thriller | `fiction/thriller.md` | 10-min hook, suspense, antagonist, reveal, pace | mother |
-| Black comedy | `fiction/black-comedy.md` | absurdity as threat, misunderstanding engine, tone, escalation | ubiyca_xolostaka |
-| Science drama | `fiction/sci-drama.md` | idea as character, science vs. drama, language of explanation | kodStepi |
-| Coming-of-age drama | `fiction/coming-of-age.md` | identity, mentor, ordeal, maturation | intherythm |
-| Drama / Dramedy | `fiction/drama.md` | value conflict, pace, ending without catharsis | woman_bulak |
-
-## Formats (operate on top of genre)
-
-| Format | File | Key systems | Projects |
-|--------|------|------------|---------|
-| Mini-series | `format/miniseries.md` | pilot, cliffhanger, season arc, closed finale | intherythm, woman_bulak |
-| Vertical microdrama 9:16 | `format/vertical-microdrama.md` | 2 min/episode, cliffhanger, on-screen text, virality | ciberbuling |
+| File | Genre | Notes |
+|------|-------|-------|
+| `fiction/action.md` | Action | Physical stakes, set pieces, escalating threat |
+| `fiction/adventure.md` | Adventure | Quest, journey, discovery |
+| `fiction/biography.md` | Biography / Biopic | Real person, key period, public vs. private |
+| `fiction/black-comedy.md` | Black Comedy | Taboo as humor, dark satire, moral ambiguity |
+| `fiction/comedy.md` | Comedy | Incongruity, social harmony, multiple subtypes |
+| `fiction/coming-of-age.md` | Coming-of-Age | Bildungsroman, psychological/moral growth |
+| `fiction/crime.md` | Crime / Gangster | Rise and fall arc, criminal world interior |
+| `fiction/drama.md` | Drama | Psychological conflict, character change |
+| `fiction/fantasy.md` | Fantasy | Magic systems, secondary worlds, chosen hero |
+| `fiction/heist.md` | Heist | Team, plan, complication, double-cross |
+| `fiction/historical.md` | Historical / Period / Epic | Epoch reconstruction, individual vs. history |
+| `fiction/horror.md` | Horror | Fear, dread, survival — includes subtypes |
+| `fiction/melodrama.md` | Melodrama | Emotional excess, moral clarity, domestic sphere |
+| `fiction/musical.md` | Musical | Song as character speech, integrated structure |
+| `fiction/mystery.md` | Mystery / Detective | Crime as disruption, detection restores order |
+| `fiction/noir.md` | Film Noir / Neo-Noir | Fatalism, femme fatale, expressionist shadow |
+| `fiction/road-movie.md` | Road Movie | Journey as meaning, wandering over destination |
+| `fiction/romantic-comedy.md` | Romantic Comedy | Meet-cute, obstacle, reunion — comedy required |
+| `fiction/romantic-drama.md` | Romantic Drama | Romance without comedy, loss permitted |
+| `fiction/sci-drama.md` | Sci-Fi Drama | Science fiction with dramatic/character emphasis |
+| `fiction/sci-fi.md` | Science Fiction | Speculative premise, all major subtypes |
+| `fiction/spy.md` | Spy / Espionage | Covert operations, identity as performance |
+| `fiction/sport.md` | Sport | Competition, training arc, final match |
+| `fiction/thriller.md` | Crime Thriller | Tension, metered information, protagonist at risk |
+| `fiction/war.md` | War | Combat, ensemble, institutional cost |
+| `fiction/western.md` | Western | Frontier morality, landscape, duel |
 
 ---
 
-## Sources and Resources
+## Documentary — Modes and Subtypes
 
-### General
-- [Wikipedia: Bible (screenwriting)](https://en.wikipedia.org/wiki/Bible_(screenwriting))
-- [ScreenCraft: Do You Really Know Your Genre?](https://screencraft.org/blog/do-you-really-know-what-genre-your-screenplay-is/)
-- [Celtx: Mastering Film Genres](https://blog.celtx.com/mastering-the-art-of-screenwriting/)
-- [Industrial Scripts: Screenwriting 101](https://industrialscripts.com/screenwriting-guide/)
-- [ScreenwritingScience: 19-Sequence Model](https://screenwritingscience.com/)
-- [ScriptMag: Genre Craft Features](https://scriptmag.com/screenplays/genre-craft-features)
+| File | Mode | Notes |
+|------|------|-------|
+| `doc/essay-film.md` | Essay Film | Authorial I, associative structure, digression |
+| `doc/investigative.md` | Investigative | Exposure, evidence, legal risk |
+| `doc/mockumentary.md` | Mockumentary | Fiction in documentary form, comedy/satire |
+| `doc/nature.md` | Nature / Wildlife | Attenborough tradition, personified animals |
+| `doc/portrait.md` | Portrait | One subject, intimate access, public vs. private |
+| `doc/true-crime.md` | True Crime | Retrospective case, investigation, ethics |
+| `doc/verite.md` | Cinema Vérité | Fly-on-the-wall, no narration, direct cinema |
 
-### Documentary
-- [MasterClass: Ken Burns Documentary Cinematography](https://www.masterclass.com/articles/filmmaker-ken-burnss-top-tips-for-documentary-cinematography)
-- [Wikipedia: Cinéma vérité](https://en.wikipedia.org/wiki/Cin%C3%A9ma_v%C3%A9rit%C3%A9)
-- [MasterClass: What is Cinema Vérité](https://www.masterclass.com/articles/what-is-cinema-verite-in-filmmaking)
-- [PremiumBeat: Rules of Cinema Vérité](https://www.premiumbeat.com/blog/cinema-verite-documentary-filmmaking/)
-- [FilmDaft: Cinema Verité — Meaning, Techniques, Examples](https://filmdaft.com/what-is-cinema-verite-meaning-examples/)
+---
 
-### Crime Thriller
-- [ActFour: A Great Thriller](https://actfourscreenplays.com/screenwriting-blog/a-great-thriller/)
-- [ScriptAngel: Writing a Gripping Thriller](https://scriptangel.com/genre-writing-a-gripping-thriller-by-charles-harris/)
-- [Greenlight Coverage: Thriller Screenplays Essentials](https://glcoverage.com/2024/08/07/thriller-screenplays/)
-- James N. Frey — *How to Write a Damn Good Thriller*
+## Genre detection quick-reference
 
-### Black Comedy
-- [MasterClass: How to Write a Comedy Screenplay](https://www.masterclass.com/articles/how-to-write-a-comedy-screenplay-a-guide-to-writing-a-comedic-screenplay-that-will-make-audiences-laugh)
-- [Celtx: How to Write a Comedy Script](https://blog.celtx.com/how-to-write-a-comedy-script/)
+**If the script has:**
+- Slug lines, individual hero, physical confrontation → **action** or **thriller**
+- A death to investigate, suspects, clues → **mystery**
+- Criminal world from inside, rise/fall arc → **crime**
+- Journey with no fixed destination → **road-movie**
+- Two people fall in love, funny moments → **romantic-comedy**
+- Two people fall in love, no laughs, may end badly → **romantic-drama**
+- Magic is real and has rules → **fantasy**
+- Future / technology as premise → **sci-fi**
+- Real person's story → **biography**
+- Documentary form, real events → see `doc/` subtypes
 
-### Mini-Series
-- [ScreenCraft: Writing the Mini-Series](https://screencraft.org/blog/writing-the-limited-series/)
-- [MasterClass: How to Write a TV Pilot](https://www.masterclass.com/articles/how-to-write-a-tv-pilot-script)
-- [Industrial Scripts: Limited Series Writing Guide](https://industrialscripts.com/limited-series/)
+---
 
-### Coming-of-Age / Drama
-- [MasterClass: How to Write a Dramatic Screenplay](https://www.masterclass.com/articles/how-to-write-a-dramatic-screenplay)
-- [ScreenCraft: Writing Coming-of-Age Stories](https://screencraft.org/blog/writing-coming-of-age-stories/)
+## Soviet and Russian cinema — cross-reference by genre
 
-### Science Drama
-- [ScriptAngel: Writing the Science Fiction Film](https://scriptangel.com/genre-writing-the-science-fiction-film-by-robert-grant/)
-- [Industrial Scripts: Writing Science Fiction](https://industrialscripts.com/writing-science-fiction/)
-- [MasterClass: How to Write a Dramatic Screenplay](https://www.masterclass.com/articles/how-to-write-a-dramatic-screenplay)
-- [Celtx: How to Write a Sci-Fi Script](https://blog.celtx.com/how-to-write-a-science-fiction-script/)
+| Genre | Key films |
+|-------|-----------|
+| War | *Come and See* (Klimov), *The Ascent* (Shepitko), *The Cranes Are Flying* (Kalatozov), *Ivan's Childhood* (Tarkovsky) |
+| Sci-Fi | *Stalker* (Tarkovsky), *Solaris* (Tarkovsky), *Kin-dza-dza!* (Danelia) |
+| Historical/Epic | *Andrei Rublev* (Tarkovsky), *War and Peace* (Bondarchuk), *Alexander Nevsky* (Eisenstein) |
+| Crime | *Brother* (Balabanov), *The Meeting Place Cannot Be Changed* (Govorukhin) |
+| Comedy | *The Diamond Arm*, *Irony of Fate*, *Office Romance* (Gaidai, Ryazanov) |
+| Drama | *The Mirror* (Tarkovsky), *My Friend Ivan Lapshin* (German), *The Asthenic Syndrome* (Muratova) |
+| Spy | *Seventeen Moments of Spring* (Lioznova), *Dead Season* |
+| Romantic Drama | *Moscow Does Not Believe in Tears* (Menshov), *The Cranes Are Flying* |
+| Road Movie | *White Sun of the Desert*, *Koktebel*, *Kin-dza-dza!* |
