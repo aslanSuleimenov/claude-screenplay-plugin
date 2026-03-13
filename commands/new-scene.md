@@ -5,6 +5,7 @@ Create a new scene/block. Argument: $ARGUMENTS — number and title, e.g. `05 Ba
 2. Check for analytics/compass_artifact.md:
    - If it exists — read it (genre systems will help write the scene in the genre's style)
    - If not — continue without it, but recommend: "Run /compass to create the genre reference"
+3. Read the genre entry from `${CLAUDE_PLUGIN_ROOT}/compass/fiction/genre-mechanics.md` (fiction) — find the section matching the project's genre. Note: **Must happen** and **Forbidden**. Ask: does this scene serve one of the structural obligations, or does it violate a forbidden pattern?
 3. Parse the argument: first number is the scene number, the rest is the title
 4. If the number is taken or being inserted between existing ones — warn and ask for confirmation before renumbering. Do the renumbering two-phase (first temp names, then final names)
 

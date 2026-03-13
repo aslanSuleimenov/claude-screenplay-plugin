@@ -18,6 +18,12 @@ If `$ARGUMENTS` is empty — analyze the entire screenplay.
 - Location and prop continuity — object appears/disappears, location changes without explanation
 - Character motivation gaps — actions without a clear reason
 
+**Genre contract (fiction only):**
+
+Read `${CLAUDE_PLUGIN_ROOT}/compass/fiction/genre-mechanics.md` — find the section for the project's genre. Check:
+- Are the **Must happen** obligations present in the screenplay?
+- Are any **Forbidden** patterns present?
+
 **Structure — beat check (fiction only):**
 
 Calculate expected beat positions from runtime in CLAUDE.md. Check whether these beats exist and where:
@@ -69,6 +75,11 @@ All is Lost:      ✗  (expected ~scene 14)
 Break into Three: ✗
 Final image:      ✗
 Protagonist goal: [stated / unclear]
+
+GENRE CONTRACT  ([genre])
+Must happen — present:   [list or ✓ all covered]
+Must happen — missing:   [list or none]
+Forbidden — violations:  [list or none]
 
 STRUCTURE ISSUES
 [issue or observation]
