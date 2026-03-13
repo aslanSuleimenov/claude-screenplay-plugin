@@ -1,118 +1,118 @@
 # CLAUDE.md
 
-<!-- Заполняется командой /startproject. Не редактировать вручную. -->
+<!-- Filled in by /startproject. Do not edit manually. -->
 
-## Проект
+## Project
 
-- **Тип:** —
-- **Название:** —
-- **Жанр:** —
-- **Логлайн:** —
-- **Формат:** —
-- **Тема:** —
-- **Целевая аудитория:** —
-- **Место действия:** —
-- **Время:** —
-- **Валюта и реалии:** —
-- **Хронометраж:** —
-- **Структурная модель:** —
+- **Type:** —
+- **Title:** —
+- **Genre:** —
+- **Logline:** —
+- **Format:** —
+- **Theme:** —
+- **Target audience:** —
+- **Setting:** —
+- **Period:** —
+- **Currency and locale:** —
+- **Runtime:** —
+- **Story structure:** —
 
-Язык работы: **русский**. Все ответы и комментарии — на русском.
+Working language: **English**. All responses and comments in English.
 
-## Персонажи
+## Characters
 
-<!-- Заполняет /startproject -->
+<!-- Filled in by /startproject -->
 
-| Имя | Возраст | Роль | Want / Need |
-|-----|---------|------|-------------|
+| Name | Age | Role | Want / Need |
+|------|-----|------|-------------|
 
-## Структура
+## Structure
 
-<!-- Заполняет /startproject -->
+<!-- Filled in by /startproject -->
 
-### Сцены
+### Scenes
 
-| № | Файл | Акт/Петля | Ключевое событие | Статус |
-|---|------|-----------|-----------------|--------|
+| # | File | Act/Loop | Key event | Status |
+|---|------|----------|-----------|--------|
 
-### Структурные точки
+### Structural beats
 
-<!-- Заполняет /startproject -->
+<!-- Filled in by /startproject -->
 
 ---
 
-## Форматирование сцен
+## Scene formatting
 
-<!-- /startproject заменяет этот блок на нужный формат в зависимости от типа проекта -->
+<!-- /startproject replaces this block with the correct format based on project type -->
 
-### Если тип = художественный
+### If type = fiction
 
-Строго по `converter_MD_DOCX/README.md`. Краткие правила:
+Strictly per `converter_MD_DOCX/README.md`. Quick rules:
 
 ```markdown
-# Сцена 01: Название
+# Scene 01: Title
 
-**ИНТ./НАТ. ЛОКАЦИЯ — ВРЕМЯ СУТОК**
+**INT./EXT. LOCATION — TIME OF DAY**
 
-Описание действия. Настоящее время, третье лицо. Максимум 4 строки в абзаце.
+Action description. Present tense, third person. Max 4 lines per paragraph.
 
-**ИМЯ ПЕРСОНАЖА**
-*(ремарка)*
-Текст диалога.
+**CHARACTER NAME**
+*(parenthetical)*
+Dialogue text.
 ```
 
-- ОДНА пустая строка между блоками; НОЛЬ между именем и диалогом
-- Имена — **жирными заглавными**: `**ИМЯ**`
-- Slug line — **жирным**: `**ИНТ. ЛОКАЦИЯ — ДЕНЬ**`
-- Первое появление: `ИМЯ (возраст)` заглавными в тексте действия
-- Не использовать: `ЗАТЕМНЕНИЕ.`, `CUT TO:`, `КРУПНЫЙ ПЛАН:`
-- Числа в диалогах — словами
-- `---` — смена локации внутри сцены (конвертер пропускает)
-- `> **ПАЛИТРА:** ...` — визуальная заметка
+- ONE blank line between blocks; ZERO between name and dialogue
+- Names — **bold caps**: `**NAME**`
+- Slug line — **bold**: `**INT. LOCATION — DAY**`
+- First appearance: `NAME (age)` in caps within action text
+- Do not use: `FADE OUT.`, `CUT TO:`, `CLOSE ON:`
+- Numbers in dialogue — written out as words
+- `---` — location change within a scene (converter skips it)
+- `> **PALETTE:** ...` — visual note
 
-### Если тип = документальный
+### If type = documentary
 
-Строго по `converter_MD_DOCX/README.md`, раздел «Документальный формат». Краткие правила:
+Strictly per `converter_MD_DOCX/README.md`, section "Documentary format". Quick rules:
 
 ```markdown
-# Блок 01: Название
+# Block 01: Title
 
 | VIDEO | AUDIO |
 |-------|-------|
-| WS. Горы, рассвет. | *(NAT SOUND: ветер)* |
-| MS. Пастух ведёт стадо. | **V/O:** Текст закадрового голоса. |
-| CU. Лицо героя. | **SOT АЙБЕК:** «Прямая речь героя.» |
-| **SUPER:** Айбек, пастух, 43 года | |
-| B-ROLL: юрты, дым, казан. | *(МУЗЫКА: комуз, тихо)* |
+| WS. Mountains, dawn. | *(NAT SOUND: wind)* |
+| MS. Shepherd leads the flock. | **V/O:** Voice-over text. |
+| CU. Subject's face. | **SOT AIBEK:** "Direct quote." |
+| **SUPER:** Aibek, shepherd, 43 | |
+| B-ROLL: yurts, smoke, kettle. | *(MUSIC: komuz, low)* |
 ```
 
-- Каждый блок = один файл `scenes/NN_название.md`
-- Таблица `| VIDEO | AUDIO |` — обязательный формат
-- Обозначения: **V/O** (закадр), **SOT** (синхрон/интервью), **SUPER** (титр), **NAT SOUND**, **SFX**, **B-ROLL**
-- Размеры планов: WS, MS, CU, ECU, AERIAL
-- `> **ЗАМЕТКА:** ...` — режиссёрская заметка (не попадает в DOCX)
+- Each block = one file `scenes/NN_name.md`
+- Table `| VIDEO | AUDIO |` — mandatory format
+- Labels: **V/O** (voice-over), **SOT** (sync/interview), **SUPER** (title card), **NAT SOUND**, **SFX**, **B-ROLL**
+- Shot sizes: WS, MS, CU, ECU, AERIAL
+- `> **NOTE:** ...` — director's note (not included in DOCX)
 
-## Правила работы
+## Working rules
 
-- НЕ менять нумерацию файлов без явной команды
-- При добавлении сцены — обновить таблицу выше и «Историю изменений»
-- Расширение через новые сцены между существующими → перенумеровать последующие (только целые номера, без букв)
-- Переименование файлов: двухфазный rename через temp-имена (избегать коллизий)
-- Паттерны ИИ-письма запрещены — см. `analytics/avoid-ai-writing-tells.md`
-- Писать только то, что видит камера: действия, не эмоции. Не «Маша грустит» — а «Маша смотрит в окно, сигарета догорела нетронутой». Сильные глаголы, конкретные детали.
+- Do NOT renumber files without an explicit command
+- When adding a scene — update the table above and "Change log"
+- Expanding by inserting scenes between existing ones → renumber subsequent scenes (whole numbers only, no letter suffixes)
+- File renaming: two-phase rename via temp names (avoid collisions)
+- AI writing patterns are forbidden — see `analytics/avoid-ai-writing-tells.md`
+- Write only what the camera sees: actions, not emotions. Not "Mary is sad" — but "Mary stares out the window, cigarette burned down untouched." Strong verbs, specific details.
 
 ## Callbacks / Running gags
 
-<!-- Заполняется по ходу работы -->
+<!-- Filled in as work progresses -->
 
-| Элемент | Откуда → Куда |
-|---------|---------------|
+| Element | From → To |
+|---------|-----------|
 
-## Зоны защиты (не добавлять юмор)
+## Protected zones (no humor)
 
-<!-- Заполняет автор -->
+<!-- Filled in by author -->
 
-## История изменений
+## Change log
 
-| Дата | Изменение |
-|------|-----------|
+| Date | Change |
+|------|--------|

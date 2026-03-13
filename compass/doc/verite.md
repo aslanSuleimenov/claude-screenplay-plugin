@@ -1,11 +1,11 @@
-# Cinema Vérité / Наблюдательное документальное
+# Cinema Vérité / Observational Documentary
 
-Проекты: `kumaiTazy`
-Индекс: `../INDEX.md`
+Projects: `kumaiTazy`
+Index: `../INDEX.md`
 
 ---
 
-## Источники
+## Sources
 
 - [Wikipedia: Cinéma vérité](https://en.wikipedia.org/wiki/Cin%C3%A9ma_v%C3%A9rit%C3%A9)
 - [MasterClass: What is Cinema Vérité](https://www.masterclass.com/articles/what-is-cinema-verite-in-filmmaking)
@@ -14,96 +14,96 @@
 - [Backstage: What Is Cinéma Vérité?](https://www.backstage.com/magazine/article/what-is-cinema-verite-examples-75673/)
 - [SoTheTheoryGoes: Observational Mode](https://www.sothetheorygoes.com/documentary-observational-mode/)
 
-Эталоны: *All That Breathes* (2022), *Gunda* (2020), *Kedi* (2016), *Honeyland* (2019), *Primary* (1960), *Chronicle of a Summer* (1961), *Человек с киноаппаратом* (1929, Вертов), *Мы* (1969, Пелешян)
+Reference films: *All That Breathes* (2022), *Gunda* (2020), *Kedi* (2016), *Honeyland* (2019), *Primary* (1960), *Chronicle of a Summer* (1961), *Man with a Movie Camera* (1929, Vertov), *We* (1969, Peleshian)
 
 ---
 
-## 1. Крючок без слов
+## 1. The Wordless Hook
 
-В наблюдательной документалистике нет голоса за кадром, который объяснит зрителю, зачем он здесь. Первая минута должна создать физическое ощущение мира — и немедленно поставить вопрос, на который зритель захочет получить ответ. Не через нарратив, а через сенсорику: звук, текстуру, движение, масштаб.
+In observational documentary, there is no voice-over to tell the audience why they're here. The first minute has to create a physical sense of a world — and immediately raise a question the audience will want answered. Not through narration, but through the senses: sound, texture, movement, scale.
 
-*All That Breathes* открывается крысами на делийской свалке в замедленной съёмке. Ещё до первого человека — уже ясно, что это город, в котором что-то гниёт. *Gunda* начинается с тёмного экрана и звука дыхания свиньи — зритель вслушивается прежде, чем видит. *Honeyland* — женщина карабкается по вертикальной скале к ульям в расщелине: ни слова, но ставки ощутимы физически. *Primary* (1960) бросает тебя прямо в предвыборный штаб — толчея, шум, Кеннеди идёт сквозь толпу, камера едва поспевает — и ты уже внутри.
+*All That Breathes* opens on rats moving through a Delhi landfill in slow motion. Before a single human appears, you already know this is a city where something is rotting. *Gunda* begins with a dark frame and the sound of a pig breathing — the audience is listening before they can see. *Honeyland* opens on a woman climbing a sheer cliff face toward a beehive wedged in a crevice: not a word spoken, but the stakes are physically felt. *Primary* (1960) drops you straight into a campaign headquarters — the crush of bodies, the noise, Kennedy moving through a crowd, the camera barely keeping up — and you're already inside.
 
-Кинематографический крючок работает через **нарушение ожидания**: зритель думает, что знает, о чём фильм (по названию, по аннотации), — и первый кадр показывает что-то другое, смещённое, неожиданно конкретное. Это смещение и удерживает.
+A cinematic hook works through **violated expectation**: the audience thinks they know what the film is about (from the title, from the synopsis), and the first shot shows them something else — displaced, unexpectedly specific. That displacement holds them.
 
-**Закон системы:** Первая сцена — сенсорный шок, а не экспозиция. Ноль объяснений. Только звук, текстура, движение. Зритель должен почувствовать мир раньше, чем поймёт, о чём он.
-
----
-
-## 2. Двигатель — тикающие часы
-
-Документальный фильм без конфликта — лекция. Cinema verité не создаёт конфликт искусственно, но обязан его **обнаружить** в реальности и предъявить зрителю достаточно рано, чтобы тот не ушёл. Конфликт в этом жанре чаще всего не между людьми, а между существованием и угрозой этому существованию.
-
-В *All That Breathes* двигатель тройной: экологический (воздух убивает птиц), финансовый (у братьев кончаются деньги на клинику), политический (Дели горит от протестов). В *Honeyland* — сосед приходит с семьёй и скотом, пчёлы Хатидзе начинают умирать. В *Kedi* тихий двигатель — джентрификация Стамбула: коты уходят из кварталов, которые перестраивают. Двигатель не обязан кричать — но он должен быть.
-
-Дедлайн — лучшая форма тикающих часов. Он превращает процесс в гонку. *Chronicle of a Summer* (1961) Руша и Морена имел встроенный дедлайн — лето: когда оно закончится, эксперимент закончится тоже. Это придавало каждому разговору ощущение последнего шанса.
-
-**Закон системы:** У фильма должен быть конкретный двигатель — угроза с ограничением по времени. Абстрактный «кризис» не работает. Нужна точка невозврата: что именно исчезнет, когда и почему это нельзя вернуть.
+**System rule:** The opening scene is a sensory shock, not an exposition. Zero explanation. Sound, texture, movement. The audience must feel the world before they understand what it's about.
 
 ---
 
-## 3. Закон тишины — наблюдение vs объяснение
+## 2. The Engine — Ticking Clock
 
-Дзига Вертов в «Человеке с киноаппаратом» сделал камеру видимым персонажем — она появляется в кадре сама, процесс съёмки становится частью фильма. Это радикальная противоположность «мухи на стене»: Вертов провозглашает, что камера не прячется, а видит лучше человеческого глаза. Советская школа кино-глаза определила весь дальнейший документальный язык, поставив вопрос: что значит показывать правду, если правда — это монтаж?
+A documentary without conflict is a lecture. Cinema vérité doesn't manufacture conflict artificially, but it must **find** conflict in reality and present it to the audience early enough that they don't leave. In this mode, conflict is usually not between people — it's between a way of existing and a threat to that existence.
 
-Артавазд Пелешян в «Мы» (1969) идёт ещё дальше: почти нет диалога, нет объяснений, только образы и музыка — кинематографическое стихотворение. Его «дистанционный монтаж» работает через рифму образов, разделённых большим временным промежутком, а не через нарративную последовательность.
+In *All That Breathes*, the engine is triple: ecological (the air is killing birds), financial (the brothers are running out of money to keep the clinic open), political (Delhi burning with protests). In *Honeyland*, a neighbor arrives with his family and his livestock, and Hatidze's bees begin to die. In *Kedi*, the engine is quiet — the gentrification of Istanbul: cats disappearing from neighborhoods being demolished and rebuilt. The engine doesn't have to announce itself, but it has to be there.
 
-Cinema verité строится на дисциплине невмешательства. Голос за кадром — это режиссёр, который не доверяет зрителю. Каждый раз, когда нарратор объясняет чувства героя или значение происходящего, он крадёт у зрителя работу интерпретации — то есть удовольствие от просмотра.
+A deadline is the most effective form of ticking clock. It turns a process into a race. *Chronicle of a Summer* (1961) by Rouch and Morin had a built-in deadline — summer: when it ended, the experiment ended too. That gave every conversation the feeling of a last chance.
 
-*Gunda* Коссаковского — 93 минуты без единого слова диалога или комментария. Только действие свиньи, кур и коров. Зритель сам достраивает всё. *Kedi* использует интервью, но камера при этом всегда на кошке, а не на говорящем человеке — слова становятся фоном, изображение остаётся главным. *All That Breathes* вплетает интервью в действие: братья говорят, не останавливаясь, пока оперируют птиц, — экспозиция идёт через руки, а не через лицо к камере.
-
-Правило проверки: любую единицу информации нужно сначала попробовать передать визуально. Если кадр справляется — слово лишнее. Слово звучит только тогда, когда изображение физически не может нести эту информацию: исторические факты, даты, цифры без визуального эквивалента.
-
-**Закон системы:** Соотношение 80/20 — восемьдесят процентов наблюдение, двадцать слово. Каждая информационная единица проверяется вопросом: «Можно ли это показать вместо того, чтобы сказать?»
+**System rule:** The film needs a concrete engine — a threat with a time limit. An abstract "crisis" doesn't work. There must be a point of no return: what exactly will be lost, when, and why it can't be recovered.
 
 ---
 
-## 4. Звук и тишина
+## 3. The Law of Silence — Observation vs. Explanation
 
-Звук в cinema verité — не украшение и не атмосфера. Это структурный элемент, равный изображению. *Gunda* микшируется так, что дыхание свиньи, хруст соломы и далёкий трактор образуют почти музыкальную партитуру. *All That Breathes* использует звуковой контраст как монтаж: тишина подвальной клиники / рёв делийской улицы над ней.
+Dziga Vertov in *Man with a Movie Camera* made the camera a visible character — it appears in its own frame, the act of filming becomes part of the film. This is the radical opposite of fly-on-the-wall: Vertov declares that the camera doesn't hide, it sees better than the human eye. The Soviet kino-eye school shaped the entire subsequent language of documentary by asking: what does it mean to show truth, if truth is an act of editing?
 
-Музыка в наблюдательном документальном — инструмент высокого риска. Она легко превращается в манипуляцию: подсказывает зрителю, когда плакать и что чувствовать. Принцип использования: музыка только в переходах между актами, никогда внутри наблюдательной сцены. *Honeyland* держит этот принцип: внутри сцен — только амбиент (ветер, пчёлы, огонь), музыка появляется только на стыках.
+Artavazd Peleshian in *We* (1969) goes further still: almost no dialogue, no explanation, only images and music — a cinematic poem. His "distance montage" works through the rhyming of images separated by large spans of time, not through narrative sequence.
 
-Тишина — отдельный инструмент. Не пустота, а выбор. Две-три сцены абсолютного амбиента в полнометражном фильме дают зрителю «дыхание» — момент, когда он сам думает, а не следует за режиссёром. *Primary* умел это делать даже в репортажном режиме: камера просто стояла, пока Кеннеди ждал результатов, и тишина ожидания говорила больше, чем любой комментарий.
+Cinema vérité is built on the discipline of non-interference. Voice-over is a director who doesn't trust the audience. Every time a narrator explains what a character is feeling, or what a moment means, they steal from the viewer the work of interpretation — which is also the pleasure of watching.
 
-**Закон системы:** Звуковая партитура строится от частного к общему: сначала конкретный источник звука в кадре, потом пространство вокруг него, потом тишина как пауза. Музыка — только на стыках структурных частей, не внутри сцен.
+*Gunda* by Kossakovsky runs 93 minutes without a single word of dialogue or commentary. Only the actions of a pig, some chickens, a cow. The audience constructs everything. *Kedi* uses interviews, but the camera stays on the cat, not on the person speaking — the words become background, the image stays primary. *All That Breathes* weaves interview into action: the brothers talk without stopping while they operate on birds — exposition comes through their hands, not through a face turned toward the camera.
 
----
+The test: try to convey any unit of information visually first. If the shot can carry it, the word is unnecessary. Words earn their place only when the image physically cannot carry the information: historical facts, dates, numbers with no visual equivalent.
 
-## 5. Камера как присутствие
-
-В cinema verité камера не притворяется, что её нет. Наоборот — она присутствует, и её отношение к субъекту формирует значение. Высота, расстояние, движение — каждый выбор делает утверждение.
-
-*Gunda* снимает всё с уровня животных — камера на земле, угол взгляда свиньи. Это не «красивый приём», это этическая позиция: режиссёр смотрит на мир глазами субъекта, а не сверху. *All That Breathes* держит камеру близко к рукам братьев, когда они работают — телесность, физический труд в кадре. *Kedi* использует камеру на уровне 20–30 см от земли для котов и нормальную высоту для людей — смена высоты как смена субъекта.
-
-Движение камеры в наблюдательном документальном — следование, а не постановка. Камера реагирует, а не предвосхищает. Это означает, что некоторые сцены будут «несовершенными» технически: нерезкость при резком движении, смазанный кадр при повороте. Это не брак — это доказательство присутствия. Роб Дрю, снимая *Primary*, держал камеру на плече без штатива, потому что штатив означал бы, что кто-то заранее знал, что произойдёт.
-
-**Закон системы:** Высота и расстояние камеры определяют отношение режиссёра к субъекту. Для нечеловеческих субъектов — уровень их тела. Для людей — расстояние разговора, не интервью. Движение только реактивное, никогда предвосхищающее.
+**System rule:** The 80/20 ratio — eighty percent observation, twenty percent speech. Every unit of information is checked against one question: "Can this be shown instead of said?"
 
 ---
 
-## 6. Монтаж без нарратора
+## 4. Sound and Silence
 
-Когда нет голоса за кадром, монтаж несёт всю интерпретирующую нагрузку. Рифма между кадрами — главный инструмент смысла. Это не «красивые переходы», это логика аргумента, выраженная через сопоставление.
+Sound in cinema vérité is not atmosphere or decoration. It's a structural element equal to image. *Gunda* is mixed so that a pig's breathing, the crunch of straw, and a distant tractor form something close to a musical score. *All That Breathes* uses sonic contrast as editing: the silence of the basement clinic / the roar of the Delhi street directly above it.
 
-*Honeyland* строит весь свой смысл через монтажный контрапункт: Хатидзе бережно берёт мёд, сосед грубо гонит скот — один жест читается через другой. *All That Breathes* рифмует масштабы: птица в руках хирурга / толпа на улице / крыса в мусоре — три размера одного кризиса. *Chronicle of a Summer* использует монтаж вопрос-ответ: герои спрашивают «счастливы ли вы?» на улице — и монтаж сталкивает разные ответы, создавая общий портрет эпохи.
+Music in observational documentary is high-risk. It slides easily into manipulation — cueing the audience when to feel sad and what to feel. The working principle: music only at transitions between acts, never inside an observational scene. *Honeyland* holds this: within scenes, only ambient sound (wind, bees, fire); music appears only at structural seams.
 
-Переходы между сюжетными линиями должны быть монтажными мостами — визуальными, звуковыми или тематическими. Не просто смена сцены, а рифма. Вопрос, поставленный в одной линии, получает неожиданный ответ в другой. Это и есть «монтаж без нарратора»: режиссёр говорит через сопоставление, а не через слова.
+Silence is its own instrument. Not emptiness — a choice. Two or three scenes of pure ambient sound in a feature-length film give the audience room to breathe — a moment where they think for themselves rather than follow the director. *Primary* understood this even in its reportage mode: the camera simply held while Kennedy waited for results, and the silence of that waiting said more than any commentary could.
 
-Ритм монтажа меняется по ходу фильма. В начале — длиннее планы, больше пространства для наблюдения. К кульминации — короче, плотнее, быстрее. Это не правило триллера, это органика нарастания.
-
-**Закон системы:** Каждый переход между сценами — монтажная рифма. Линии комментируют друг друга через сопоставление, а не чередуются механически. Смысл возникает в зазоре между кадрами, а не внутри каждого из них.
+**System rule:** The sound design moves from specific to general — first, a concrete sound source in frame; then the space surrounding it; then silence as a pause. Music only at structural transitions, never inside scenes.
 
 ---
 
-## 7. Этика наблюдения
+## 5. Camera as Presence
 
-Cinema verité возникло из этического вопроса, который не имеет окончательного ответа: что делает камера с теми, на кого она направлена? Жан Руш в *Chronicle of a Summer* сделал этот вопрос темой самого фильма — в финале он показывает отснятый материал героям и снимает их реакцию на собственные образы.
+In cinema vérité, the camera doesn't pretend it isn't there. It's present, and its relationship to the subject creates meaning. Height, distance, movement — each choice makes a statement.
 
-Присутствие камеры всегда меняет происходящее. Не потому, что люди притворяются — а потому, что осознание наблюдения меняет поведение. Длительные съёмки частично снимают этот эффект: через несколько недель камера перестаёт быть событием. Коссаковский жил рядом со своими свиньями достаточно долго, чтобы Гунда перестала его замечать. Режиссёры *Honeyland* провели с Хатидзе три года.
+*Gunda* shoots everything from animal level — the camera on the ground, at a pig's eye line. This isn't a stylistic flourish; it's an ethical stance. The director is looking at the world from the subject's perspective, not from above. *All That Breathes* keeps the camera close to the brothers' hands while they work — physicality, manual labor in frame. *Kedi* uses a camera position 20–30 centimeters off the ground for cats and normal eye level for people — the shift in height is the shift in subject.
 
-Доступ — не то же самое, что право. То, что человек согласился сниматься, не означает, что режиссёр вправе показывать всё снятое. Граница проходит там, где показ наносит реальный вред субъекту или его близким. В *All That Breathes* братья рассказывают о семейных конфликтах — и режиссёр делает выбор, что включить, а что оставить за кадром. Это не цензура, это ответственность.
+Camera movement in observational documentary is reactive, not anticipatory. The camera responds; it doesn't predict. This means some scenes will be technically imperfect: a momentary loss of focus during a sudden movement, a blurred frame during a quick pan. That's not a flaw — it's evidence of presence. Robert Drew, shooting *Primary*, handheld the camera without a tripod because a tripod would have implied that someone knew in advance what was going to happen.
 
-Анонимность — ещё одна этическая проблема наблюдательного жанра. *Kedi* снимает Стамбул как живой организм — и при этом все герои-люди узнаваемы. Выбор: показывать лица или нет, называть имена или нет — всегда этический, не только эстетический.
+**System rule:** Camera height and distance define the director's relationship to the subject. For non-human subjects — the level of their body. For people — the distance of a conversation, not an interview. Movement is reactive only, never anticipatory.
 
-**Закон системы:** Этика наблюдения — не ограничение, а метод. Длительное присутствие снижает эффект камеры. Доступ не равен праву показа. Граница — там, где показ наносит реальный вред субъекту вне съёмочного процесса.
+---
+
+## 6. Editing Without a Narrator
+
+When there's no voice-over, editing carries the full weight of interpretation. The rhyme between shots is the primary instrument of meaning. Not "beautiful transitions" — the logic of an argument expressed through juxtaposition.
+
+*Honeyland* builds its entire meaning through montage counterpoint: Hatidze carefully takes honey, the neighbor roughly drives his cattle — each gesture reads through the other. *All That Breathes* rhymes scales: a bird in a surgeon's hands / a crowd in the street / a rat in the garbage — three sizes of the same crisis. *Chronicle of a Summer* uses question-and-answer editing: subjects ask "are you happy?" on the streets of Paris, and the cut collides their different answers into a composite portrait of an era.
+
+Transitions between storylines should be montage bridges — visual, sonic, or thematic. Not simply a scene change, but a rhyme. A question raised in one line gets an unexpected answer in another. This is what editing without a narrator means: the director speaks through juxtaposition, not through words.
+
+Editing rhythm changes over the course of the film. At the beginning — longer takes, more space for observation. Toward the climax — shorter, denser, faster. This isn't a thriller convention; it's the organic shape of accumulation.
+
+**System rule:** Every transition between scenes is a montage rhyme. Lines comment on each other through juxtaposition, not mechanical alternation. Meaning emerges in the gap between shots, not within any single one of them.
+
+---
+
+## 7. The Ethics of Observation
+
+Cinema vérité emerged from an ethical question that has no final answer: what does a camera do to the people it's pointed at? Jean Rouch in *Chronicle of a Summer* made this question the subject of the film itself — in the final act, he screens the footage for the participants and films their reactions to their own images.
+
+A camera's presence always changes what's happening. Not because people are performing — but because the awareness of being watched alters behavior. Extended shooting periods partially dissolve this effect: after several weeks, the camera stops being an event. Kossakovsky lived alongside his pigs long enough that Gunda stopped registering his presence. The directors of *Honeyland* spent three years with Hatidze.
+
+Access is not the same as the right to show. A subject's willingness to be filmed does not mean the director is entitled to use everything that was captured. The line falls where showing something causes real harm to the subject or their family. In *All That Breathes*, the brothers discuss family conflicts — and the director decides what to include and what to leave out. That's not censorship; it's responsibility.
+
+Anonymity is a separate ethical problem in observational work. *Kedi* films Istanbul as a living organism, and all the human subjects are recognizable. Whether to show faces, whether to use names — these are always ethical choices, not just aesthetic ones.
+
+**System rule:** Observational ethics is not a constraint — it's a method. Extended presence reduces the camera effect. Access does not equal the right to show. The boundary is where showing causes real harm to the subject outside the filming process.

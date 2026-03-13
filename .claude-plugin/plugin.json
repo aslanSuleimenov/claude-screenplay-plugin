@@ -1,0 +1,21 @@
+{
+  "name": "screenplay",
+  "description": "Screenplay and AV-script writing toolkit — slash commands, format validation hooks, and MD→DOCX export. Supports fiction screenplays and documentary AV-scripts.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Aslan Suleimenov",
+    "url": "https://github.com/aslanSuleimenov"
+  },
+  "repository": "https://github.com/aslanSuleimenov/claude-screenplay-template",
+  "license": "MIT",
+  "keywords": ["screenplay", "screenwriting", "documentary", "av-script", "docx", "film"],
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@microsoft/playwright-mcp@latest"]
+    }
+  }
+}

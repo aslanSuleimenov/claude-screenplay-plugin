@@ -1,114 +1,114 @@
-# Документальный портрет / Биографическое эссе
+# Documentary Portrait / Biographical Essay
 
-Проекты: `ardak70`
-Индекс: `../INDEX.md`
+Projects: `ardak70`
+Index: `../INDEX.md`
 
 ---
 
-## Источники
+## Sources
 
 - [MasterClass: Ken Burns Documentary Cinematography](https://www.masterclass.com/articles/filmmaker-ken-burnss-top-tips-for-documentary-cinematography)
 - [Wikipedia: Documentary film](https://en.wikipedia.org/wiki/Documentary_film)
 - [No Film School: Documentary Filmmaking](https://nofilmschool.com/documentary-filmmaking)
 
-Эталоны: *Crumb* (1994), *Amy* (2015), *20 Feet from Stardom* (2013), *I Am Not Your Negro* (2016), *Faces Places* (2017), *Человек с киноаппаратом* (1929, Вертов), *Свидетели Путина* (2018, Манский)
+Reference films: *Crumb* (1994), *Amy* (2015), *20 Feet from Stardom* (2013), *I Am Not Your Negro* (2016), *Faces Places* (2017), *Man with a Movie Camera* (1929, Vertov), *Witnesses of Putin* (2018, Mansky)
 
 ---
 
-## 1. Нарратив и структура
+## 1. Narrative and Structure
 
-Документальный портрет не рассказывает биографию — он задаёт вопрос и ищет ответ через биографию. Хронология — только инструмент, не цель. Фильм может идти хронологически, но внутри каждого временного блока должна быть своя логика: не «потом случилось то-то», а «это изменило то, как мы понимаем героя».
+A documentary portrait doesn't tell a biography — it poses a question and pursues an answer through biography. Chronology is a tool, not a destination. A film can move forward in time, but each temporal block needs its own internal logic: not "and then this happened," but "this changed how we understand the person."
 
-Портрет работает на трёх уровнях одновременно: событийный (что произошло), психологический (почему это произошло с этим человеком) и тематический (что это говорит о природе творчества, успеха, самопожертвования). *20 Feet from Stardom* движется по всем трём: история бэк-вокалисток — это одновременно репортаж об индустрии, портрет конкретных женщин и вопрос о том, что значит быть близко к славе, но не на сцене. *I Am Not Your Negro* вообще отказывается от стандартной биографической структуры: фильм организован не по хронологии Болдуина, а по темам его незавершённой книги.
+A portrait operates on three levels simultaneously: the event level (what happened), the psychological level (why it happened to this particular person), and the thematic level (what it reveals about the nature of creativity, success, or sacrifice). *20 Feet from Stardom* moves across all three: the story of backup singers is at once a report on the music industry, a portrait of specific women, and a question about what it means to be close to fame but never on the stage. *I Am Not Your Negro* abandons standard biographical structure entirely — the film is organized not by Baldwin's chronology but by the themes of his unfinished book.
 
-Центральный вопрос должен быть сформулирован или почувствован в первые три минуты. Не через закадровый голос («этот фильм о том, как...»), а через образ или ситуацию, которая его воплощает. Если в финале этот вопрос получает ответ — это одна модель. Если финал оставляет вопрос открытым, но более объёмным — это другая, и она не хуже. *Crumb* не отвечает, был ли Роберт Крамб гением или больным человеком. Он делает этот вопрос невозможным.
+The central question must be felt, if not stated, within the first three minutes. Not through voice-over ("this film is about..."), but through an image or situation that embodies it. If the question gets answered by the final scene, that's one model. If the ending leaves the question open but deepened — that's another, and neither is inferior. *Crumb* never resolves whether Robert Crumb was a genius or a damaged man. It makes that question impossible.
 
-**Закон системы:** Структура портрета — это структура зрительского понимания героя, а не хронология его жизни. Каждый следующий эпизод должен ломать или усложнять представление, сложившееся в предыдущем.
-
----
-
-## 2. Архив и материал
-
-Архив в документальном портрете может выполнять три функции: иллюстративную (показывать то, о чём говорят), контрапунктную (опровергать то, о чём говорят) и самостоятельную (говорить то, что никто не произносит вслух). Третья функция — самая редкая и самая ценная. В *Amy* записи с репетиций, домашнее видео, фотографии работают именно так: они показывают человека, которого публика никогда не видела, пока он был жив.
-
-Материал надо делить на два типа: то, что существовало до фильма (архивные записи, фотографии, письма, черновики, фрагменты других фильмов), и то, что создаётся для фильма (интервью, съёмки в реальном времени). Первый тип несёт документальный вес — это то, что было без камеры. Второй тип всегда отчасти постановочный, потому что камера меняет поведение человека. Хорошие режиссёры знают эту разницу и используют её: *Faces Places* Варды и Жр строится на том, что камера провоцирует встречи, которые иначе бы не случились.
-
-Вертов в «Человеке с киноаппаратом» (1929) строит весь фильм из архивного и текущего материала без единого слова — только монтаж. Это предельный случай: архив как язык, где каждый кадр — не иллюстрация, а аргумент. Советская традиция кино-глаза поставила вопрос, который документальный портрет решает до сих пор: может ли монтаж двух кадров создать смысл, которого нет ни в одном из них по отдельности?
-
-Архив не должен просто подтверждать нарратив. В *I Am Not Your Negro* Болдуин говорит одно, а архивные кадры телевизионной Америки 1960-х показывают другое — и именно это расхождение создаёт напряжение фильма. Когда архив иллюстрирует — это учебник. Когда архив спорит — это кино.
-
-**Закон системы:** Архивный материал должен нести информацию, которую интервью не может дать. Если архив и интервью говорят одно и то же — один из них лишний.
+**System rule:** The structure of a portrait is the structure of the audience's understanding of the subject — not the chronology of their life. Each successive episode must break or complicate whatever impression the previous one established.
 
 ---
 
-## 3. Интервью
+## 2. Archive and Material
 
-Интервью в документальном портрете — не источник фактов. Факты можно получить из архива, из текстов, из авторских разработок. Интервью — источник точки зрения. Спикер интересен не тем, что он знает, а тем, как он видит и оценивает героя.
+Archive footage in a documentary portrait can do three things: illustrate (show what people are talking about), contradict (undercut what people are saying), or speak independently (say what no one is willing to articulate). The third function is the rarest and the most valuable. In *Amy*, rehearsal recordings, home video, and photographs work exactly this way — they reveal a person the public never saw while she was alive.
 
-Выбор спикеров должен создавать конфликт перспектив. Если все говорят одно и то же — нет портрета, есть некролог. *Crumb* берёт интервью у братьев Роберта, у его жены, у психолога, у арт-критика — и каждый видит принципиально другого человека. Это не противоречие, которое надо разрешить; это и есть природа сложного человека. В *20 Feet from Stardom* бэк-вокалистки говорят о себе, а продюсеры — о них, и эти описания не совпадают.
+Material falls into two categories: what existed before the film (archival footage, photographs, letters, drafts, fragments of other films), and what is created for the film (interviews, present-tense footage). The first category carries documentary weight — it existed without a camera present. The second is always partly staged, because a camera changes behavior. Good directors know this difference and use it deliberately: *Faces Places* by Varda and JR is built on the premise that the camera provokes encounters that wouldn't otherwise occur.
 
-Техника интервью влияет на результат сильнее, чем вопросы. Длинная пауза после ответа даёт человеку время добавить то, что он не планировал говорить. Реакция на конкретный архивный материал (показать фотографию, включить запись) часто производит более живые ответы, чем абстрактные вопросы о творчестве. Интервью лицом к лицу с объектом съёмки — один результат; интервью, где герой смотрит на экран со своим старым фильмом, — другой.
+Vertov's *Man with a Movie Camera* (1929) constructs the entire film from archival and live material without a single word — only editing. This is the extreme case: archive as language, where every shot is not an illustration but an argument. The Soviet kino-eye tradition posed a question documentary portraiture is still working through: can the juxtaposition of two shots create meaning that neither contains on its own?
 
-**Закон системы:** Каждый спикер должен добавлять измерение, которого нет у других. Если двое говорят об одном и том же аспекте героя одинаково — один из них не нужен.
+Archive should not simply confirm the narrative. In *I Am Not Your Negro*, Baldwin says one thing while archival footage of 1960s television America shows another — and that gap is where the film's tension lives. When archive illustrates, you have a textbook. When archive argues, you have cinema.
 
----
-
-## 4. Субъективность vs объективность
-
-Документальный портрет никогда не бывает объективным. Выбор героя, выбор спикеров, выбор архива, монтаж — каждое решение субъективно. Притворяться иначе значит лгать зрителю. Лучшие портреты либо открыто заявляют свою субъективность, либо организованы так, что зритель видит её сам.
-
-*I Am Not Your Negro* открыто позиционирует себя как эссе: это взгляд Болдуина и взгляд Пека на Болдуина, а не нейтральная биография. *Faces Places* — взгляд Варды и Жр на людей, которых они встречают, и на самих себя в этих встречах. Камера признаёт своё присутствие. *Amy*, напротив, создаёт иллюзию «мухи на стене» — но это тоже авторская позиция, потому что Кападия выбирал, какие плёнки показывать и в каком порядке.
-
-Опасная зона — фильмы, которые делают вид, что они объективны, а на деле пропагандируют определённый взгляд. Портрет живого человека особенно уязвим: герой видит смонтированный материал и имеет право на несогласие. Некоторые режиссёры решают это, показывая героя черновой монтаж. Другие намеренно сохраняют дистанцию: Азиф Кападия не интервьюировал Эми Уайнхаус, потому что её уже не было в живых, и это дало ему свободу.
-
-**Закон системы:** Позиция автора должна быть встроена в структуру фильма, а не скрыта за видимостью нейтральности. Зритель должен понимать, с чьей точки зрения он смотрит.
+**System rule:** Archival material must carry information that interviews cannot provide. If archive and interview say the same thing, one of them is redundant.
 
 ---
 
-## 5. Голос за кадром
+## 3. Interviews
 
-Закадровый голос — самый перегруженный инструмент документального портрета. Его используют, когда не хватает изображения или когда режиссёр не доверяет зрителю. В большинстве случаев голос за кадром объясняет то, что уже видно, или то, что могли бы сказать сами участники.
+Interviews in a documentary portrait are not a source of facts. Facts come from archives, texts, research. Interviews are a source of perspective. A speaker is interesting not for what they know, but for how they see and judge the subject.
 
-Три законных применения закадрового голоса: когда голос сам является персонажем (как в *I Am Not Your Negro*, где читается текст Болдуина — это не комментарий, это голос героя); когда голос несёт информацию, которую невозможно получить иначе (исторический контекст без которого кадр непонятен); когда голос создаёт намеренный контрапункт с изображением. Всё остальное — замена работы.
+The selection of speakers must create a conflict of perspectives. If everyone says the same thing, you don't have a portrait — you have an obituary. *Crumb* interviews Robert's brothers, his wife, a psychologist, an art critic — each one sees a fundamentally different person. This is not a contradiction to be resolved; it is the nature of a complex human being. In *20 Feet from Stardom*, the backup singers describe themselves, and the producers describe them, and these descriptions don't align.
 
-*Faces Places* использует голос Варды редко и всегда лично: она говорит о своей слепоте, о памяти, о потере друзей. Это не объяснение — это исповедь. *Crumb* не имеет закадрового голоса вообще: герой и его окружение говорят сами. *Amy* использует минимальный комментарий только там, где хронология требует ориентира. Показательно, что три из пяти эталонных фильмов обходятся без традиционного нарратора.
+Interview technique shapes the result more than the questions do. A long pause after an answer gives people time to add what they hadn't planned to say. Showing a specific piece of archive — a photograph, a recording — often produces more alive responses than abstract questions about creative work. An interview where the subject faces the camera yields one result; an interview where they're watching their own old footage yields another.
 
-**Закон системы:** Закадровый голос должен говорить то, что не может быть показано или сказано участниками. Если голос дублирует изображение или интервью — его нужно убрать.
-
----
-
-## 6. Крючок
-
-Первые три минуты документального портрета выполняют одну задачу: дать зрителю причину остаться. Не биографическую справку, не перечисление достижений — образ или ситуацию, которая содержит весь фильм в сжатом виде.
-
-*Amy* начинается с домашней записи 14-летней Уайнхаус, поющей «Happy Birthday» подруге. Голос уже тот самый — и уже понятно, что произойдёт дальше. *Crumb* открывается с Роберта, рисующего за столом, — это первое и последнее, что он умеет делать. *I Am Not Your Negro* начинается с кадров расовых столкновений 1960-х и голоса Болдуина, спрашивающего: «Что вы хотите, чтобы я сделал со своей болью?» — вопрос сразу, без разгона. *Faces Places* открывается Вардой и Жр в грузовике, и уже в первой сцене ясно, что это фильм о встречах и о том, что остаётся после.
-
-Крючок работает через несоответствие: зритель ожидает одно, получает другое, и это несоответствие рождает вопрос. Или через немедленный эмоциональный контакт с героем — не через факты о нём, а через его присутствие в кадре. Технически крючок часто использует лучший архивный материал, который у режиссёра есть: то, что невозможно воспроизвести, что существовало один раз.
-
-**Закон системы:** Открывающий образ должен содержать метафору всего фильма. Если крючок можно заменить биографической справкой — он не работает.
+**System rule:** Each speaker must add a dimension that no one else provides. If two people address the same aspect of the subject in the same way, one of them doesn't need to be there.
 
 ---
 
-## 7. Монтаж и темп
+## 4. Subjectivity vs. Objectivity
 
-Монтаж документального портрета решает проблему, которой нет в игровом кино: материал снимался в разное время, в разных условиях, с разными людьми — и из этого нужно сделать единое высказывание. Монтажёр не просто склеивает куски: он создаёт причинно-следственные связи, которых не было в реальности.
+Documentary portraits are never objective. The choice of subject, the choice of speakers, the choice of archive, the editing — every decision is subjective. Pretending otherwise is a form of dishonesty. The best portraits either openly declare their subjectivity, or are structured so that the audience can see it themselves.
 
-Темп в портрете неоднороден намеренно. Быстрый монтаж архива и коротких высказываний создаёт информационную плотность и ощущение движения. Длинные планы — молчание, пауза, чьё-то лицо после ответа — создают пространство для зрительского переживания. *Amy* строится на контрасте: быстрые склейки архивных кадров перемежаются долгими планами лица Эми в студии или на сцене. *Faces Places* медленнее — потому что фильм о том, что значит остановиться и посмотреть.
+*I Am Not Your Negro* positions itself openly as an essay: it is Baldwin's perspective and Peck's perspective on Baldwin, not a neutral biography. *Faces Places* is Varda and JR's view of the people they meet, and of themselves in those encounters. The camera acknowledges its own presence. *Amy*, by contrast, constructs the illusion of a fly on the wall — but that is also an authorial position, because Kapadia chose which footage to show and in what order.
 
-Переходы между блоками — отдельная задача. Документальный портрет часто использует паузу (чёрный или белый кадр), музыкальный мотив или повторяющийся визуальный образ как сигнал смены темы. В *I Am Not Your Negro* переходы сделаны через архивные фотографии, которые останавливают движение и заставляют смотреть на одно лицо. Монтаж внутри интервью — отдельная этика: вырезать паузы — обычно нормально, вырезать часть фразы так, чтобы изменился смысл — нет.
+The danger zone is films that present themselves as objective while advancing a particular view. A portrait of a living subject is especially vulnerable: the subject sees the cut and has every right to disagree. Some directors address this by showing a rough cut to the subject. Others maintain deliberate distance: Asif Kapadia didn't interview Amy Winehouse because she was already dead, and that freed him.
 
-**Закон системы:** Темп монтажа — это темп понимания. Быстро там, где нужно накопить информацию. Медленно там, где нужно её прочувствовать. Если темп одинаков на протяжении всего фильма — нет динамики.
+**System rule:** The author's position must be built into the structure of the film, not concealed behind a veneer of neutrality. The audience should be able to tell whose point of view they're watching from.
 
 ---
 
-## 8. Точка зрения автора
+## 5. Voice-Over
 
-Документальный портрет всегда создаётся двумя людьми одновременно: героем и режиссёром. Отношения между ними определяют тип фильма. Режиссёр может быть невидимым наблюдателем (Кападия в *Amy*), равноправным участником (Варда в *Faces Places*), провокатором (Тернер в *Crumb*), или голосом поколения (Пек в *I Am Not Your Negro*).
+Voice-over is the most overused tool in documentary portraiture. It gets deployed when the images aren't sufficient, or when the director doesn't trust the audience. In most cases, voice-over explains what is already visible, or what the participants themselves could have said.
 
-Виталий Манский в «Свидетелях Путина» (2018) занимает позицию разочарованного очевидца: он снимал официальные события, имел доступ, а потом смонтировал фильм против нарратива, которому должен был служить. Позиция встроена в структуру: то, что попало в официальный монтаж, и то, что осталось за кадром — и есть фильм. Это один из редких случаев, когда режиссёр использует архив как улику против самого архива.
+There are three legitimate uses: when the voice itself is a character (as in *I Am Not Your Negro*, where Baldwin's text is read aloud — this isn't commentary, it's the subject's own voice); when the voice carries information that can't be obtained any other way (historical context without which a shot is incomprehensible); when the voice creates deliberate counterpoint with the image. Everything else is a substitute for doing the work.
 
-Позиция режиссёра проявляется не в декларациях, а в выборах: кого снимать, как долго держать план, какой архив включить, что оставить за кадром. Асиф Кападия сказал, что его задачей было дать Эми Уайнхаус возможность рассказать о себе собственным голосом после смерти. Это позиция. Варда в *Faces Places* появляется в кадре и открыто говорит о своей слабости — это другая позиция. Пек не скрывает, что *I Am Not Your Negro* — политический акт. Это третья позиция.
+*Faces Places* uses Varda's voice sparingly and always personally — she speaks about her failing eyesight, about memory, about the loss of friends. It isn't explanation; it's confession. *Crumb* has no voice-over at all: the subject and his circle speak for themselves. *Amy* uses minimal narration only where the chronology requires a reference point. Three of these five reference films get along without a traditional narrator.
 
-Когда режиссёр не понимает своей позиции, фильм разваливается на хорошо снятые фрагменты. Точка зрения автора — это не мнение о герое («он был велик» или «он был жертвой»), а понимание того, зачем этот фильм нужен сейчас. Что изменится в зрителе после просмотра? Этот вопрос должен быть у режиссёра до начала съёмок, а не в монтажной комнате.
+**System rule:** Voice-over should say what cannot be shown or said by the participants. If it duplicates the image or the interview, cut it.
 
-**Закон системы:** Точка зрения автора — не оценка героя, а понимание того, зачем этот фильм нужен именно сейчас. Без ответа на этот вопрос портрет превращается в биографическую справку с картинками.
+---
+
+## 6. The Hook
+
+The first three minutes of a documentary portrait have one job: give the audience a reason to stay. Not a biographical summary, not a list of achievements — an image or situation that contains the whole film in compressed form.
+
+*Amy* opens with home footage of a fourteen-year-old Winehouse singing "Happy Birthday" to a friend. The voice is already that voice — and what will happen is already legible. *Crumb* opens with Robert drawing at a table: the first thing we see is the only thing he can do. *I Am Not Your Negro* opens with footage of racial confrontations in the 1960s and Baldwin's voice asking: "What do you want me to do with my pain?" — a question, immediately, without preamble. *Faces Places* opens with Varda and JR in their truck, and within the first scene it's already clear that this is a film about encounters and what remains after them.
+
+A hook works through mismatch: the audience expects one thing and receives something else — displaced, unexpectedly specific. That displacement holds attention. Or it works through immediate emotional contact with the subject — not through facts about them, but through their presence in the frame. Technically, hooks often use the best archival material a director has: something that cannot be recreated, something that existed once.
+
+**System rule:** The opening image must contain the film's central metaphor. If the hook can be replaced by a biographical summary, it isn't working.
+
+---
+
+## 7. Editing and Pace
+
+Editing in a documentary portrait solves a problem that fiction filmmaking doesn't have: the material was shot at different times, under different conditions, with different people — and it needs to become a single statement. The editor isn't just assembling pieces; they're creating cause-and-effect relationships that didn't exist in reality.
+
+Pace in a portrait is deliberately uneven. Fast cutting through archive and short statements creates informational density and a sense of forward motion. Long takes — silence, a pause, someone's face after answering — create space for the audience to feel something. *Amy* is built on contrast: rapid cuts through archival footage alternate with extended shots of Winehouse's face in the studio or on stage. *Faces Places* moves more slowly, because the film is about what it means to stop and look.
+
+Transitions between sections are their own problem. Documentary portraits often use a pause (black or white frame), a musical motif, or a recurring visual image to signal a change of subject. In *I Am Not Your Negro*, transitions are made through archival photographs that stop the motion and ask you to look at a single face. Editing ethics within interviews: cutting pauses is generally fine; cutting part of a sentence to change its meaning is not.
+
+**System rule:** Editing pace is the pace of understanding. Fast where information needs to accumulate. Slow where it needs to be felt. If the pace is uniform throughout, there is no arc.
+
+---
+
+## 8. The Director's Point of View
+
+A documentary portrait is always being made by two people at once: the subject and the director. Their relationship determines the kind of film it becomes. The director can be an invisible observer (Kapadia in *Amy*), an equal participant (Varda in *Faces Places*), a provocateur (Zwigoff in *Crumb*), or the voice of a generation (Peck in *I Am Not Your Negro*).
+
+Vitaly Mansky in *Witnesses of Putin* (2018) occupies the position of a disillusioned insider: he filmed official events, had full access, then edited a film against the very narrative he was supposed to serve. The position is built into the structure — what made it into the official cut, and what was left over, is the film. This is one of the rare cases where a director uses archive as evidence against the archive itself.
+
+A director's position shows up not in declarations but in choices: who to film, how long to hold a shot, which archive to include, what to leave out. Asif Kapadia said his goal was to let Amy Winehouse tell her own story in her own voice after her death. That is a position. Varda in *Faces Places* appears on camera and speaks openly about her frailties — that is a different position. Peck doesn't hide that *I Am Not Your Negro* is a political act. That is a third position.
+
+When a director doesn't understand their own position, the film falls apart into well-shot fragments. Point of view isn't an opinion about the subject ("she was great" or "she was a victim") — it's knowing why this film needs to exist now. What changes in the audience after they watch it? That question needs to be answered before the shoot begins, not in the editing room.
+
+**System rule:** The director's point of view is not a judgment of the subject, but an understanding of why this film is necessary right now. Without an answer to that question, a portrait becomes a biographical summary with pictures.

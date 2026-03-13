@@ -1,18 +1,18 @@
-# Правила написания текста: избегай признаков AI-генерации
+# Writing rules: how to avoid AI tells
 
-Источники: [Wikipedia: Signs of AI Writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) + исследования ИТМО, Сколтеха, МФТИ, данные Хабра и vc.ru + адаптация для русскоязычного сценария.
+Sources: [Wikipedia: Signs of AI Writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) + NLP research + adaptation for screenplay work.
 
-Единственный канонический файл. Читать перед написанием любой сцены.
+The single canonical file. Read before writing any scene.
 
 ---
 
-## Запрещённые паттерны (английские)
+## Banned patterns (English)
 
-### 1. Раздутая символика
+### 1. Inflated significance
 
-Не преувеличивай значимость. Не приписывай вещам вселенский масштаб.
+Don't exaggerate importance. Don't assign cosmic weight to ordinary things.
 
-Забудь эти слова и конструкции:
+Cut these words and constructions:
 - testament / serves as a testament
 - pivotal / pivotal moment
 - watershed moment
@@ -27,13 +27,13 @@
 - stands as a
 - solidifies
 
-Вместо этого — пиши конкретно. Что именно произошло, какой результат, какие цифры.
+Write concretely instead. What happened, what was the result, what are the numbers.
 
-### 2. Рекламный тон
+### 2. Brochure tone
 
-Текст не должен звучать как туристический буклет или пресс-релиз.
+Text shouldn't read like a tourist pamphlet or a press release.
 
-Забудь:
+Cut:
 - rich cultural heritage / rich history
 - rich tapestry / cultural tapestry
 - breathtaking / stunning
@@ -44,22 +44,22 @@
 - clean and modern
 - scenic landscapes
 
-### 3. Редакторские вставки
+### 3. Editorial throat-clearing
 
-Не вставляй пустые метакомментарии о самом тексте.
+Don't insert empty metacommentary about the text itself.
 
-Забудь:
+Cut:
 - it's important to note / remember / consider
 - it is worth mentioning
 - no discussion would be complete without
 - in this article / in this section
 - as mentioned earlier / as we discussed
 
-### 4. Заезженные связки
+### 4. Worn-out connectives
 
-Не злоупотребляй переходными словами. Одно-два за весь текст — нормально. Через каждый абзац — нет.
+Don't lean on transition words. One or two across a whole text is fine. Every paragraph is not.
 
-Ограничь использование:
+Use sparingly:
 - moreover
 - furthermore
 - in addition
@@ -70,25 +70,25 @@
 - specifically
 - consequently
 
-Вместо этого — строй логику через порядок предложений, а не через слова-костыли.
+Build logic through sentence order, not through crutch words.
 
-### 5. Негативный параллелизм
+### 5. Negative parallelism
 
-Одна из самых узнаваемых AI-конструкций. Контраст через отрицание.
+One of the most recognizable AI constructions. Contrast through negation.
 
-Забудь:
+Cut:
 - not X, but Y
 - not only... but also
 - it's not just about X; it's about Y
 - while X, it is Y that truly...
 
-Если нужен контраст — перестрой предложение без «not».
+If you need contrast — restructure the sentence without "not."
 
-### 6. Поверхностный анализ через -ing
+### 6. The hollow -ing tail
 
-AI любит приклеивать к концу предложения причастный оборот, который якобы объясняет значимость. На деле это пустота.
+AI loves tacking a participial phrase onto the end of a sentence that supposedly explains significance. It's empty.
 
-Забудь конструкции с:
+Cut constructions ending with:
 - ensuring...
 - highlighting...
 - emphasizing...
@@ -97,14 +97,14 @@ AI любит приклеивать к концу предложения при
 - demonstrating...
 - underscoring...
 
-Пример плохого: «Consumers benefit from flexibility, **improving convenience**».
-Лучше: «Потребители получают гибкость выбора кошелька у любого мерчанта».
+Bad: "Consumers benefit from flexibility, **improving convenience**."
+Better: "Consumers can pay at any merchant with any wallet they choose."
 
-### 7. Размытые ссылки на авторитеты (weasel words)
+### 7. Vague appeals to authority (weasel words)
 
-Не приписывай мнения абстрактным источникам.
+Don't attribute opinions to abstract sources.
 
-Забудь:
+Cut:
 - industry reports suggest
 - observers have cited
 - some critics argue
@@ -112,38 +112,40 @@ AI любит приклеивать к концу предложения при
 - many consider
 - it is widely regarded
 
-Если есть источник — назови его. Если нет — пиши как своё утверждение или не пиши вовсе.
+If you have a source — name it. If you don't — write it as your own claim or don't write it at all.
 
-### 8. Форматирование
+### 8. Formatting
 
-**Em dash (—):** Не ставь тире там, где хватит запятой, скобок или двоеточия. Одно-два на весь текст — максимум.
+**Em dash (—):** Don't use a dash where a comma, parentheses, or colon would do. One or two per text — that's the ceiling.
 
-**Bold:** Не выделяй жирным каждое второе слово. Жирный шрифт — для действительно ключевых вещей, редко.
+**Bold:** Don't bold every other phrase. Bold is for genuinely critical things, used rarely.
 
-**Списки с жирным заголовком:** Не делай буллеты вида:
+**Bullets with bold headers:** Don't write:
 ```
 - **Scalability:** The system is designed to scale easily.
 ```
-Жирное слово просто пересказывается в тексте после него. Это пустая структура.
+The bold word just gets restated in the text after it. Empty structure.
 
-### 9. Монотонный ритм
+### 9. Monotone rhythm
 
-Не пиши предложения одной длины. Не делай абзацы одного размера. Чередуй короткие и длинные. Иногда одно слово. Иногда — развёрнутая мысль на три строки.
+Don't write sentences that are all the same length. Don't make every paragraph the same size. Mix short and long. Sometimes one word. Sometimes a thought that runs to three lines and earns its space.
 
-### 10. Прочее (англ.)
+### 10. Other (English)
 
-- Не начинай абзацы с «In today's world...», «In the ever-evolving landscape of...», «As we navigate...»
-- Не используй «delve», «crucial», «landscape», «leverage», «foster», «robust» без реальной необходимости
-- Не используй «align with», «bolstered», «enhance», «amplify», «elevate» как пустые усилители — только если есть конкретный смысл
-- Не заканчивай текст пафосным обобщением в духе «This marks a new era...»
-- Не повторяй одну мысль разными словами в соседних предложениях
-- Не мешай американский и британский английский в одном тексте (colour/color, realise/realize)
+- Don't open paragraphs with "In today's world...", "In the ever-evolving landscape of...", "As we navigate..."
+- Don't use "delve," "crucial," "landscape," "leverage," "foster," "robust" without a real reason
+- Don't use "align with," "bolstered," "enhance," "amplify," "elevate" as empty intensifiers — only when there's specific meaning
+- Don't end text with a pompous summary like "This marks a new era..."
+- Don't restate the same idea in different words in adjacent sentences
+- Don't mix American and British English in one text (colour/color, realise/realize)
 
 ---
 
-## Русские AI-паттерны
+## Russian-language AI patterns
 
-### 11. Слова-паразиты (русские эквиваленты cursed vocabulary)
+These sections document patterns specific to Russian-language AI output. Keep them in Russian — that's the point.
+
+### 11. Слова-паразиты (Russian equivalents of cursed vocabulary)
 
 | Запрещено по-русски | Почему это ИИ |
 |---------------------|---------------|
@@ -178,27 +180,27 @@ AI любит приклеивать к концу предложения при
 
 ### 12. Канцелярит и номинализация
 
-Типичные AI-маркеры в русском тексте:
-- «данный» вместо «этот» — всегда заменяй на «этот»
-- «осуществлять» вместо «делать» — пиши проще
-- «является» вместо «это» — убирай где можно (живой русский ставит тире: не «Москва является столицей», а «Москва — столица»)
+Typical AI markers in Russian text:
+- «данный» вместо «этот» — always replace with «этот»
+- «осуществлять» вместо «делать» — write simpler
+- «является» вместо «это» — cut where possible (живой русский ставит тире: not «Москва является столицей», but «Москва — столица»)
 - «производить» вместо «делать»
-- «в рамках» — убирай или перестраивай
-- «на сегодняшний день» — убирай
-- «в настоящее время» — убирай
-- «в условиях» / «в контексте» — убирай
-- «в связи с этим» — чаще всего лишнее
-- номинализация глаголов: «осуществление перевода» → «перевести», «проведение анализа» → «проанализировать»
-- отглагольные существительные, которые AI ставит особенно часто: «использование», «предоставление», «обеспечение», «достижение», «формирование», «распределение», «привлечение», «вовлечение»
+- «в рамках» — cut or restructure
+- «на сегодняшний день» — cut
+- «в настоящее время» — cut
+- «в условиях» / «в контексте» — cut
+- «в связи с этим» — usually unnecessary
+- Nominalization: «осуществление перевода» → «перевести», «проведение анализа» → «проанализировать»
+- Verbal nouns AI reaches for: «использование», «предоставление», «обеспечение», «достижение», «формирование», «распределение», «привлечение», «вовлечение»
 
 ### 13. Структурные паттерны
 
-**Правило трёх (Rule of Threes):**
-ИИ почти всегда даёт ровно три примера, три прилагательных, три пункта.
+**Правило трёх:**
+AI почти всегда даёт ровно три примера, три прилагательных, три пункта.
 - Запрещено: «тёмный, холодный и пустой»
-- Допустимо: «тёмный. Холодный.» или «тёмный, холодный, пустой, и ещё этот запах»
+- Допустимо: «тёмный. Холодный.» or «тёмный, холодный, пустой, и ещё этот запах»
 
-**Ложные диапазоны (False Ranges):**
+**Ложные диапазоны:**
 Конструкция «от X до Y» между несвязанными понятиями.
 - Запрещено: «от страха до надежды», «от быта до философии»
 
@@ -206,35 +208,26 @@ AI любит приклеивать к концу предложения при
 - Запрещено: «Это не провал — это урок», «Не страх, а осознание»
 
 **Принудительное резюме:**
-- Запрещено: «Таким образом...», «Подводя итог...», «В целом можно сказать...»
-- ИИ добавляет «Выводы» или «Заключение» даже в постах для соцсетей, где это неуместно
+- Запрещено: «Таким образом…», «Подводя итог…», «В целом можно сказать…»
 
 **Тире вместо запятых:**
-ИИ ставит длинное тире там, где человек написал бы запятую или скобки.
+AI ставит длинное тире там, где человек написал бы запятую.
 - Запрещено: «Он понял — всё кончено — ещё вчера»
-- Допустимо: скобки, запятая, или просто убрать
 
 **Хвостовые клише значимости:**
-Финальная фраза, которая объясняет смысл сцены:
-- Запрещено: «...что подчёркивает его одиночество», «...отражая его внутренний конфликт»
+- Запрещено: «…что подчёркивает его одиночество», «…отражая его внутренний конфликт»
 
 **Несвязные абзацы:**
-Каждый абзац — отдельный «кирпич», между ними нет перехода. Читаешь блок за блоком, но ощущение связного текста не возникает. Признак: убери любой абзац — остальные не заметят. В живом тексте убрать абзац — значит потерять нить.
+Каждый абзац — отдельный кирпич без перехода. Тест: убери любой абзац — остальные не заметят. В живом тексте убрать абзац — значит потерять нить.
 
 **Заглавная буква после двоеточия:**
-AI следует английской норме, нарушая русскую пунктуацию. «Привлечение: Высокая эффективность позволяет…» — ошибка. После двоеточия — строчная (кроме прямой речи и имён собственных).
-
-**Заголовки в стиле Title Case:**
-С Заглавной Буквы Каждого Слова — калька с английского, чужая русской типографике.
-Также: шаблонные заголовки «Что такое…», «Как работает…», «Почему важно…» — типичные AI-зачины.
+AI follows English punctuation, violating Russian norms. «Привлечение: Высокая эффективность…» — ошибка.
 
 ### 14. Клише-зачины и вводные фразы
 
-AI открывает абзацы и тексты строго определёнными заходами. Узнаваемость — стопроцентная.
-
 Запрещено:
 - «Важно отметить, что…» / «Стоит отметить» / «Следует отметить» / «Необходимо подчеркнуть» / «Нельзя не упомянуть»
-- «В современном мире…» / «В современном динамичном мире…» / «В современном обществе…»
+- «В современном мире…» / «В современном динамичном мире…»
 - «Не секрет, что…» / «Ни для кого не секрет…»
 - «Давайте рассмотрим…» / «Давайте разберёмся» / «Давайте погрузимся…»
 - «На сегодняшний день…» / «В настоящее время…»
@@ -243,8 +236,6 @@ AI открывает абзацы и тексты строго определё
 - «Данная тема отличается повышенной актуальностью…»
 
 ### 15. Пафосные конструкции
-
-Перевод с английских рекламных штампов. В художественном тексте — немедленно убивают достоверность.
 
 Запрещено:
 - «играет важную / значительную / ключевую роль»
@@ -259,43 +250,32 @@ AI открывает абзацы и тексты строго определё
 - «раскрыть свой потенциал»
 - «поворотный момент»
 
-Вместо: конкретный факт, действие, деталь.
+Replace with: конкретный факт, действие, деталь.
 
 ### 16. Модальное уклонение
 
-AI избегает категоричности, прячась за модальность. Текст становится водянистым и ни к чему не обязывающим.
-
-Сигнал: «может» в каждом предложении.
+AI avoids committing to anything, hiding behind modality.
 
 Запрещено:
 - «может повлиять…» / «может стать…» / «может быть полезным для…»
 - «может оказать влияние…» / «может способствовать…»
 - «в ряде случаев», «при определённых условиях», «как правило»
 
-Если это правда — пиши прямо. Если не знаешь — лучше не пиши.
-
 ### 17. Синтаксический «акцент» (эффект перевода с английского)
 
-Русский AI-текст читается как плохой перевод. Конкретные проявления:
-
 - **«Является»** вместо тире: «Москва является столицей России» → «Москва — столица России»
-- **Прямой порядок слов SVO** вместо свободного русского синтаксиса. В живом русском порядок слов несёт стилистическую нагрузку
-- **«Такие как»** вместо двоеточия после обобщающего слова (калька с «such as»)
-- **Обязательное подлежащее в каждом предложении** — русский язык свободно допускает безличные конструкции и опущение подлежащего
+- **Прямой порядок слов SVO** вместо свободного русского синтаксиса
+- **«Такие как»** вместо двоеточия (калька с «such as»)
+- **Обязательное подлежащее** в каждом предложении — русский язык свободно допускает безличные конструкции
 
 ### 18. Неуместные метафоры
 
-AI генерирует образы формально правильные, но логически странные — метафора не работает, потому что взята из другой области без учёта контекста.
-
 - «Кофе — супергерой вашего утра» рядом с данными о вреде кофеина
 - «Алгоритм дышит данными» — дышит чем?
-- Метафора начата и брошена: «это мост между... а теперь рассмотрим следующий аспект»
-
-Признак: метафора не развивается, не работает на образ сцены, взята наугад.
+- Метафора начата и брошена: «это мост между… а теперь рассмотрим следующий аспект»
 
 ### 19. Сервисные фразы чат-бота
 
-Иногда проскакивают в нередактированном тексте. Стопроцентный маркер AI:
 - «Конечно!», «Безусловно!»
 - «Я надеюсь, это помогло вам»
 - «Если хотите спросить что-то ещё, дайте мне знать»
@@ -304,60 +284,59 @@ AI генерирует образы формально правильные, н
 
 ---
 
-## Паттерны в сценарном тексте
+## Screenplay-specific patterns
 
-### 20. Диалог, который объясняет чувства
-- Запрещено: «Я злюсь, потому что ты меня не слышишь»
-- Допустимо: молчание, действие, косвенная реплика
+### 20. Dialogue that explains feelings
+- Banned: "I'm angry because you never listen to me"
+- Use instead: silence, action, an oblique line
 
-### 21. Экшн-строки, описывающие камеру
-- Запрещено: «Камера медленно приближается к...», «Крупный план руки»
-- Допустимо: описать действие, дать читателю самому "увидеть"
+### 21. Action lines that direct the camera
+- Banned: "The camera slowly moves toward...," "Close-up on the hand"
+- Use instead: describe the action and let the reader see it
 
-### 22. Слишком правильная речь
-ИИ даёт персонажам законченные, грамматически идеальные фразы.
-Живые люди говорят обрывками, перебивают себя, не заканчивают мысли.
+### 22. Characters who speak too well
+AI gives characters complete, grammatically perfect sentences.
+Real people speak in fragments, interrupt themselves, don't finish thoughts.
 
-### 23. Стек прилагательных
-- Запрещено: «старый, облупленный, покосившийся забор»
-- Допустимо: один точный образ: «забор держится на одном гвозде»
+### 23. Adjective stacking
+- Banned: "the old, peeling, lopsided fence"
+- Use instead: one precise image: "the fence held up by a single nail"
 
-### 24. Объяснение шутки
-Если после смешного момента идёт фраза, которая объясняет почему это смешно — это ИИ.
+### 24. Explaining the joke
+If a funny moment is followed by a line that explains why it's funny — that's AI.
 
-### 25. Симметричные сцены
-Каждая сцена: завязка → конфликт → разрешение. Слишком опрятно.
-Жизнь и хорошее кино — несимметричны.
+### 25. Symmetrical scenes
+Every scene: setup → conflict → resolution. Too tidy.
+Life and good film are asymmetrical.
 
-### 26. Эмоциональные плейсхолдеры
-- Запрещено: «смотрит задумчиво», «улыбается», «кивает», «вздыхает»
-- Допустимо: конкретное действие: «берёт солонку, переставляет её на пять сантиметров»
+### 26. Emotional placeholders
+- Banned: "looks thoughtfully," "smiles," "nods," "sighs"
+- Use instead: a specific action: "picks up the salt shaker, moves it two inches to the left"
 
-### 27. Универсальные прилагательные
-ИИ обучен на рекламных текстах, поэтому по умолчанию даёт:
-«живописный», «захватывающий», «чистый и современный», «уютный»
-
----
-
-## Как писать вместо этого
-
-- Конкретно. Факты, цифры, примеры.
-- С разным ритмом. Короткие предложения рядом с длинными.
-- Прямо. Без обёрток и реверансов. Сказал — и дальше.
-- Без самолюбования. Текст — инструмент, не витрина.
-- Как разговариваешь с коллегой, который в теме.
+### 27. Universal adjectives
+AI trained on advertising copy defaults to:
+"picturesque," "breathtaking," "clean and modern," "cozy"
 
 ---
 
-## Быстрая проверка перед сохранением сцены
+## How to write instead
 
-- [ ] Нет слов из таблиц выше?
-- [ ] Диалог не объясняет чувства — показывает действием?
-- [ ] Не три прилагательных подряд?
-- [ ] Нет «в целом», «таким образом», «важно отметить», «стоит отметить»?
-- [ ] Нет «данный», «осуществлять», «является», «в рамках», «в контексте»?
-- [ ] Нет «играет ключевую роль», «поворотный момент», «оставляет неизгладимый след»?
-- [ ] Нет модального уклонения («может повлиять», «может стать»)?
-- [ ] Нет синтаксического «акцента» («является» вместо тире, «такие как»)?
-- [ ] Эмоции конкретны, а не «смотрит задумчиво»?
-- [ ] Нет избыточных тире вместо запятых?
+- Specifically. Facts, numbers, examples.
+- With varied rhythm. Short sentences next to long ones.
+- Directly. No wrappers, no genuflecting. Say it and move on.
+- Without self-admiration. Text is a tool, not a display case.
+- Like you're talking to a colleague who knows the subject.
+
+---
+
+## Quick check before saving a scene
+
+- [ ] None of the words from the tables above?
+- [ ] Dialogue shows action, not feelings?
+- [ ] No three adjectives in a row?
+- [ ] No "overall," "thus," "it's important to note"?
+- [ ] No «данный», «осуществлять», «является», «в рамках»?
+- [ ] No "plays a key role," "turning point," "leaves a lasting mark"?
+- [ ] No modal hedging ("may influence," «может стать»)?
+- [ ] Emotions are concrete, not "looks thoughtfully" / «смотрит задумчиво»?
+- [ ] No excessive dashes substituting for commas?
