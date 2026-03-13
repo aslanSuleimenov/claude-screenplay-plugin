@@ -56,7 +56,10 @@ Claude reads the file, extracts what it can (title, type, genre, characters, log
 - `CLAUDE.md` — project metadata and formatting rules
 - `scenes/00_title.md` — title page
 - `analytics/avoid-ai-writing-tells.md` — AI pattern checklist
-- `compass/` — 8 genre reference files (thriller, drama, verité, etc.)
+- `memory/` — session logs (written by hook automatically)
+- `START_HERE.md` — this file
+
+Genre compass files stay in the plugin and are read directly. To get local editable copies: `/sync-plugin-files`
 
 ---
 
@@ -154,20 +157,17 @@ Commands automatically detect project type from `CLAUDE.md`.
 ```
 my-film/
   CLAUDE.md                     ← project metadata + formatting rules
+  START_HERE.md                 ← this file
   scenes/
     00_title.md                 ← title page
   analytics/
-    avoid-ai-writing-tells.md   ← AI pattern checklist
+    avoid-ai-writing-tells.md   ← AI pattern checklist (from plugin)
     compass_artifact.md         ← created by /compass
     pitch.md                    ← created by pitch agent
     unico_package.md            ← created by unico agent
-  compass/
-    INDEX.md
-    fiction/                    ← thriller, drama, black-comedy, sci-drama, coming-of-age
-    doc/                        ← portrait, verite
   versions/                     ← DOCX output (created by /compile)
   memory/
     session_log.md              ← written by hook automatically
 ```
 
-The `compass/` files are local copies from the plugin. Edit them freely for this project. To reset to plugin defaults: `/sync-plugin-files`.
+Genre compass lives in the plugin — no local copy by default. Commands and agents read it via `${CLAUDE_PLUGIN_ROOT}/compass/`. To get local editable copies: `/sync-plugin-files`.

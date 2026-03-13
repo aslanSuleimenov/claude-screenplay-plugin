@@ -201,7 +201,15 @@ Read `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md` and write to `a
 
 ---
 
-## Step 7: Confirm
+## Step 7: Create memory/ and write START_HERE.md
+
+Create directory `memory/` if it doesn't exist.
+
+Write `START_HERE.md` to the project root. Content — read from `${CLAUDE_PLUGIN_ROOT}/START_HERE.md` and write as-is.
+
+---
+
+## Step 8: Confirm
 
 Tell the user:
 
@@ -212,6 +220,8 @@ Created:
 - CLAUDE.md
 - scenes/00_title.md
 - analytics/avoid-ai-writing-tells.md
+- memory/
+- START_HERE.md
 
 Genre compass: read from plugin (${CLAUDE_PLUGIN_ROOT}/compass/).
 To get local editable copies: /sync-plugin-files

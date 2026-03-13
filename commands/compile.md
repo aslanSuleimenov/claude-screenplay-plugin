@@ -9,7 +9,7 @@ Compile the screenplay into DOCX.
    - If there are problems — list them and ask whether to continue
 4. Run the converter:
    ```
-   python converter_MD_DOCX/md_to_docx.py
+   python "${CLAUDE_PLUGIN_ROOT}/converter_MD_DOCX/md_to_docx.py"
    ```
 5. Output the result: file path, number of scenes, number of paragraphs
 6. If there are errors — show them and suggest a fix
