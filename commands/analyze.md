@@ -18,10 +18,28 @@ If `$ARGUMENTS` is empty — analyze the entire screenplay.
 - Location and prop continuity — object appears/disappears, location changes without explanation
 - Character motivation gaps — actions without a clear reason
 
-**Structure:**
-- Scenes that contribute nothing (no new information, no change)
-- Structural beats — are they present and in the right place?
-- Opening and closing — does the ending answer the question raised at the start?
+**Structure — beat check (fiction only):**
+
+Calculate expected beat positions from runtime in CLAUDE.md. Check whether these beats exist and where:
+
+| Beat | Expected position | Found? |
+|------|------------------|--------|
+| Opening image | ~1% | |
+| Catalyst | ~10% | |
+| Break into Two | ~20% | |
+| Midpoint (false victory/defeat) | ~50% | |
+| All is Lost | ~75% | |
+| Break into Three | ~85% | |
+| Final image | ~99% | |
+
+Also check:
+- Does the protagonist have one clear external goal for the entire screenplay?
+- Does the final image mirror the opening image (transformation visible)?
+- Scenes that contribute nothing — no new information, no value change
+
+**Structure — documentary (no beat map, check instead):**
+- Is there a clear POV / argument? Or just a sequence of facts?
+- Does each block change something — reveal, complicate, or answer?
 
 **Format (check against CLAUDE.md scene formatting rules):**
 - Heading format violations
@@ -42,9 +60,20 @@ LOGIC / CONTINUITY
 ...
 If none: ✓ No issues found
 
-STRUCTURE
+BEAT CHECK  (fiction only)
+Opening image:    scene 01 ✓
+Catalyst:         scene 03 ✓  (~10% — on target)
+Break into Two:   ✗  (expected ~scene 04)
+Midpoint:         scene 09 ✓  (~48% — close)
+All is Lost:      ✗  (expected ~scene 14)
+Break into Three: ✗
+Final image:      ✗
+Protagonist goal: [stated / unclear]
+
+STRUCTURE ISSUES
 [issue or observation]
 ...
+If none: ✓ Structure sound
 
 FORMAT ERRORS
 Scene NN: description
