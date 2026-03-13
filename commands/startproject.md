@@ -84,9 +84,12 @@ Working language: **English**. All responses and comments in English.
 
 ## Characters
 
-| Name | Age | Role | Want / Need |
-|------|-----|------|-------------|
+| Name | Age | Role | External goal | Inner need |
+|------|-----|------|---------------|------------|
 [rows for each character found — or empty if none]
+
+<!-- External goal: what the character is actively pursuing (visible, concrete)  -->
+<!-- Inner need: what they must change or accept in themselves — often the opposite of what they want -->
 
 ## Structure
 
