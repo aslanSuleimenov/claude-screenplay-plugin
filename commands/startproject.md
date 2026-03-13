@@ -1,32 +1,64 @@
-Initialize a new screenplay project in the current directory. Ask questions one at a time using AskUserQuestion, wait for each answer before proceeding.
+Initialize a new screenplay project in the current directory.
 
-## Questions
+Argument: `$ARGUMENTS` — optional path to a draft or existing script file.
 
-1. Project type: **fiction** or **documentary**?
-2. Project title?
-3. Genre (black comedy / thriller / drama / documentary portrait / cinema verité / other)?
-4. Logline — one sentence: who, what's at stake, what the conflict is?
-5. Format (feature / short / pilot / series)?
-6. Theme — what is it about at a deeper level?
-7. Target audience?
-8. Setting (country, city, environment)?
-9. Season and time period?
-10. Currency and cultural specifics (names, place names, language of characters)?
-11. Target runtime in minutes?
-12. Structural model (three-act / five-loop / other)?
+---
 
-## After all answers — create the project structure
+## Step 1: Extract data from file (if provided)
 
-### 1. Create directories
+If `$ARGUMENTS` is not empty:
+- Read the file at `$ARGUMENTS`
+- Extract as much as possible:
+  - **Type** — fiction if you see slug lines (INT./EXT.), scene headings, dialogue blocks; documentary if you see VIDEO/AUDIO tables or AV-script structure
+  - **Title** — from the first heading or title block
+  - **Genre** — infer from tone, setting, content
+  - **Logline** — from any explicit logline, or summarize the premise in one sentence
+  - **Format** — feature / short / series based on scope and length
+  - **Theme** — what the story is about at a deeper level
+  - **Setting** — locations and environment mentioned
+  - **Period** — time period, season
+  - **Runtime** — estimate from word count (~170 words = 1 min for fiction, ~340 words = 2 min for documentary AV)
+  - **Characters** — names, rough roles, ages if mentioned
+  - **Structural model** — infer from structure or default to three-act
 
-Create if they don't exist:
-- `scenes/`
-- `analytics/`
-- `versions/`
+If `$ARGUMENTS` is empty: all fields start as unknown.
 
-### 2. Write CLAUDE.md
+---
 
-Write `CLAUDE.md` with the actual values from the answers (not dashes):
+## Step 2: Ask only about missing fields
+
+For each field that could NOT be reliably determined, ask via AskUserQuestion — one question at a time.
+
+Fields to fill:
+1. **Type** — fiction or documentary?
+2. **Title**
+3. **Genre** (black comedy / thriller / drama / documentary portrait / cinema verité / other)
+4. **Logline** — one sentence: who, what's at stake, what the conflict is
+5. **Format** (feature / short / pilot / series)
+6. **Theme** — deeper meaning
+7. **Target audience**
+8. **Setting**
+9. **Period**
+10. **Currency and locale** (names, place names, character language)
+11. **Runtime** in minutes
+12. **Structural model** (three-act / five-loop / other)
+
+If a field was extracted from the file with confidence — use it, do not ask. If uncertain — ask.
+
+Before asking, show what you found:
+> "Found in the file: Type = fiction, Title = «...», Genre = thriller. Still need: logline, audience, runtime."
+
+---
+
+## Step 3: Create project structure
+
+Create directories if they don't exist: `scenes/`, `analytics/`, `versions/`
+
+---
+
+## Step 4: Write CLAUDE.md
+
+Write `CLAUDE.md` with all actual values:
 
 ```
 # CLAUDE.md
@@ -52,6 +84,7 @@ Working language: **English**. All responses and comments in English.
 
 | Name | Age | Role | Want / Need |
 |------|-----|------|-------------|
+[rows for each character found — or empty if none]
 
 ## Structure
 
@@ -92,12 +125,12 @@ Working language: **English**. All responses and comments in English.
 ```
 
 **Scene formatting block — fiction:**
+
 ```
 ## Scene formatting
 
 Strictly per screenplay format. Quick rules:
 
-```markdown
 # Scene 01: Title
 
 **INT./EXT. LOCATION — TIME OF DAY**
@@ -107,7 +140,6 @@ Action description. Present tense, third person. Max 4 lines per paragraph.
 **CHARACTER NAME**
 *(parenthetical)*
 Dialogue text.
-` `` `
 
 - ONE blank line between blocks; ZERO between name and dialogue
 - Names — **bold caps**: `**NAME**`
@@ -120,12 +152,12 @@ Dialogue text.
 ```
 
 **Scene formatting block — documentary:**
+
 ```
 ## Scene formatting
 
 Strictly two-column AV format. Quick rules:
 
-```markdown
 # Block 01: Title
 
 | VIDEO | AUDIO |
@@ -135,7 +167,6 @@ Strictly two-column AV format. Quick rules:
 | CU. Subject's face. | **SOT AIBEK:** "Direct quote." |
 | **SUPER:** Aibek, shepherd, 43 | |
 | B-ROLL: yurts, smoke, kettle. | *(MUSIC: komuz, low)* |
-` `` `
 
 - Each block = one file `scenes/NN_name.md`
 - Table `| VIDEO | AUDIO |` — mandatory
@@ -144,7 +175,9 @@ Strictly two-column AV format. Quick rules:
 - `> **NOTE:** ...` — director's note (not in DOCX)
 ```
 
-### 3. Write scenes/00_title.md
+---
+
+## Step 5: Write scenes/00_title.md
 
 ```
 # [TITLE]
@@ -158,45 +191,15 @@ Author: —
 [Year]
 ```
 
-### 4. Write analytics/avoid-ai-writing-tells.md
+---
 
-Write the following content verbatim:
+## Step 6: Copy reference files from plugin
 
-```
-# AI Writing Tells — What to Avoid
-
-## Structural patterns
-
-1. **Rule of three adjectives** — exactly 3 adjectives/epithets in a row. Replace with one precise word.
-2. **Significance tail** — ending a sentence with "...and that changed everything", "...and life would never be the same." Cut.
-3. **Emotional placeholder stage directions** — "looks thoughtfully", "sighs meaningfully", "smiles sadly". Replace with a physical action.
-4. **Dialogue that explains feelings** — "I feel like you're pulling away from me." Replace with subtext or silence.
-5. **Parallel construction overload** — three sentences in a row with identical structure. Break the rhythm.
-6. **Thematic declaration in dialogue** — a character explains the theme directly. Never. Show it through action.
-7. **False modesty opener** — "It's worth noting that...", "It's important to understand...", "One might argue..." Delete.
-8. **Hedge stack** — "perhaps", "possibly", "in some ways", "to a certain extent" — in one sentence. Pick one or cut all.
-9. **Echoed keyword** — the same word appears 3+ times in a paragraph. Vary.
-10. **Resolution ribbon** — the last paragraph ties everything up neatly and optimistically. Resist.
-
-## Russian-language markers (for Russian-language projects)
-
-11. **Канцелярит-связки** — «в рамках», «на сегодняшний день», «в контексте», «осуществляет деятельность».
-12. **Псевдоглубокие абстракции** — «истинная суть», «глубинный смысл», «подлинное предназначение».
-13. **Перечисление через «а также»** — «...а также другие важные аспекты».
-14. **Официозный пассив** — «было принято решение», «является неотъемлемой частью».
-15. **Нарративный костыль** — «следует отметить, что», «необходимо подчеркнуть».
-16. **Тавтологичное усиление** — «полностью и окончательно», «абсолютно точно», «совершенно очевидно».
-17. **Тройной синоним** — «думает, размышляет и анализирует» — три слова там, где хватит одного.
-18. **Ложная многозначительность** — короткий абзац, который звучит глубоко, но ничего не говорит.
-19. **Эмоциональный итог в конце сцены** — «Это был важный момент для обоих». Показывай, не объясняй.
-```
-
-### 5. Copy compass files from plugin
-
-Read each file from the plugin and write it to the project:
+Read each file from the plugin and write to the project:
 
 | Source | Destination |
 |--------|-------------|
+| `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md` | `analytics/avoid-ai-writing-tells.md` |
 | `${CLAUDE_PLUGIN_ROOT}/compass/INDEX.md` | `compass/INDEX.md` |
 | `${CLAUDE_PLUGIN_ROOT}/compass/fiction/thriller.md` | `compass/fiction/thriller.md` |
 | `${CLAUDE_PLUGIN_ROOT}/compass/fiction/black-comedy.md` | `compass/fiction/black-comedy.md` |
@@ -208,10 +211,9 @@ Read each file from the plugin and write it to the project:
 
 Create directories `compass/fiction/` and `compass/doc/` before writing.
 
-Also copy `avoid-ai-writing-tells.md` from the plugin (authoritative version):
-Read `${CLAUDE_PLUGIN_ROOT}/analytics/avoid-ai-writing-tells.md` and write to `analytics/avoid-ai-writing-tells.md` (overwrite the version written in step 4).
+---
 
-### 6. Confirm
+## Step 7: Confirm
 
 Tell the user:
 
@@ -223,10 +225,12 @@ Created:
 - scenes/00_title.md
 - analytics/avoid-ai-writing-tells.md
 - compass/ (8 genre files)
-- scenes/, analytics/, versions/, compass/ directories
 
 Next steps:
-- /split [path to draft] — if you have a draft to break into scenes
-- /new-scene 01 Title — to write the first scene from scratch
-- /compass [genre — logline] — for genre analysis and reference films
+- /split [path to draft] — break a draft into scenes
+- /new-scene 01 Title — write the first scene from scratch
+- /compass [genre — logline] — genre analysis and reference films
 ```
+
+If the file argument was provided, also say:
+> "Source file read: `[filename]`. [N] characters extracted. Run /split [filename] to break it into scenes."

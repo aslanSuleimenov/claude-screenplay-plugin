@@ -1,168 +1,173 @@
-# How to start a new project
+# Screenplay Plugin — How to use
 
-## Step 0 — Install dependencies
+## Step 0 — Install the plugin
+
+In Claude Code (any project):
+
+```
+/plugin marketplace add aslanSuleimenov/claude-screenplay-template
+/plugin install screenplay@claude-screenplay-template
+/reload-plugins
+```
+
+One-time install. The plugin is then available in all your projects.
+
+**Update later:**
+```
+/plugin update screenplay
+```
+
+---
+
+## Step 1 — Create a project folder and open it
 
 ```bash
-pip install python-docx
-```
-
-Required for `/compile` (conversion to DOCX). Make sure it's `python-docx`, not `docx` — they are different packages.
-
-## Step 1 — Copy the folder
-
-```
-X:\scenarii\_template     ← do not touch, this is the master copy
-X:\scenarii\my_project    ← copy everything here
-```
-
-**Windows:** when copying, make sure the `.claude/` folder is included. It is a hidden folder — in Explorer, enable "Show hidden items" (View → Show → Hidden items). Without `.claude/` the commands and hooks will not work.
-
-## Step 2 — Open in Claude Code
-
-```bash
-cd "X:/scenarii/my_project"
+mkdir "X:/scenarii/my-film"
+cd "X:/scenarii/my-film"
 claude
 ```
 
-(Use forward slashes `/` in bash paths, even on Windows.)
+Any empty folder works. No template copying needed.
 
-## Step 3 — /startproject
+---
+
+## Step 2 — /startproject
 
 ```
 /startproject
 ```
 
-Claude will ask 12 questions. **The first question is the project type:**
+Or, if you already have a draft file:
 
-| Type | When to choose | Page format |
-|------|----------------|-------------|
-| **Fiction** | Feature film, animation, series, short film | Single-column (screenplay): slug line → action → name → dialogue |
-| **Documentary** | Documentary film, corporate video, advertising | Two-column (AV-script): VIDEO ↔ AUDIO table |
+```
+/startproject path/to/draft.md
+```
 
-Remaining questions: title, genre, logline, format, theme, audience, setting, period, locale, runtime, structure.
+Claude reads the file, extracts what it can (title, type, genre, characters, logline), and only asks about what's missing. Without a file — asks all 12 questions one at a time.
 
-The command will fill in `CLAUDE.md` and configure the format for the chosen type.
+**Project types:**
 
-**Alternative:** `python setup.py` — same questions via terminal.
+| Type | When to use | DOCX output |
+|------|-------------|-------------|
+| **Fiction** | Feature film, series, short film | Single-column, Courier New 12pt |
+| **Documentary** | Documentary, corporate video, AV-script | Two-column VIDEO/AUDIO, landscape A4 |
 
-## Step 4 — /split (if you have a draft)
+`/startproject` creates the full project structure:
+- `CLAUDE.md` — project metadata and formatting rules
+- `scenes/00_title.md` — title page
+- `analytics/avoid-ai-writing-tells.md` — AI pattern checklist
+- `compass/` — 8 genre reference files (thriller, drama, verité, etc.)
+
+---
+
+## Step 3 — /split (if you have a draft)
 
 ```
 /split path/to/draft.md
 ```
 
-Reads the file and splits it into:
-- **Fiction** → scenes with slug lines and dialogue
-- **Documentary** → blocks with VIDEO | AUDIO tables
+Splits a raw text into scenes/blocks, places them in `scenes/`, extracts characters, fills the tables in `CLAUDE.md`.
 
-Places files in `scenes/`, extracts characters/subjects, fills in the tables in `CLAUDE.md`.
+If you have no draft — write from scratch with `/new-scene`.
 
-If you have no draft — skip this, write from scratch with `/new-scene`.
+---
 
-## Step 5 — /compass
+## Step 4 — /compass
 
 ```
 /compass genre — logline
 ```
 
-Goes online, builds a genre reference guide at `analytics/compass_artifact.md`.
+Searches the web, builds a genre reference at `analytics/compass_artifact.md`. Used by `/analyze` and `/new-scene`.
 
 ---
 
 ## All commands
 
-Commands **automatically** detect the project type from CLAUDE.md and apply the correct format.
+Commands automatically detect project type from `CLAUDE.md`.
 
-### Project setup
+### Setup
 
 | Command | What it does |
 |---------|-------------|
-| `/startproject` | Initialization: type + 11 questions → fills CLAUDE.md |
-| `/split [file]` | Splits a draft into scenes/blocks → scenes/ + tables |
-| `/compass [genre — logline]` | Builds a genre reference from the web → analytics/ |
+| `/startproject [file]` | Initialize project. Reads file if provided, asks only about missing fields |
+| `/split [file]` | Split a draft into scenes/blocks → scenes/ + character tables |
+| `/compass [genre — logline]` | Build genre reference from web → analytics/ |
+| `/sync-plugin-files` | Update local compass and avoid-ai-writing-tells from plugin (after plugin update) |
 
 ### Writing and analysis
 
 | Command | Fiction | Documentary |
 |---------|---------|-------------|
-| `/new-scene 05 Bar` | Creates a scene: slug line + action + dialogue | Creates a block: VIDEO ↔ AUDIO table |
-| `/rewrite 05 notes` | Rewrites the scene based on notes | Rewrites the block based on notes |
+| `/new-scene 05 Bar` | Scene: slug line + action + dialogue | Block: VIDEO/AUDIO table |
+| `/rewrite 05 notes` | Rewrite scene by notes | Rewrite block by notes |
 | `/analyze 05` | Analysis via compass systems | Analysis via compass systems |
-| `/character-sheet Name` | Character card: arc, voice, contradictions | Subject card: appearances, quotes (SOT) |
-| `/continuity` | Time, geography, props, character knowledge | Facts, timeline, names, title cards (SUPER) |
+| `/character-sheet Name` | Character card: arc, voice, contradictions | Subject card: appearances, SOT quotes |
+| `/continuity` | Time, geography, props, character knowledge | Facts, timeline, names, title cards |
 | `/research topic` | Web research → analytics/ | Web research → analytics/ |
 
-### Structure and management
+### Structure
 
 | Command | What it does |
 |---------|-------------|
 | `/outline` | Show/create beat sheet, placeholder scenes |
 | `/renumber` | Renumber scenes (two-phase rename) |
-| `/delete-scene NN` | Delete a scene + renumber |
-| `/merge NN NN` | Merge two scenes into one |
+| `/delete-scene NN` | Delete scene + renumber |
+| `/merge NN NN` | Merge two scenes |
 
-### Review and export
+### Output
 
 | Command | Fiction | Documentary |
 |---------|---------|-------------|
 | `/stats` | Scenes + runtime + dialogue/action ratio | Blocks + V/O word count + SOT count |
-| `/compile` | Single-column DOCX (screenplay) | Two-column DOCX (AV-script, landscape) |
+| `/compile` | Single-column DOCX | Two-column DOCX (landscape) |
 
-### Agents (run manually)
+### Agents
 
 | Agent | What it does | Output |
 |-------|-------------|--------|
-| `/pitch` | Pitch document for investor/producer | analytics/pitch.md |
-| `/unico` | UNICO starter pack (passport + character bible + presentation) | analytics/unico_package.md |
-| `/proofread [NN\|all]` | Proofread: spelling, logic, timeline, anachronisms | output only |
-
-**When to use what:**
-
-| Task | Tool |
-|------|------|
-| Genre system, hook, scene structure | `/analyze NN` |
-| Spelling, logic, timeline, props | `/proofread NN` |
-| Full check before final version | both in sequence |
+| `draft-polish` | Full draft pipeline: analysis → scenes → logic → spelling → AI patterns | scenes/ |
+| `pitch` | Pitch document for investor/producer | analytics/pitch.md |
+| `unico` | UNICO starter pack (passport + character bible + presentation) | analytics/unico_package.md |
+| `proofread [NN\|all]` | Spelling, logic, timeline, anachronisms | console only |
 
 ### Diagnostics
 
 | Command | What it does |
 |---------|-------------|
-| `/type-check` | Project status: type set? compass present? how many scenes? |
-
-### Hooks (run automatically)
-
-| Hook | When it fires | What it checks |
-|------|--------------|----------------|
-| Format check | After every Edit/Write in scenes/ | **Fiction:** slug line, names, indentation. **Doc:** table, V/O, SOT, SUPER. **Both:** AI patterns |
-| Session report | When work session ends | Writes changed files to memory/session_log.md |
+| `/type-check` | Project status: type set? compass? how many scenes? |
 
 ---
 
-## Folder structure
+## Hooks (automatic)
+
+| Hook | When | What it does |
+|------|------|-------------|
+| Format check | After every Edit/Write in scenes/ | Validates slug lines, character names, AI patterns |
+| Compass check | Session start | Warns if compass_artifact.md is missing |
+| Session report | Session end | Writes changed files to memory/session_log.md |
+
+---
+
+## Folder structure (after /startproject)
 
 ```
-my_project/
-  START_HERE.md
-  CLAUDE.md                       ← filled in by /startproject (including project type)
-  setup.py                        ← alternative to /startproject via terminal
-  scenes/                         ← scenes/blocks (filled by /split or /new-scene)
+my-film/
+  CLAUDE.md                     ← project metadata + formatting rules
+  scenes/
+    00_title.md                 ← title page
   analytics/
-    compass_artifact.md           ← created by /compass
-    avoid-ai-writing-tells.md     ← banned AI writing patterns
-    pitch.md                      ← created by /pitch agent
-    unico_package.md              ← created by /unico agent
-  versions/                       ← DOCX output (created by /compile)
-  converter_MD_DOCX/
-    md_to_docx.py                 ← screenplay converter (auto-detects type)
-    pitch_to_docx.py              ← pitch → DOCX converter
-    README.md                     ← formatting rules (both types)
+    avoid-ai-writing-tells.md   ← AI pattern checklist
+    compass_artifact.md         ← created by /compass
+    pitch.md                    ← created by pitch agent
+    unico_package.md            ← created by unico agent
+  compass/
+    INDEX.md
+    fiction/                    ← thriller, drama, black-comedy, sci-drama, coming-of-age
+    doc/                        ← portrait, verite
+  versions/                     ← DOCX output (created by /compile)
   memory/
-    session_log.md                ← written automatically by hook
-  .claude/
-    settings.json                 ← MCP + hooks (format validation + session report)
-    commands/                     ← 16 commands (work with both types)
-    hooks/
-      session_report.py           ← Python, works on Windows/macOS/Linux
-    agents/                       ← pitch, unico, proofread
+    session_log.md              ← written by hook automatically
 ```
+
+The `compass/` files are local copies from the plugin. Edit them freely for this project. To reset to plugin defaults: `/sync-plugin-files`.

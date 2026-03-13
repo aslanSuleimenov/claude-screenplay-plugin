@@ -1,39 +1,36 @@
-# Claude Screenplay Template
+# Claude Screenplay Plugin
 
-A [Claude Code](https://claude.ai/code) template for writing professional screenplays — fiction films, series, and documentary AV-scripts. One template, two formats.
+A [Claude Code](https://claude.ai/code) plugin for writing professional screenplays — fiction films, series, and documentary AV-scripts. One plugin, two formats.
 
 ---
 
-## What it does
+## Install
 
-- **Two project types** from one template: fiction screenplay (one-column) and documentary AV-script (two-column VIDEO/AUDIO table)
-- **16 slash commands** — from `/startproject` to `/compile` — all auto-detect project type
-- **Format validation hook** — checks scene files on every save (slug lines, character names, AI writing patterns)
-- **MD → DOCX converter** — outputs production-ready files: Courier New 12pt for fiction, landscape A4 table for documentary
-- **Genre compass system** — research-backed reference files for thriller, drama, documentary portrait, verité, and more
-- **Anti-AI-writing checker** — built-in rules against emotional placeholders, rule-of-three patterns, on-the-nose dialogue
+In Claude Code:
+
+```
+/plugin marketplace add aslanSuleimenov/claude-screenplay-template
+/plugin install screenplay@claude-screenplay-template
+/reload-plugins
+```
 
 ---
 
 ## Quick start
 
-**Requirements:** [Claude Code](https://claude.ai/code), Python 3, `pip install python-docx`
-
 ```bash
-# 1. Copy this template to your project folder
-cp -r claude-screenplay-template my-film
-cd my-film
-
-# 2. Open in Claude Code
+# Create a project folder and open it
+mkdir my-film && cd my-film
 claude
 
-# 3. Initialize your project
+# Initialize — asks 12 questions, creates full structure
 /startproject
+
+# Or pass a draft file — Claude extracts what it can, asks only about the rest
+/startproject path/to/draft.md
 ```
 
-Claude will ask 12 questions (project type, title, genre, logline, format, theme, audience, location, period, currency/setting, runtime, structure) and configure `CLAUDE.md` accordingly.
-
-**Windows users:** Make sure `.claude/` folder is copied — it's hidden. In Explorer: View → Show → Hidden items.
+`/startproject` creates: `CLAUDE.md`, `scenes/00_title.md`, `analytics/avoid-ai-writing-tells.md`, and `compass/` with 8 genre reference files.
 
 ---
 
@@ -46,26 +43,29 @@ Claude will ask 12 questions (project type, title, genre, logline, format, theme
 | DOCX | A4 portrait, Courier New 12pt | A4 landscape, 55%/45% columns |
 | Markers | `**INT./EXT.**`, `**CHARACTER**` | `**V/O:**`, `**SOT NAME:**`, `*(NAT SOUND:)*`, `**SUPER:**` |
 
+Type is set once during `/startproject` and drives all commands, hooks, and the converter.
+
 ---
 
 ## Commands
 
-All commands auto-detect project type from `CLAUDE.md`.
+All auto-detect project type from `CLAUDE.md`.
 
-### Start
+### Setup
 | Command | What it does |
 |---------|-------------|
-| `/startproject` | Initialize: type + 11 questions → fills CLAUDE.md |
+| `/startproject [file]` | Initialize project. Reads file if provided, asks only about missing fields |
 | `/split [file]` | Split a draft into scenes/blocks → scenes/ + character tables |
 | `/compass [genre — logline]` | Build genre reference from web research → analytics/ |
+| `/sync-plugin-files` | Refresh local compass and avoid-ai-writing-tells from plugin |
 
 ### Write & analyze
 | Command | Fiction | Documentary |
 |---------|---------|-------------|
-| `/new-scene 05 Bar` | Creates scene: slug line + action + dialogue | Creates block: VIDEO ↔ AUDIO table |
+| `/new-scene 05 Bar` | Creates scene: slug line + action + dialogue | Creates block: VIDEO/AUDIO table |
 | `/rewrite 05 notes` | Rewrites scene by notes | Rewrites block by notes |
 | `/analyze 05` | Analysis through compass systems | Analysis through compass systems |
-| `/character-sheet Name` | Character card: arc, speech, contradictions | Hero card: appearances, quotes (SOT) |
+| `/character-sheet Name` | Character card: arc, speech, contradictions | Subject card: appearances, SOT quotes |
 | `/continuity` | Time, geography, props, character knowledge | Facts, chronology, names, supers |
 | `/research topic` | Web research → analytics/ | Web research → analytics/ |
 
@@ -86,9 +86,10 @@ All commands auto-detect project type from `CLAUDE.md`.
 ### Agents
 | Agent | What it does |
 |-------|-------------|
-| `/pitch` | Pitch document for investors/producers → analytics/pitch.md |
-| `/unico` | UNICO starter pack (passport + character bible + presentation) |
-| `/proofread [NN\|all]` | Proofreading: spelling, logic, chronology, anachronisms |
+| `draft-polish [file]` | Full pipeline: analysis → scenes → logic check → spelling → AI patterns |
+| `pitch` | Pitch document for investors/producers → analytics/pitch.md |
+| `unico` | UNICO starter pack (passport + character bible + presentation) |
+| `proofread [NN\|all]` | Spelling, logic, chronology, anachronisms |
 
 ---
 
@@ -97,13 +98,14 @@ All commands auto-detect project type from `CLAUDE.md`.
 | Hook | Trigger | Checks |
 |------|---------|--------|
 | Format validation | After every Edit/Write in scenes/ | **Fiction:** slug line, names, indentation. **Doc:** table, V/O, SOT, SUPER. **Both:** AI writing patterns |
-| Session report | On session end | Writes changed scene files to memory/session_log.md |
+| Compass check | Session start | Warns if compass_artifact.md is missing |
+| Session report | Session end | Writes changed scene files to memory/session_log.md |
 
 ---
 
 ## Genre compass
 
-The `compass/` folder contains genre theory reference files — no project-specific content, pure craft systems and benchmarks. Use from any project as `./compass/` or move one level up for multi-project sharing (`../compass/`).
+`compass/` contains genre theory reference files — craft systems and benchmarks, no project-specific content.
 
 ```
 compass/
@@ -114,78 +116,37 @@ compass/
 │   ├── black-comedy.md
 │   ├── coming-of-age.md
 │   └── sci-drama.md
-├── doc/
-│   ├── portrait.md       (documentary portrait)
-│   └── verite.md         (cinema verité)
-└── format/
-    ├── miniseries.md
-    └── vertical-microdrama.md
+└── doc/
+    ├── portrait.md       (documentary portrait)
+    └── verite.md         (cinema verité)
 ```
 
-Each project gets its own `analytics/compass_artifact.md` — the application of genre theory to that specific project. The compass files stay generic.
+`/startproject` copies these into every new project. Edit freely — run `/sync-plugin-files` to reset to plugin defaults.
+
+Each project gets `analytics/compass_artifact.md` — the application of genre theory to that specific project, created by `/compass`.
 
 ---
 
 ## Folder structure
 
 ```
-my-project/
-  README.md
+my-film/
   CLAUDE.md                     ← filled by /startproject (includes project type)
-  НАЧНИ_ЗДЕСЬ.md                ← full guide in Russian
-  setup.py                      ← terminal alternative to /startproject
-  scenes/                       ← scenes/blocks (filled by /split or /new-scene)
+  scenes/                       ← scenes/blocks (created by /split or /new-scene)
   analytics/
     compass_artifact.md         ← created by /compass
-    avoid-ai-writing-tells.md   ← forbidden AI writing patterns
-    pitch.md                    ← created by /pitch agent
+    avoid-ai-writing-tells.md   ← AI writing pattern checklist
+    pitch.md                    ← created by pitch agent
+    unico_package.md            ← created by unico agent
+  compass/                      ← local copies of genre reference files
   versions/                     ← DOCX output (created by /compile)
-  converter_MD_DOCX/
-    md_to_docx.py               ← converter (auto-detects project type)
-    README.md                   ← full format specification (both types)
   memory/
     session_log.md              ← written by hook automatically
-  compass/                      ← genre reference (can be moved one level up)
-  .claude/
-    settings.json               ← hooks configuration
-    commands/                   ← 16 commands
-    hooks/
-      session_report.py
-    agents/                     ← pitch, unico, proofread
 ```
 
 ---
 
-## Language
+## Requirements
 
-The template works in any language — Claude responds in whatever language is set in `CLAUDE.md`:
-
-```markdown
-Working language: **English**. All responses and comments in English.
-```
-
-Default is Russian. Change this line during `/startproject` or manually in `CLAUDE.md`.
-
----
-
-## Contributing
-
-Improvements to commands, hooks, compass files, or the converter are welcome. The template is kept intentionally minimal — one copy per project, no dependencies beyond `python-docx`.
-
----
-
----
-
-## На русском
-
-Это шаблон Claude Code для написания профессиональных сценариев — художественных фильмов, сериалов и документальных AV-сценариев.
-
-**Быстрый старт:** скопируй папку → открой в Claude Code → `/startproject`
-
-Подробная инструкция — в файле **`НАЧНИ_ЗДЕСЬ.md`** внутри шаблона.
-
-**Два типа проектов:**
-- **Художественный** — одноколоночный screenplay (slug line → действие → диалог)
-- **Документальный** — двухколоночный AV-script (таблица VIDEO | AUDIO)
-
-Тип выбирается при `/startproject` и влияет на все команды, хуки и конвертер.
+- [Claude Code](https://claude.ai/code)
+- Python 3 + `pip install python-docx` (for `/compile`)
