@@ -69,12 +69,19 @@ All is Lost:       — ✗  (expected ~scene 15)
 Break into Three:  — ✗
 Final image:       — ✗
 
+## Attractor map  (every 7–10 min needs an emotional impact)
+~min 0–10:   scene 02 — reversal ✓
+~min 10–20:  ✗ gap — no attractor in this zone
+~min 20–30:  scene 08 — revelation ✓
+...
+
 ## Gaps
 - No connective tissue between scenes 08 and 09
 - Midpoint missing — no false victory/defeat at the halfway point
+- Attractor gap: minutes 10–20 have no emotional impact
 ```
 
-5. Suggest what to add or rearrange based on missing beats.
+5. Suggest what to add or rearrange based on missing beats and attractor gaps.
 
 ---
 

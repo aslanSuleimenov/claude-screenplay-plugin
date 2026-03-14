@@ -92,6 +92,7 @@ Analog: which known films were made in a similar range.
 - Synopsis — present tense ("The hero drives", not "The hero will drive")
 - Logline — no film title inside it
 - No grandiosity in describing the theme — only specifics
+- References — don't limit to Hollywood. For CIS projects, Soviet and Russian cinema is valid: Tarkovsky, Balabanov, Muratova, Zvyagintsev, Shepitko, Klimov, German, Sokurov. Use when tone, cultural context, or moral weight matches.
 
 Save the result to analytics/pitch.md.
 Report how many scenes you read and which genre file you used.

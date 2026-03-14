@@ -48,6 +48,7 @@ Also check:
 - **Protagonist's dramatic need:** one clear external goal that drives the entire screenplay — can it be stated in one sentence? If not — flag it.
 - Does the final image mirror the opening image (transformation visible)?
 - Scenes that contribute nothing — no new information, no value change
+- **Attractor distribution:** every 7–10 minutes there should be an emotional impact — revelation, reversal, humor, shock, sudden intimacy. Map the attractors across the screenplay. Flag zones longer than 10 minutes with no attractor.
 
 **Structure — documentary (no beat map, check instead):**
 - Is there a clear POV / argument? Or just a sequence of facts? A documentary without a filmmaker's position is not neutral — it's empty.
@@ -88,6 +89,11 @@ GENRE CONTRACT  ([genre])
 Must happen — present:   [list or ✓ all covered]
 Must happen — missing:   [list or none]
 Forbidden — violations:  [list or none]
+
+ATTRACTOR MAP  (fiction)
+~min 0–10:   [scene NN — type of attractor or ✗ gap]
+~min 10–20:  [scene NN — type of attractor or ✗ gap]
+...
 
 STRUCTURE ISSUES
 [issue or observation]
