@@ -84,7 +84,6 @@ For each scene:
 4. After confirmation — write the file in the project format:
    - Fiction: heading `# Scene NN: Title`, slug line `**INT./EXT. LOCATION — DAY/NIGHT**`, names `**IN CAPS**`
    - Documentary: heading `# Block NN: Title`, table `| VIDEO | AUDIO |`
-   - Vertical: heading `# Episode NN: Title`, ~340 words, cliffhanger at the end
 5. Update the scene table in CLAUDE.md (add a row)
 
 After writing all scenes — say: "N scenes written. Moving to review passes."

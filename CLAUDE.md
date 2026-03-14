@@ -10,6 +10,7 @@
 - **Logline:** —
 - **Format:** —
 - **Theme:** —
+- **Seed:** —
 - **Target audience:** —
 - **Setting:** —
 - **Period:** —
@@ -23,8 +24,8 @@ Working language: **English**. All responses and comments in English.
 
 <!-- Filled in by /startproject -->
 
-| Name | Age | Role | Want / Need |
-|------|-----|------|-------------|
+| Name | Age | Role | External goal | Inner need |
+|------|-----|------|---------------|------------|
 
 ## Structure
 
