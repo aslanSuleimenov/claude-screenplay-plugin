@@ -1,10 +1,12 @@
 Analyze a scene or the full screenplay. Argument: $ARGUMENTS (scene number, title, or empty).
 
+Do not ask the user what to analyze. Determine the mode from $ARGUMENTS and proceed immediately.
+
 ---
 
 ## Mode A — No argument: full screenplay analysis
 
-If `$ARGUMENTS` is empty — analyze the entire screenplay.
+If `$ARGUMENTS` is empty or not provided — analyze the entire screenplay. Do not ask for clarification.
 
 1. Read CLAUDE.md — type, title, structure table, characters
 2. Read all files in scenes/ in order
