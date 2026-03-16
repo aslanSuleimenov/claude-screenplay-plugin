@@ -1,9 +1,9 @@
 """
-Конвертер analytics/pitch.md → versions/pitch_vNN.docx
+Конвертер analytics/pitch.md → versions/projectName_vNN_pitch.docx
 
 Запуск:
     python converter_MD_DOCX/pitch_to_docx.py
-    python converter_MD_DOCX/pitch_to_docx.py МойПроект_pitch_v2
+    python converter_MD_DOCX/pitch_to_docx.py custom_name
 
 Зависимость: python-docx
     pip install python-docx
@@ -212,20 +212,20 @@ def main():
     versions_dir = root / "versions"
     versions_dir.mkdir(exist_ok=True)
 
-    # Определить имя файла
+    # Определить имя файла: projectName_vNN_pitch (версия от последнего сценария)
     if len(sys.argv) > 1:
         stem = sys.argv[1]
     else:
         project_name = root.name
-        # Найти следующий номер версии
-        existing = list(versions_dir.glob(f"{project_name}_pitch_v*.docx"))
+        # Найти последнюю версию основного сценария
+        existing = list(versions_dir.glob(f"{project_name}_v*.docx"))
         nums = []
         for f in existing:
-            m = re.search(r'_pitch_v(\d+)\.docx$', f.name)
+            m = re.search(r'_v(\d+)\.docx$', f.name)
             if m:
                 nums.append(int(m.group(1)))
-        next_v = (max(nums) + 1) if nums else 1
-        stem = f"{project_name}_pitch_v{next_v:02d}"
+        latest_v = max(nums) if nums else 1
+        stem = f"{project_name}_v{latest_v:02d}_pitch"
 
     output = versions_dir / f"{stem}.docx"
     convert_pitch(source, output)

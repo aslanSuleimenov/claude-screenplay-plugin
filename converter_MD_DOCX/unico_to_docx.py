@@ -301,15 +301,16 @@ def main():
     versions_dir = root / "versions"
     versions_dir.mkdir(exist_ok=True)
 
+    # projectName_vNN_unico (версия от последнего сценария)
     if len(sys.argv) > 1:
         stem = sys.argv[1]
     else:
         project_name = root.name
-        existing = list(versions_dir.glob(f"{project_name}_unico_v*.docx"))
+        existing = list(versions_dir.glob(f"{project_name}_v*.docx"))
         nums = [int(m.group(1)) for f in existing
-                if (m := re.search(r'_unico_v(\d+)\.docx$', f.name))]
-        next_v = (max(nums) + 1) if nums else 1
-        stem = f"{project_name}_unico_v{next_v:02d}"
+                if (m := re.search(r'_v(\d+)\.docx$', f.name))]
+        latest_v = max(nums) if nums else 1
+        stem = f"{project_name}_v{latest_v:02d}_unico"
 
     output = versions_dir / f"{stem}.docx"
     convert_unico(source, output)
