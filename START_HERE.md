@@ -7,8 +7,8 @@
 In Claude Code (any project, one-time):
 
 ```
-/plugin marketplace add aslanSuleimenov/claude-screenplay-template
-/plugin install screenplay@claude-screenplay-template
+/plugin marketplace add aslanSuleimenov/claude-screenplay-plugin
+/plugin install screenplay@claude-screenplay-plugin
 /reload-plugins
 ```
 

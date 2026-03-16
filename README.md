@@ -1,6 +1,6 @@
 # Claude Screenplay Plugin
 
-A [Claude Code](https://claude.ai/code) plugin for writing professional screenplays — fiction films, series, and documentary AV-scripts. One plugin, two formats.
+A [Claude Code](https://claude.ai/code) plugin for writing screenplays — fiction films, series, and documentary AV-scripts. One plugin, two formats.
 
 ---
 
