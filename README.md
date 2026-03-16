@@ -165,4 +165,4 @@ my-film/
 
 ## Author
 
-[@AslanSuleimenov](https://x.com/AslanSuleimenov)
+[@aslanSuleimenov](https://x.com/aslanSuleimenov)
