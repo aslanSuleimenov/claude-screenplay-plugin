@@ -160,3 +160,9 @@ my-film/
 
 - [Claude Code](https://claude.ai/code)
 - Python 3 + `pip install python-docx` (for `/compile`)
+
+---
+
+## Author
+
+[@AslanSuleimenov](https://x.com/AslanSuleimenov)
