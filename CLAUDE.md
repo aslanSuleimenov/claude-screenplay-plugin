@@ -63,7 +63,8 @@ Dialogue text.
 ```
 
 - Exactly ONE blank line between blocks (action → name, dialogue → next action); NEVER two blank lines before a character name; ZERO blank lines between name and dialogue
-- Names — CAPS, plain text (no asterisks)
+- No bold (**) anywhere in scene files. All text is plain, no markdown formatting
+- Names — CAPS, plain text
 - Slug line — plain text: `INT. LOCATION — DAY`
 - First appearance: `NAME (age)` in caps within action text
 - Do not use: `FADE OUT.`, `CUT TO:`, `CLOSE ON:`
