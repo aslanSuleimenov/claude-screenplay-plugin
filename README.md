@@ -9,8 +9,8 @@ A [Claude Code](https://claude.ai/code) plugin for writing professional screenpl
 In Claude Code:
 
 ```
-/plugin marketplace add aslanSuleimenov/claude-screenplay-template
-/plugin install screenplay@claude-screenplay-template
+/plugin marketplace add aslanSuleimenov/claude-screenplay-plugin
+/plugin install screenplay@claude-screenplay-plugin
 /reload-plugins
 ```
 
