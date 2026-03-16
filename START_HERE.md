@@ -33,7 +33,7 @@ Claude extracts what it can from the file and asks only about what's missing.
 
 **What gets created:**
 - `CLAUDE.md` — project metadata and formatting rules
-- `scenes/00_title.md` — title page
+- `scenes/` — empty, ready for /new-scene or /split
 - `analytics/avoid-ai-writing-tells.md` — AI pattern checklist
 - `memory/` — session logs
 - `START_HERE.md` — this file
@@ -128,7 +128,6 @@ my-film/
   CLAUDE.md
   START_HERE.md
   scenes/
-    00_title.md
   analytics/
     avoid-ai-writing-tells.md
     compass_artifact.md         ← /compass

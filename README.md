@@ -30,7 +30,7 @@ claude
 /startproject path/to/draft.md
 ```
 
-`/startproject` creates: `CLAUDE.md`, `scenes/00_title.md`, `analytics/avoid-ai-writing-tells.md`, `memory/`, and `START_HERE.md`.
+`/startproject` creates: `CLAUDE.md`, `scenes/`, `analytics/avoid-ai-writing-tells.md`, `memory/`, and `START_HERE.md`. Title page is generated automatically by `/compile` from CLAUDE.md.
 
 Genre compass stays in the plugin — no local copy by default. To get editable local copies: `/sync-plugin-files`.
 

@@ -182,19 +182,9 @@ Strictly two-column AV format. Quick rules:
 
 ---
 
-## Step 5: Write scenes/00_title.md
+## Step 5: Create scenes/ directory
 
-```
-# [TITLE]
-
-**[GENRE]**
-*[project type]*
-
-[Logline]
-
-Author: —
-[Year]
-```
+Create the `scenes/` directory. Do NOT create a title page file — the converter generates the title page from CLAUDE.md automatically.
 
 ---
 
@@ -225,7 +215,7 @@ Project "[Title]" initialized.
 
 Created:
 - CLAUDE.md
-- scenes/00_title.md
+- scenes/ (empty, ready for /new-scene or /split)
 - analytics/avoid-ai-writing-tells.md
 - converter_MD_DOCX/
 - memory/
