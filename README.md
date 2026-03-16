@@ -95,6 +95,7 @@ All auto-detect project type from `CLAUDE.md`.
 | Agent | What it does |
 |-------|-------------|
 | `draft-polish [file]` | Full pipeline: analysis → scenes → logic check → spelling → AI patterns |
+| `character-bible` | Character bible from all scenes → analytics/characters.md |
 | `pitch` | Pitch document for investors/producers → analytics/pitch.md |
 | `unico` | UNICO starter pack (passport + character bible + presentation) |
 | `proofread [NN\|all]` | Spelling, logic, chronology, anachronisms |
@@ -147,6 +148,7 @@ my-film/
   analytics/
     avoid-ai-writing-tells.md   ← AI writing pattern checklist (from plugin)
     compass_artifact.md         ← created by /compass
+    characters.md               ← created by character-bible agent
     pitch.md                    ← created by pitch agent
     unico_package.md            ← created by unico agent
   versions/                     ← DOCX output (created by /compile)

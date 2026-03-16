@@ -104,6 +104,7 @@ Genre compass stays in the plugin. To get local editable copies: `/sync-plugin-f
 | Agent | What it does |
 |-------|-------------|
 | `draft-polish [file]` | Full pipeline: analysis → scenes → logic → spelling → AI patterns |
+| `character-bible` | Character bible from all scenes → analytics/characters.md |
 | `pitch` | Pitch document → analytics/pitch.md |
 | `unico` | UNICO starter pack → analytics/unico_package.md |
 | `proofread [NN\|all]` | Spelling, logic, chronology, anachronisms |
@@ -131,6 +132,7 @@ my-film/
   analytics/
     avoid-ai-writing-tells.md
     compass_artifact.md         ← /compass
+    characters.md               ← character-bible agent
     pitch.md                    ← pitch agent
     unico_package.md            ← unico agent
   versions/                     ← /compile output
