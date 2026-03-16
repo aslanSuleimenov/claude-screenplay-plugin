@@ -43,8 +43,8 @@ Read CLAUDE.md — era, setting, genre, characters (names, roles).
 - Clothing, hairstyles, period details that don't match the era
 
 ### Script format
-- Character names in dialogue — must be **IN CAPS** and consistent
-- Slug line for fiction: **INT./EXT. LOCATION — TIME**
+- Character names in dialogue — plain CAPS, no bold, consistent throughout
+- Slug line for fiction: plain text `INT./EXT. LOCATION — TIME` (no bold)
 - For documentary: the | VIDEO | AUDIO | table must be filled in both columns
 
 ## Step 3: How to output results

@@ -82,7 +82,7 @@ For each scene:
 2. If offering options — show 2–3 with a brief description of each
 3. Ask via AskUserQuestion: "Write this scene to scenes/NN_title.md?"
 4. After confirmation — write the file in the project format:
-   - Fiction: heading `# Scene NN: Title`, slug line `**INT./EXT. LOCATION — DAY/NIGHT**`, names `**IN CAPS**`
+   - Fiction: heading `# Scene NN: Title`, slug line `INT./EXT. LOCATION — DAY/NIGHT` (plain text, no bold), names in plain CAPS (no bold)
    - Documentary: heading `# Block NN: Title`, table `| VIDEO | AUDIO |`
 5. Update the scene table in CLAUDE.md (add a row)
 
