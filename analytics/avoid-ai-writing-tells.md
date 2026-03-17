@@ -1,6 +1,6 @@
 # Writing rules: how to avoid AI tells
 
-Sources: [Wikipedia: Signs of AI Writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) + NLP research + adaptation for screenplay work.
+Sources: [Wikipedia: Signs of AI Writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) + [27 Red Flags — SEOengine.ai](https://seoengine.ai/blog/signs-of-ai-writing) + [Gramota.ru — признаки ИИ-текста](https://gramota.ru/journal/stati/tekhnologii/chem-sgenerirovannye-teksty-vydayut-sebya) + [Habr — маркеры ИИ](https://habr.com/ru/articles/918226/) + [Nature — AI text detection](https://www.nature.com/articles/s41467-025-67145-1) + [Blake Stockton — Wikipedia takeaways](https://www.blakestockton.com/takeaways-from-wikipedias-signs-of-ai-writing-2/) + NLP research + adaptation for screenplay work.
 
 The single canonical file. Read before writing any scene.
 
@@ -133,11 +133,78 @@ Don't write sentences that are all the same length. Don't make every paragraph t
 ### 10. Other (English)
 
 - Don't open paragraphs with "In today's world...", "In the ever-evolving landscape of...", "As we navigate..."
-- Don't use "delve," "crucial," "landscape," "leverage," "foster," "robust" without a real reason
+- Don't use "delve," "crucial," "landscape," "leverage," "foster," "robust," "multifaceted," "commendable," "meticulous," "intricate," "realm," "beacon," "myriad," "plethora," "nuanced," "compelling," "harness," "embark," "navigate" (metaphor), "whilst," "akin," "endeavour," "commence," "utilize," "facilitate," "comprehensive," "foundational" without a real reason
 - Don't use "align with," "bolstered," "enhance," "amplify," "elevate" as empty intensifiers — only when there's specific meaning
 - Don't end text with a pompous summary like "This marks a new era..."
 - Don't restate the same idea in different words in adjacent sentences
 - Don't mix American and British English in one text (colour/color, realise/realize)
+
+### 11. Treadmill effect
+
+Text circles the same idea without progressing. A 500-word section contains 100 words of actual information and 400 words of restating and rephrasing. Test: remove a paragraph — if nothing is lost, it was treadmill.
+
+### 12. Latinate bias
+
+AI picks the longer Latin-derived word over the short Anglo-Saxon one.
+
+Cut:
+- utilize → use
+- facilitate → help
+- commence → start
+- endeavour → try
+- implement → do
+- demonstrate → show
+- subsequent → next
+- prior to → before
+- in order to → to
+- sufficient → enough
+
+### 13. "From X to Y" construction
+
+AI shows comprehensiveness by spanning two unrelated endpoints.
+
+Cut:
+- "from content creation to data analysis"
+- "from small businesses to enterprise clients"
+- "from beginners to advanced users"
+
+### 14. Motivational poster tone
+
+Every problem is an "opportunity." Every failure "opens new doors." No negative outcome stays negative for more than one sentence.
+
+### 15. Symmetrical list items
+
+Every bullet point is the same length, same structure, same number of supporting details. Real lists are uneven — some points need one word, some need a paragraph.
+
+### 16. The Nice-Nice Wrap
+
+AI never picks a winner. "Both approaches have their merits." "Each has its own strengths." If you can't tell what the author recommends after reading the conclusion — it's AI.
+
+### 17. Personifying abstractions
+
+Cut:
+- "the data tells us"
+- "the market spoke clearly"
+- "the tool chose to focus on"
+- "the numbers paint a picture"
+
+Objects and concepts don't speak, choose, or paint.
+
+### 18. Over-explanation
+
+Defines obvious concepts for the reader. Explains what "email" means in an email marketing article. Assumes zero audience knowledge on every topic.
+
+### 19. -ing sentence openers
+
+AI opens sentences with present participles at 2–5x the human rate.
+
+Cut:
+- "Offering a wide range of..."
+- "Providing users with..."
+- "Giving teams the ability to..."
+- "Leveraging modern technology..."
+
+Different from the hollow -ing tail (section 6) — this one is about sentence beginnings.
 
 ---
 
@@ -274,7 +341,78 @@ AI avoids committing to anything, hiding behind modality.
 - «Алгоритм дышит данными» — дышит чем?
 - Метафора начата и брошена: «это мост между… а теперь рассмотрим следующий аспект»
 
-### 19. Сервисные фразы чат-бота
+### 19. Эффект беговой дорожки (treadmill)
+
+Текст крутится вокруг одной мысли, не продвигаясь вперёд. 500 слов = 100 слов информации + 400 перефразирования.
+
+Тест: убери абзац. Если ничего не потерялось — это беговая дорожка.
+
+### 20. Латинизмы вместо простых слов
+
+AI выбирает длинное слово вместо короткого:
+- «использовать» → «применять» или просто действие
+- «осуществить» → «сделать»
+- «функционировать» → «работать»
+- «оптимизировать» → «улучшить» или конкретное действие
+- «имплементировать» → «внедрить» или «запустить»
+- «актуализировать» → «обновить»
+- «верифицировать» → «проверить»
+- «интегрировать» → «соединить», «встроить»
+
+### 21. Мотивационный плакат
+
+Каждая проблема — это «возможность». Каждый провал «открывает новые горизонты». Негатив не остаётся негативом дольше одного предложения.
+
+Запрещено:
+- «Это непросто, но открывает новые возможности»
+- «Несмотря на трудности, это ценный опыт»
+- «Каждая ошибка — шаг к успеху»
+
+### 22. Симметричные списки
+
+Каждый пункт списка одной длины, одной структуры. Живой список неровный — что-то в одно слово, что-то в абзац.
+
+### 23. Нежелание выбрать сторону (Nice-Nice Wrap)
+
+«Оба подхода имеют свои преимущества.» «У каждого метода есть сильные стороны.» Если после прочтения непонятно, что автор рекомендует — это ИИ.
+
+### 24. Олицетворение абстракций
+
+Запрещено:
+- «данные говорят нам»
+- «рынок ясно дал понять»
+- «цифры рисуют картину»
+- «технология стремится к…»
+
+Предметы и концепции не говорят, не стремятся, не рисуют.
+
+### 25. Объяснение очевидного
+
+ИИ объясняет читателю то, что он знает. Определяет термин в статье для специалистов. Пересказывает контекст, который очевиден.
+
+### 26. Деепричастные зачины
+
+ИИ начинает предложения деепричастиями в 2–5 раз чаще людей.
+
+Запрещено частое:
+- «Предлагая широкий спектр…»
+- «Обеспечивая пользователям…»
+- «Используя современные технологии…»
+- «Являясь ключевым элементом…»
+
+Отличие от хвостовых клише (секция «Хвостовые клише значимости»): там конец предложения, здесь — начало.
+
+### 27. Избыток существительных вместо глаголов
+
+ИИ предпочитает существительные глаголам:
+- «осуществление контроля» → «контролировать»
+- «проведение мероприятий» → «провести»
+- «оказание влияния» → «повлиять»
+- «принятие решения» → «решить»
+
+Живой русский текст глагольный, не номинативный.
+
+### 28. Сервисные фразы чат-бота
 
 - «Конечно!», «Безусловно!»
 - «Я надеюсь, это помогло вам»
@@ -359,3 +497,8 @@ Rule: one thought, one paragraph. When the action shifts — break. No exception
 - [ ] Emotions are concrete, not "looks thoughtfully" / «смотрит задумчиво»?
 - [ ] No excessive dashes substituting for commas?
 - [ ] Each action beat in its own paragraph with a blank line between?
+- [ ] No treadmill (remove a paragraph — is anything lost)?
+- [ ] No Latinate bloat (utilize → use, осуществить → сделать)?
+- [ ] No motivational poster tone?
+- [ ] Lists are uneven, not symmetrical?
+- [ ] Author picks a side, not "both have merits"?
