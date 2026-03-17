@@ -60,7 +60,6 @@ All auto-detect project type from `CLAUDE.md`.
 | `/startproject [file]` | Initialize project. Reads file if provided, asks only about missing fields |
 | `/split [file]` | Split a draft into scenes/blocks → scenes/ + character tables |
 | `/compass [genre — logline]` | Build genre reference from web research → analytics/ |
-| `/update-ai-tells` | Search web for new AI writing patterns, merge into avoid-ai-writing-tells.md |
 | `/sync-plugin-files` | Copy compass files and avoid-ai-writing-tells into the project for local editing |
 
 ### Write & analyze

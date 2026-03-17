@@ -68,7 +68,6 @@ Genre compass stays in the plugin. To get local editable copies: `/sync-plugin-f
 | `/startproject [file]` | Initialize. Reads file if provided, asks only about missing fields |
 | `/split [file]` | Split a draft into scenes/blocks + fill character tables |
 | `/compass [genre — logline]` | Genre reference from web research → analytics/compass_artifact.md |
-| `/update-ai-tells` | Search web for new AI writing patterns, merge into plugin |
 | `/sync-plugin-files` | Copy compass files into project for local editing |
 
 ### Write & analyze
