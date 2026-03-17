@@ -4,6 +4,8 @@ Sources: [Wikipedia: Signs of AI Writing](https://en.wikipedia.org/wiki/Wikipedi
 
 The single canonical file. Read before writing any scene.
 
+Priority: Screenplay rules > General rules. If a general pattern conflicts with a screenplay-specific one — the screenplay rule wins.
+
 ---
 
 ## Banned patterns (English)
