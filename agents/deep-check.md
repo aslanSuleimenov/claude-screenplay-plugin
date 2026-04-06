@@ -1,7 +1,7 @@
 ---
 name: deep-check
 description: Master orchestrator agent. Runs all 14 screenplay analysis agents in optimal sequence (foundation → macro → details → synthesis). Consolidates reports into single dashboard. Returns comprehensive screenplay audit.
-tools: Agent, Read, Glob, Write
+tools: Agent, Read, Glob, Write, Bash
 model: sonnet
 permissionMode: plan
 ---
@@ -19,6 +19,16 @@ When user calls `/full-check`, you coordinate:
 4. **Phase 4 (Characters)** — voice and consistency
 5. **Phase 5 (Quality)** — scene-level craft
 6. **Phase 6 (Synthesis)** — consolidated report
+
+## Pre-flight
+
+Before running any agents, ensure the output directory exists:
+
+```bash
+mkdir -p analytics
+```
+
+Use the Bash tool to create it. This is required before any agent writes reports.
 
 ## Execution Order
 
