@@ -10,7 +10,8 @@
       "description": "Screenplay and AV-script writing toolkit — slash commands, comprehensive analysis system (/full-check: 14 agents), format validation hooks, and MD→DOCX export.",
       "source": {
         "type": "github",
-        "repo": "aslanSuleimenov/claude-screenplay-plugin"
+        "repo": "aslanSuleimenov/claude-screenplay-plugin",
+        "path": ".claude-plugin"
       }
     }
   ]
