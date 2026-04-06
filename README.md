@@ -90,6 +90,12 @@ All auto-detect project type from `CLAUDE.md`.
 | `/stats` | Scenes + runtime + dialogue/action ratio | Blocks + V/O word count + SOT count |
 | `/compile` | One-column DOCX (screenplay) | Two-column DOCX (AV-script, landscape) |
 
+### Analysis
+
+| Command | What it does |
+|---------|-------------|
+| `/full-check [NN-MM]` | **Comprehensive screenplay audit.** Runs 14 specialized agents in 6 phases (foundation → macro → continuity → characters → craft → synthesis). Produces consolidated dashboard + 14 detailed reports in analytics/. ~90 min per full script. |
+
 ### Agents
 
 | Agent | What it does |
@@ -99,6 +105,20 @@ All auto-detect project type from `CLAUDE.md`.
 | `pitch` | Pitch document for investors/producers → analytics/pitch.md |
 | `unico` | UNICO starter pack (passport + character bible + presentation) |
 | `proofread [NN\|all]` | Spelling, logic, chronology, anachronisms |
+| `deep-check [NN-MM]` | *Internal orchestrator for `/full-check`* — runs all 14 analysis agents in dependency order |
+
+### Built-in Analysis Agents (via `/full-check`)
+
+14 specialized agents run automatically via `/full-check`. Use individually via `/analyze` or `/check` for single-scene analysis.
+
+| Phase | Agents | What they check |
+|-------|--------|-----------------|
+| **1. Foundation** | `action-line-checker`, `timeline-checker` | Spec formatting, filmability, day/night consistency, physical states |
+| **2. Macro Structure** | `structure-checker`, `scene-balance-checker`, `dialogue-ratio-checker` | Save the Cat beats, scene type rhythm (ACTION/DIALOGUE/EXPOSITION), pacing ratios |
+| **3. Continuity & Logic** | `scene-continuity-checker`, `plot-thread-checker`, `tone-checker` | Props/costumes/positions, setup/payoff tracking, genre register |
+| **4. Characters** | `character-ooc-checker` | Dialogue voice, behavioral consistency, ear test |
+| **5. Craft** | `value-shift-checker`, `scene-hook-checker`, `scene-economy-checker`, `subtext-checker`, `visual-storytelling-checker` | McKee value shifts, YES-BUT/NO-AND momentum, enter-late/exit-early, on-the-nose dialogue, visual independence |
+| **6. Synthesis** | `deep-check` | Consolidates all reports, prioritizes fixes, produces dashboard |
 
 ---
 
