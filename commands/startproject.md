@@ -206,7 +206,17 @@ Write `START_HERE.md` to the project root. Content — read from `${CLAUDE_PLUGI
 
 ---
 
-## Step 8: Confirm
+## Step 8: Split draft into scenes (if file was provided)
+
+If `$ARGUMENTS` was provided (a draft file):
+- Automatically split the file into scene/block files following the full `/split` logic (see `split.md`): identify boundaries, create `scenes/NN_title.md` files, extract characters, update CLAUDE.md tables.
+- Do NOT ask for confirmation — proceed directly after project structure is created.
+
+If no file was provided — skip this step.
+
+---
+
+## Step 9: Confirm
 
 Tell the user:
 
@@ -215,7 +225,7 @@ Project "[Title]" initialized.
 
 Created:
 - CLAUDE.md
-- scenes/ (empty, ready for /new-scene or /split)
+- scenes/ [N files from draft / empty, ready for /new-scene]
 - analytics/avoid-ai-writing-tells.md
 - converter_MD_DOCX/
 - memory/
@@ -226,10 +236,12 @@ To get local editable copies: /sync-plugin-files
 To update converter after plugin upgrade: /sync-plugin-files
 
 Next steps:
-- /split [path to draft] — break a draft into scenes
-- /new-scene 01 Title — write the first scene from scratch
 - /compass [genre — logline] — genre analysis and reference films
+- /analyze — full screenplay analysis
 ```
 
-If the file argument was provided, also say:
-> "Source file read: `[filename]`. [N] characters extracted. Run /split [filename] to break it into scenes."
+If no file was provided, also add to next steps:
+```
+- /split [path to draft] — break a draft into scenes
+- /new-scene 01 Title — write the first scene from scratch
+```

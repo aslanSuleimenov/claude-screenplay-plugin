@@ -10,7 +10,7 @@ In Claude Code:
 
 ```
 /plugin marketplace add aslanSuleimenov/claude-screenplay-plugin
-/plugin install screenplay@claude-screenplay-plugin
+/plugin install claude-screenplay-plugin@claude-screenplay-plugin
 /reload-plugins
 ```
 

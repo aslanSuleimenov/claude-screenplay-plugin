@@ -6,9 +6,27 @@ Read CLAUDE.md — the **Type** field (fiction or documentary).
 
 ## Step 2 — Read the file
 
-Read the file at the given path in full. This is a draft — flat text, no strict formatting.
+`$ARGUMENTS` may contain one or more file paths (space-separated, possibly quoted). Process all of them in order as a single continuous draft.
 
-**Large files (>50 pages / >15000 words):** if the file is very large, process in parts — first third, then second, then third. Create scene files as each part is processed.
+**DOCX files:** if a path ends with `.docx`, convert to text first by running:
+```bash
+python3 -c "
+from docx import Document
+import sys
+doc = Document(sys.argv[1])
+for p in doc.paragraphs:
+    print(p.text)
+" "path/to/file.docx"
+```
+Use the output as the draft text. Requires `python-docx` (`pip install python-docx`).
+
+**PDF files:** use the Read tool directly — it supports PDF.
+
+**TXT / MD files:** read with the Read tool as usual.
+
+After reading, concatenate all files in order (with a blank line between them) and treat as a single draft.
+
+**Large files (>50 pages / >15000 words):** if the combined text is very large, process in parts — first third, then second, then third. Create scene files as each part is processed.
 
 ## Step 3 — Identify boundaries
 

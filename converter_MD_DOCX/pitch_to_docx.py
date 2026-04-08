@@ -1,11 +1,11 @@
 """
-Конвертер analytics/pitch.md → versions/projectName_vNN_pitch.docx
+Converter analytics/pitch.md → versions/projectName_vNN_pitch.docx
 
-Запуск:
+Usage:
     python converter_MD_DOCX/pitch_to_docx.py
     python converter_MD_DOCX/pitch_to_docx.py custom_name
 
-Зависимость: python-docx
+Requires: python-docx
     pip install python-docx
 """
 
@@ -20,7 +20,7 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
 
-# ── Константы оформления ──────────────────────────────────────────────────────
+# ── Design constants ──────────────────────────────────────────────────────
 
 FONT_MAIN   = "Georgia"
 FONT_TITLE  = "Georgia"
@@ -32,15 +32,15 @@ PT_BODY     = 11
 PT_LOGLINE  = 12
 PT_META     = 10
 
-COLOR_SECTION = RGBColor(0x1a, 0x1a, 0x2e)   # тёмно-синий
-COLOR_META    = RGBColor(0x66, 0x66, 0x66)   # серый
-COLOR_RULE    = RGBColor(0xcc, 0xcc, 0xcc)   # светло-серый
+COLOR_SECTION = RGBColor(0x1a, 0x1a, 0x2e)   # dark navy
+COLOR_META    = RGBColor(0x66, 0x66, 0x66)   # grey
+COLOR_RULE    = RGBColor(0xcc, 0xcc, 0xcc)   # light grey
 
 
-# ── Вспомогательные функции ───────────────────────────────────────────────────
+# ── Helper functions ───────────────────────────────────────────────────
 
 def add_horizontal_rule(doc):
-    """Тонкая горизонтальная линия."""
+    """Thin horizontal rule."""
     p = doc.add_paragraph()
     p.paragraph_format.space_before = Pt(2)
     p.paragraph_format.space_after  = Pt(2)
@@ -78,7 +78,7 @@ def add_para(doc, text, size_pt, bold=False, italic=False,
 
 
 def parse_inline(paragraph, text, size_pt, base_italic=False):
-    """Разбирает **bold** и *italic* внутри строки."""
+    """Parse **bold** and *italic* inline markers."""
     tokens = re.split(r'(\*\*[^*]+\*\*|\*[^*]+\*)', text)
     for token in tokens:
         if token.startswith("**") and token.endswith("**"):
@@ -92,7 +92,7 @@ def parse_inline(paragraph, text, size_pt, base_italic=False):
             set_run_font(run, size_pt, italic=base_italic)
 
 
-# ── Парсер pitch.md ───────────────────────────────────────────────────────────
+# ── pitch.md parser ───────────────────────────────────────────────────────────
 
 def convert_pitch(source_path, output_path):
     text = source_path.read_text(encoding="utf-8")
@@ -100,7 +100,7 @@ def convert_pitch(source_path, output_path):
 
     doc = Document()
 
-    # Поля страницы
+    # Page margins
     for section in doc.sections:
         section.page_width   = Cm(21)
         section.page_height  = Cm(29.7)
@@ -109,7 +109,7 @@ def convert_pitch(source_path, output_path):
         section.left_margin  = Cm(3)
         section.right_margin = Cm(2.5)
 
-    # Удалить дефолтный пустой абзац
+    # Remove default empty paragraph
     for el in list(doc.element.body):
         doc.element.body.remove(el)
 
@@ -119,15 +119,15 @@ def convert_pitch(source_path, output_path):
     while i < len(lines):
         line = lines[i].rstrip()
 
-        # ── Пустая строка ─────────────────────────────────────────────────────
+        # ── Empty line ─────────────────────────────────────────────────────
         if line == "":
             i += 1
             continue
 
-        # ── H1: Питч: Название ────────────────────────────────────────────────
+        # ── H1: Pitch: Title ────────────────────────────────────────────────
         if line.startswith("# "):
             title = line[2:].strip()
-            # убрать "Питч: " для выноса в подзаголовок
+            # strip "Питч: " prefix for subtitle
             if title.lower().startswith("питч:"):
                 label  = "ПИТЧ"
                 name   = title[5:].strip()
@@ -135,7 +135,7 @@ def convert_pitch(source_path, output_path):
                 label  = "ПИТЧ"
                 name   = title
 
-            doc.add_paragraph()  # отступ сверху
+            doc.add_paragraph()  # top spacer
             add_para(doc, label, PT_META, bold=True, italic=False,
                      align=WD_ALIGN_PARAGRAPH.CENTER, color=COLOR_META,
                      space_before=0, space_after=2)
@@ -146,7 +146,7 @@ def convert_pitch(source_path, output_path):
             i += 1
             continue
 
-        # ── H2: Раздел ────────────────────────────────────────────────────────
+        # ── H2: Section ────────────────────────────────────────────────────────
         if line.startswith("## "):
             section_title = line[3:].strip().upper()
             in_logline = (section_title == "ЛОГЛАЙН")
@@ -156,13 +156,13 @@ def convert_pitch(source_path, output_path):
             i += 1
             continue
 
-        # ── Горизонтальная линия ---────────────────────────────────────────────
+        # ── Horizontal rule ---────────────────────────────────────────────
         if line.startswith("---"):
             add_horizontal_rule(doc)
             i += 1
             continue
 
-        # ── Метаданные (жирная метка: значение) ───────────────────────────────
+        # ── Metadata (bold label: value) ───────────────────────────────
         meta_match = re.match(r'^\*\*([^*]+):\*\*\s*(.*)', line)
         if meta_match and not in_logline:
             label, value = meta_match.group(1), meta_match.group(2)
@@ -176,7 +176,7 @@ def convert_pitch(source_path, output_path):
             i += 1
             continue
 
-        # ── Логлайн (выделенный блок) ─────────────────────────────────────────
+        # ── Logline (highlighted block) ─────────────────────────────────────────
         if in_logline:
             p = doc.add_paragraph()
             p.alignment = WD_ALIGN_PARAGRAPH.LEFT
@@ -187,7 +187,7 @@ def convert_pitch(source_path, output_path):
             i += 1
             continue
 
-        # ── Обычный абзац ─────────────────────────────────────────────────────
+        # ── Regular paragraph ─────────────────────────────────────────────────────
         p = doc.add_paragraph()
         p.paragraph_format.space_before = Pt(0)
         p.paragraph_format.space_after  = Pt(5)
@@ -195,7 +195,7 @@ def convert_pitch(source_path, output_path):
         i += 1
 
     doc.save(str(output_path))
-    print(f"Сохранено: {output_path}")
+    print(f"Saved: {output_path}")
 
 
 # ── main ──────────────────────────────────────────────────────────────────────
@@ -205,19 +205,19 @@ def main():
     source = root / "analytics" / "pitch.md"
 
     if not source.exists():
-        print(f"Ошибка: файл {source} не найден.")
-        print("Сначала запусти агент /pitch для генерации pitch.md")
+        print(f"Error: file {source} not found.")
+        print("Run the pitch agent first to generate pitch.md")
         sys.exit(1)
 
     versions_dir = root / "versions"
     versions_dir.mkdir(exist_ok=True)
 
-    # Определить имя файла: projectName_vNN_pitch (версия от последнего сценария)
+    # Determine filename: projectName_vNN_pitch (version from latest screenplay)
     if len(sys.argv) > 1:
         stem = sys.argv[1]
     else:
         project_name = root.name
-        # Найти последнюю версию основного сценария
+        # Find latest version of the main screenplay
         existing = list(versions_dir.glob(f"{project_name}_v*.docx"))
         nums = []
         for f in existing:

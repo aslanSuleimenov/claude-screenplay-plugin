@@ -301,7 +301,7 @@ def main():
     versions_dir = root / "versions"
     versions_dir.mkdir(exist_ok=True)
 
-    # projectName_vNN_unico (версия от последнего сценария)
+    # projectName_vNN_unico (version from latest screenplay)
     if len(sys.argv) > 1:
         stem = sys.argv[1]
     else:

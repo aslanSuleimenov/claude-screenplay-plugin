@@ -1,11 +1,11 @@
-"""Конвертер scenes/*.md → DOCX.
+"""Converter scenes/*.md → DOCX.
 
-Автоматически определяет тип проекта из CLAUDE.md:
-  - художественный → однокол​оночный формат (screenplay)
-  - документальный → двухкол​оночный формат (AV-script)
+Auto-detects project type from CLAUDE.md:
+  - художественный → single-column format (screenplay)
+  - документальный → two-column format (AV-script)
 
-Использование:
-  python converter_MD_DOCX/md_to_docx.py [имя_файла]
+Usage:
+  python converter_MD_DOCX/md_to_docx.py [filename]
 """
 import re
 import sys
@@ -31,7 +31,7 @@ scenes_dir = BASE / "scenes"
 versions_dir = BASE / "versions"
 
 
-# --- Определить тип проекта ---
+# --- Detect project type ---
 def detect_project_type():
     claude_md = BASE / "CLAUDE.md"
     if not claude_md.exists():
@@ -44,7 +44,7 @@ def detect_project_type():
 
 
 def find_next_version(proj_name):
-    """Найти следующий номер версии, безопасно обрабатывая нечисловые суффиксы."""
+    """Find next version number, safely handling non-numeric suffixes."""
     existing = sorted(versions_dir.glob(f"{proj_name}_v*.docx"))
     max_num = 0
     for f in existing:
@@ -54,12 +54,12 @@ def find_next_version(proj_name):
             if num > max_num:
                 max_num = num
         except ValueError:
-            continue  # пропустить файлы с нечисловым суффиксом
+            continue  # skip files with non-numeric suffix
     return max_num + 1
 
 
 def add_page_numbers(doc):
-    """Добавить номера страниц в footer."""
+    """Add page numbers to footer."""
     for section in doc.sections:
         footer = section.footer
         footer.is_linked_to_previous = False
@@ -82,7 +82,7 @@ def add_page_numbers(doc):
 
 
 # ============================================================
-#  ОБЩИЕ ФУНКЦИИ
+#  COMMON FUNCTIONS
 # ============================================================
 
 def add_run(p, text, bold=None, italic=None, size=None):
@@ -120,7 +120,7 @@ def setup_page(doc, orientation="portrait"):
 
 
 def make_title_page(doc):
-    """Генерация титульной страницы из CLAUDE.md."""
+    """Generate title page from CLAUDE.md."""
     claude_md = BASE / "CLAUDE.md"
     title = "МОИ ИГРУШКИ"
     logline = ""
@@ -137,7 +137,7 @@ def make_title_page(doc):
         if m:
             genre = m.group(1).strip()
 
-    # Отступ сверху ~1/3 страницы
+    # Top spacing ~1/3 page
     spacer = doc.add_paragraph()
     spacer.paragraph_format.space_before = Pt(180)
 
@@ -163,7 +163,7 @@ def make_title_page(doc):
 
 
 # ============================================================
-#  ХУДОЖЕСТВЕННЫЙ ФОРМАТ (screenplay)
+#  FICTION FORMAT (screenplay)
 # ============================================================
 
 INDENT_CHAR = Inches(2.0)
@@ -213,7 +213,7 @@ def convert_fiction(doc, scene_files):
 
             had_blank = prev_was_blank
             prev_was_blank = False
-            # Пустая строка разрывает диалог — сбросить тип
+            # Blank line breaks dialogue — reset type
             if had_blank and last_type in ("dialogue", "paren"):
                 last_type = "action"
 
@@ -222,7 +222,7 @@ def convert_fiction(doc, scene_files):
             if clean.startswith("ЗАТЕМНЕНИЕ") or clean == "CUT TO:":
                 continue
 
-            # Заголовок сцены
+            # Scene heading
             if s.startswith("# "):
                 text = s[2:].strip()
                 scene_count += 1
@@ -257,7 +257,7 @@ def convert_fiction(doc, scene_files):
                 last_type = "slug"
                 continue
 
-            # Ремарка
+            # Parenthetical
             if s.startswith("*(") and s.endswith(")*"):
                 inner = s[1:-1].strip()
                 p = doc.add_paragraph()
@@ -268,7 +268,7 @@ def convert_fiction(doc, scene_files):
                 last_type = "paren"
                 continue
 
-            # Курсив
+            # Italic
             if s.startswith("*") and s.endswith("*") and not s.startswith("**"):
                 inner = s[1:-1].strip()
                 if inner.startswith("(") and inner.endswith(")"):
@@ -287,7 +287,7 @@ def convert_fiction(doc, scene_files):
                     last_type = "action"
                 continue
 
-            # Имя персонажа
+            # Character name
             if is_character_line(s):
                 name, paren = extract_character_name(s)
                 p = doc.add_paragraph()
@@ -298,11 +298,11 @@ def convert_fiction(doc, scene_files):
                 last_type = "character"
                 continue
 
-            # Блок цитаты (заметки, палитра) — пропускаем
+            # Blockquote (notes, palette) — skip
             if s.startswith("> "):
                 continue
 
-            # Обычный текст
+            # Plain text
             text = re.sub(r'\*\*\*(.*?)\*\*\*', r'\1', s)
             text = re.sub(r'\*\*(.*?)\*\*', r'\1', text)
             text = re.sub(r'\*(.*?)\*', r'\1', text)
@@ -325,11 +325,11 @@ def convert_fiction(doc, scene_files):
 
 
 # ============================================================
-#  ДОКУМЕНТАЛЬНЫЙ ФОРМАТ (AV-script)
+#  DOCUMENTARY FORMAT (AV-script)
 # ============================================================
 
 def set_cell_font(cell, text, bold=False, italic=False, size=None):
-    """Установить текст и шрифт в ячейке таблицы."""
+    """Set text and font in a table cell."""
     cell.text = ""
     p = cell.paragraphs[0]
     p.paragraph_format.space_after = Pt(2)
@@ -343,13 +343,13 @@ def set_cell_font(cell, text, bold=False, italic=False, size=None):
 
 
 def set_cell_rich(cell, text, size=None):
-    """Парсит markdown-разметку (**bold**, *italic*) в ячейке."""
+    """Parse markdown markup (**bold**, *italic*) in a table cell."""
     cell.text = ""
     p = cell.paragraphs[0]
     p.paragraph_format.space_after = Pt(2)
     p.paragraph_format.space_before = Pt(2)
 
-    # Разбиваем по **bold** и *italic* маркерам
+    # Split by **bold** and *italic* markers
     parts = re.split(r'(\*\*.*?\*\*|\*.*?\*)', text)
     for part in parts:
         if not part:
@@ -367,11 +367,11 @@ def set_cell_rich(cell, text, size=None):
 
 
 def parse_md_table(lines, start_idx):
-    """Парсит markdown-таблицу начиная с заголовка | VIDEO | AUDIO |.
-    Возвращает (rows, end_idx). rows = [(video_text, audio_text), ...]"""
+    """Parse markdown table starting from | VIDEO | AUDIO | header.
+    Returns (rows, end_idx). rows = [(video_text, audio_text), ...]"""
     rows = []
     i = start_idx
-    # Пропустить заголовок и разделитель
+    # Skip header and separator
     if i < len(lines) and "|" in lines[i]:
         i += 1  # | VIDEO | AUDIO |
     if i < len(lines) and re.match(r'\|[-\s|]+\|', lines[i]):
@@ -403,12 +403,12 @@ def convert_documentary(doc, scene_files):
         while i < len(file_lines):
             s = file_lines[i].strip()
 
-            # Пропуск
+            # Skip
             if not s or s == "---" or s.startswith("<!--") or s.startswith("<div"):
                 i += 1
                 continue
 
-            # Заголовок блока
+            # Block heading
             if s.startswith("# "):
                 text = s[2:].strip()
                 block_count += 1
@@ -422,7 +422,7 @@ def convert_documentary(doc, scene_files):
                 i += 1
                 continue
 
-            # H2: титр-разделитель
+            # H2: title card separator
             if s.startswith("## "):
                 text = s[3:].strip().replace("**", "").replace("*", "")
                 p = doc.add_paragraph()
@@ -433,19 +433,19 @@ def convert_documentary(doc, scene_files):
                 i += 1
                 continue
 
-            # Режиссёрская заметка — пропускаем
+            # Director's note — skip
             if s.startswith("> "):
                 i += 1
                 continue
 
-            # Таблица VIDEO | AUDIO
+            # VIDEO | AUDIO table
             if "|" in s and re.search(r'VIDEO|AUDIO|video|audio', s, re.IGNORECASE):
                 rows, end_idx = parse_md_table(file_lines, i)
                 if rows:
                     table = doc.add_table(rows=len(rows), cols=2)
                     table.style = "Table Grid"
 
-                    # Ширина колонок: VIDEO 55%, AUDIO 45%
+                    # Column widths: VIDEO 55%, AUDIO 45%
                     sec = doc.sections[-1]
                     avail_width = sec.page_width - sec.left_margin - sec.right_margin
                     video_w = int(avail_width * 0.55)
@@ -459,14 +459,14 @@ def convert_documentary(doc, scene_files):
                         set_cell_rich(video_cell, video)
                         set_cell_rich(audio_cell, audio)
 
-                    # Отступ после таблицы
+                    # Spacing after table
                     p = doc.add_paragraph()
                     p.paragraph_format.space_before = Pt(6)
 
                 i = end_idx
                 continue
 
-            # Обычный текст (авторские заметки между таблицами)
+            # Plain text (author's notes between tables)
             text = re.sub(r'\*\*(.*?)\*\*', r'\1', s)
             text = re.sub(r'\*(.*?)\*', r'\1', text)
             p = doc.add_paragraph()
@@ -490,7 +490,7 @@ def main():
 
     scene_files = sorted(scenes_dir.glob("*.md"))
     if not scene_files:
-        print("Нет .md файлов в scenes/")
+        print("No .md files in scenes/")
         sys.exit(1)
 
     next_num = find_next_version(proj_name)
@@ -504,22 +504,22 @@ def main():
     style.paragraph_format.space_before = Pt(0)
     style.paragraph_format.line_spacing = 1.0
 
-    print(f"Тип проекта: {project_type}")
+    print(f"Project type: {project_type}")
 
     if project_type == "документальный":
         count = convert_documentary(doc, scene_files)
-        label = "Блоков"
+        label = "Blocks"
     else:
         count = convert_fiction(doc, scene_files)
-        label = "Сцен"
+        label = "Scenes"
 
     add_page_numbers(doc)
 
     doc.save(str(dst))
-    print(f"Сохранено: {dst}")
-    print(f"Файлов: {len(scene_files)}")
+    print(f"Saved: {dst}")
+    print(f"Files: {len(scene_files)}")
     print(f"{label}: {count}")
-    print(f"Параграфов: {len(doc.paragraphs)}")
+    print(f"Paragraphs: {len(doc.paragraphs)}")
 
 
 if __name__ == "__main__":

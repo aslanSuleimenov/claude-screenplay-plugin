@@ -8,7 +8,82 @@ Commands read this file to validate scene function and flag missing structural o
 
 ## How to use
 
-For each genre: **Promise** = what the audience expects to feel. **Must happen** = structural events that cannot be skipped. **Forbidden** = what breaks the contract.
+For each genre: **Promise** = what the audience expects to feel. **Must happen** = structural events that cannot be skipped. **Forbidden** = what breaks the contract. **Series engine** = the repeatable mechanism that generates a new conflict each episode while the season arc keeps moving. Used by script-doctor for series format analysis.
+
+---
+
+## Series Engine Theory
+
+This section defines the principles behind series engines. Genre-specific engines are listed under each genre below.
+
+### Three layers of engine
+
+A series operates on three distinct layers. Conflating them is the most common structural error in TV writing.
+
+| Layer | What it does | Scope | Example (Breaking Bad) |
+|-------|-------------|-------|----------------------|
+| **Episode engine** | Generates the conflict within a single episode | One episode | A new cook, a new deal, a new threat to the operation |
+| **Season engine** | Drives the arc of one season toward its climax | One season | Walt builds an empire (S1: survival → S5: downfall) |
+| **Series engine** | The repeatable format that can generate multiple seasons | Entire run | A high-school teacher's transformation into a drug lord — each season a new moral floor |
+
+A healthy series needs all three working. A procedural can survive on episode engine alone. A serialized show needs season + series engines. A hybrid needs all three.
+
+### Engine types
+
+| Type | How it generates episodes | Audience entry | Examples |
+|------|--------------------------|----------------|---------|
+| **Procedural** | External catalyst each episode (case, patient, monster) | Any episode | CSI, House, Law & Order |
+| **Serialized** | Continuous narrative — each episode is a chapter | Must watch in order | Breaking Bad, Game of Thrones |
+| **Hybrid** | Self-contained episode surface + serialized character/plot underneath | Ideally in order, but episodic hook helps | The Good Wife, Supernatural, Fargo |
+| **Relationship-driven** | Character dynamics generate situations | Flexible | The Office, Modern Family, Friends |
+| **Anthology** | Shared format/theme transfers to new cast/setting each season | Any season | Black Mirror, White Lotus, True Detective |
+| **Limited / Mini-series** | No episode engine needed — one continuous story in 6–10 parts | Must watch in order | Chernobyl, Band of Brothers |
+
+### The irreconcilable difference
+
+The strongest engines are built on a relationship where the core characters fundamentally want incompatible things and can never fully resolve that tension. This built-in irreconcilability is what makes an engine self-renewing.
+
+- Walt wants power. Jesse wants connection. (Breaking Bad)
+- Carrie wants the truth. Saul wants control. (Homeland)
+- Don wants to be someone else. Betty wants the man she married. (Mad Men)
+
+If the core tension can be resolved in a single conversation — the engine is broken.
+
+### Central dramatic argument (Craig Mazin / Scriptnotes)
+
+Every series argues a thesis the audience can agree or disagree with. Structure is a symptom of the characters' relationship to this argument.
+
+- "The system is designed to crush the individual" (The Wire)
+- "Chemistry is the study of transformation" (Breaking Bad)
+- "People don't change — they just become more of what they already are" (Mad Men)
+
+The argument is not stated in the pilot. It is demonstrated across every episode. If the engine is the mechanism, the argument is the fuel.
+
+### Engine health tests
+
+1. **5-logline test** (Orchard Project): generate five "the one where..." episode ideas in ten minutes. If you can't — the engine isn't running.
+2. **10-episode pitch test** (Greenlight Coverage): if you can't pitch ten new episodes off your first draft — rethink the engine.
+3. **Pilot = mirror test**: the pilot demonstrates the same engine as all subsequent episodes, not just the world setup.
+4. **Audience question test**: after each episode, can the viewer articulate one question that makes them press "next episode"?
+
+### Engine failure modes
+
+| Failure | Symptom | Example |
+|---------|---------|---------|
+| **No plot movement** | Characters return to starting positions every episode | Late-run sitcoms that become "hangout shows" |
+| **Trait inflation** | Character traits cranked to 11 instead of generating new situations | Flanderization (The Simpsons) |
+| **Engine without endpoint** | The mechanism can generate episodes forever but has no built-in destination | Lost (after S2), BSG |
+| **Resolved tension** | The core conflict that powered the engine gets solved too early | Shows that "jump the shark" after the couple gets together |
+| **Formula fatigue** | The procedural pattern becomes predictable; no serialized layer to compensate | Late-run procedurals (NCIS S15+) |
+
+### Sources
+
+- Neil Landau, *The TV Showrunner's Roadmap* (Ch. 4: "Fueling Your Story Engine")
+- Jamie Nash, *Save the Cat! Writes for TV* (TV Franchise Types)
+- Pamela Douglas, *Writing the TV Drama Series* / *Искусство сериала*
+- John Truby, *Anatomy of Genres* (2022)
+- Александр Молчанов, *Сценарий телесериала*
+- Craig Mazin, Scriptnotes podcast ("Central Dramatic Argument")
 
 ---
 
@@ -23,6 +98,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** Hero wins without sacrifice. Stakes plateau in Act II.
 
+**Series engine:** Each episode — a new mission whose cost escalates. The protagonist's body or moral compass erodes; the season arc tracks how much they can lose before the competence no longer compensates.
+
 ---
 
 ## Adventure
@@ -35,6 +112,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - The return — and the world at home looks different now
 
 **Forbidden:** Hero returns unchanged. The journey is only external.
+
+**Series engine:** Each episode — a new territory or challenge that strips away one more certainty the traveler brought from home. The season arc is the distance between who left and who arrives.
 
 ---
 
@@ -49,6 +128,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** Chronological parade of achievements. No internal conflict.
 
+**Series engine:** Each episode — a new era or chapter where the defining wound produces a new consequence. The season arc traces how the private person diverges from the public figure.
+
 ---
 
 ## Black Comedy
@@ -61,6 +142,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - The ending is funny and bleak simultaneously — no clean rescue
 
 **Forbidden:** The protagonist escapes the absurdity unscathed. Sentimentality that resolves the darkness.
+
+**Series engine:** Each episode — a new attempt to fix or escape the absurd system that makes everything worse. The season arc is the system tightening; the comedy is that the protagonist keeps using the same broken logic.
 
 ---
 
@@ -75,6 +158,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** Stakes are never real. The protagonist is passive — chaos happens around them.
 
+**Series engine:** Each episode — a new situation triggered by the protagonist's unchanged flaw. The flaw's cost compounds; the season arc is the accumulating damage that finally forces change.
+
 ---
 
 ## Coming-of-Age
@@ -87,6 +172,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - A choice — not forced — where the protagonist acts from their new self
 
 **Forbidden:** The protagonist learns the lesson but doesn't pay for it. Adults solve the problem.
+
+**Series engine:** Each episode — a new threshold or "first" that destroys one more childhood belief. The season arc covers the last stretch of a self that will not exist again.
 
 ---
 
@@ -101,6 +188,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** Crime succeeds without cost. The world's rules are inconsistent.
 
+**Series engine:** Each episode — a new job or case where the rules of the criminal world tighten. The season arc tracks how deep the protagonist is in and how few exits remain.
+
 ---
 
 ## Drama
@@ -113,6 +202,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - The ending shows what the pressure produced — change or the refusal to change
 
 **Forbidden:** The protagonist's inner life is stated rather than shown. Resolution comes from outside.
+
+**Series engine:** Each episode — a new pressure point that exposes a deeper layer of what the protagonist won't admit. The season arc is the accumulation of pressure until the internal truth can no longer be contained.
 
 ---
 
@@ -127,6 +218,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** Magic solves the emotional problem. Rules are invented to serve plot.
 
+**Series engine:** Each episode — a new trial or quest where the other world's rules test the hero's real-world wound from a different angle. The season arc is the wound transforming into power or destroying the hero.
+
 ---
 
 ## Heist
@@ -139,6 +232,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - The crew dynamic fractures under pressure — trust is the real subject
 
 **Forbidden:** The plan works exactly as described. The crew is interchangeable.
+
+**Series engine:** Each episode — a new phase of the plan where trust frays further. The season arc is the heist itself: setup → recruitment → rehearsal → execution → fallout. Each phase generates its own betrayal.
 
 ---
 
@@ -153,6 +248,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** History is backdrop. The protagonist is carried by events rather than choosing.
 
+**Series engine:** Each episode — a new historical event that forces a more impossible personal choice. The season arc follows the protagonist through an era; each event narrows their options and raises the moral cost.
+
 ---
 
 ## Horror
@@ -165,6 +262,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - The "final" defeat costs something that cannot be recovered
 
 **Forbidden:** The threat is explained away. The protagonist wins cleanly.
+
+**Series engine:** Each episode — a new manifestation of the threat or a new victim. Each survival costs more; the season arc is the shrinking circle of safety until the protagonist understands the threat's true nature.
 
 ---
 
@@ -179,6 +278,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** Sentimentality substituted for earned emotion. Coincidence as resolution.
 
+**Series engine:** Each episode — a new complication that raises the price of love or devotion. The season arc is the pressure building toward a sacrifice that either breaks or redefines the central relationship.
+
 ---
 
 ## Musical
@@ -191,6 +292,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - The final number reflects how the protagonist has changed
 
 **Forbidden:** Songs that pause the story. Numbers that repeat what dialogue already said.
+
+**Series engine:** Each episode — a new emotional crisis too large for speech that erupts into song. The season arc tracks the protagonist's voice changing — literally and figuratively — as the songs reflect who they are becoming.
 
 ---
 
@@ -205,6 +308,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** The solution depends on information withheld from the audience. The detective is infallible.
 
+**Series engine:** Each episode — a new case or layer of the central mystery that points back to the investigator's blind spot. The season arc is the overarching case that slowly reveals the detective must investigate themselves.
+
 ---
 
 ## Noir
@@ -217,6 +322,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - The ending is not rescue — it is reckoning
 
 **Forbidden:** The protagonist is innocent. The ending restores order.
+
+**Series engine:** Each episode — a new compromise that pulls the protagonist deeper into the corrupt system. Each exit gets smaller; the season arc tracks the distance between who they were and who they've become.
 
 ---
 
@@ -231,6 +338,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** The journey is purely external. The destination is the point.
 
+**Series engine:** Each episode — a new encounter on the road that mirrors what the protagonist fled from. The season arc is the road itself: the further from home, the harder it becomes to tell whether they're running away or running toward.
+
 ---
 
 ## Romantic Comedy
@@ -243,6 +352,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - A grand gesture that is specific to these two people, not interchangeable
 
 **Forbidden:** The obstacle is a misunderstanding that one conversation would solve. The ending is declared, not earned.
+
+**Series engine:** Each episode — a new obstacle born from the protagonist's flaw that tests the relationship. The season arc is the flaw's accumulated damage: either the protagonist changes or the relationship breaks.
 
 ---
 
@@ -257,6 +368,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** Love conquers all without consequence. One character exists only to love the other.
 
+**Series engine:** Each episode — a new test of whether love can survive an escalating cost. The season arc is the central question: what remains of love after everything it demands?
+
 ---
 
 ## Sci-Drama
@@ -269,6 +382,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - The resolution is human, not technological
 
 **Forbidden:** The technology is backdrop. The sci-fi element solves the emotional problem.
+
+**Series engine:** Each episode — a new implication of the premise that forces a human choice the present can't ask directly. The season arc explores the premise's deepest consequence: what happens when the technology changes who we are, not just what we can do.
 
 ---
 
@@ -283,6 +398,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** Technological inconsistency. The premise is abandoned when inconvenient.
 
+**Series engine:** Each episode — a new consequence of the changed premise that tightens the world's logic. The season arc follows the premise to its endpoint: what the new rules actually mean for the people living under them.
+
 ---
 
 ## Sport
@@ -295,6 +412,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - The final competition is earned by what the protagonist has resolved or accepted
 
 **Forbidden:** Winning the game resolves everything. The opponent is the only obstacle.
+
+**Series engine:** Each episode — a new match or competition where the internal obstacle manifests in the game. The season arc tracks the gap between winning on the field and losing off it — until the two can no longer stay separate.
 
 ---
 
@@ -309,6 +428,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** The spy is only competent. The divided life leaves no mark.
 
+**Series engine:** Each episode — a new mission that widens the gap between the spy's loyalties. The season arc is the double life cracking: the protagonist serves two masters until the cost of loyalty to one becomes betrayal of the other.
+
 ---
 
 ## Thriller
@@ -321,6 +442,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - The revelation reframes what the protagonist — and audience — thought they understood
 
 **Forbidden:** The threat is random. The protagonist is passive. The ending explains everything comfortably.
+
+**Series engine:** Each episode — a new revelation that reframes the threat. The season arc is paranoia compounding: each answer generates two new questions, and the protagonist trusts less with every episode until they can't tell ally from enemy.
 
 ---
 
@@ -335,6 +458,8 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 
 **Forbidden:** War is only exciting. The cost is abstract. Characters are interchangeable.
 
+**Series engine:** Each episode — a new operation or situation that tests one more bond in the group. The season arc counts the cost: each episode someone changes, breaks, or is lost — and the group that remains is not the group that started.
+
 ---
 
 ## Western
@@ -347,3 +472,5 @@ For each genre: **Promise** = what the audience expects to feel. **Must happen**
 - An ending that acknowledges what is being buried with the old world
 
 **Forbidden:** The hero rides into a future. The violence has no weight.
+
+**Series engine:** Each episode — a new conflict where the old code fails against the changing world. The season arc is the frontier closing: each episode the protagonist's way of life works a little less, until they must choose between adapting and disappearing.

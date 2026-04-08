@@ -1,307 +1,307 @@
-# Конвертер MD → DOCX для сценария
+# MD → DOCX Screenplay Converter
 
-## Что делает
+## What it does
 
-Читает все `.md` файлы из папки `scenes/` по алфавиту, склеивает на лету и конвертирует в `.docx`.
+Reads all `.md` files from the `scenes/` folder in alphabetical order, concatenates them on the fly, and converts to `.docx`.
 
-Автоматически определяет тип проекта из CLAUDE.md (`- **Тип:** художественный` или `документальный`) и применяет соответствующий формат.
+Automatically detects the project type from CLAUDE.md (`- **Тип:** художественный` or `документальный`) and applies the corresponding format.
 
-## Запуск
+## Usage
 
 ```bash
 pip install python-docx
 python converter_MD_DOCX/md_to_docx.py
 ```
 
-Результат: `versions/<имя_папки_проекта>_vNN.docx`
+Output: `versions/<project_folder_name>_vNN.docx`
 
-Можно задать имя файла явно:
+You can specify the filename explicitly:
 
 ```bash
-python converter_MD_DOCX/md_to_docx.py МойСценарий_v2
+python converter_MD_DOCX/md_to_docx.py MyScreenplay_v2
 ```
 
-## Папки проекта
+## Project folders
 
-| Папка | Назначение |
-|-------|-----------|
-| `scenes/` | Сцены/блоки в markdown (нумерация двузначная: 01, 02, ...) |
-| `versions/` | Выходные DOCX-файлы (создаётся автоматически) |
-| `analytics/` | Аналитика, compass_artifact.md |
-| `converter_MD_DOCX/` | Конвертер и эта документация |
+| Folder | Purpose |
+|--------|---------|
+| `scenes/` | Scenes/blocks in markdown (two-digit numbering: 01, 02, ...) |
+| `versions/` | Output DOCX files (created automatically) |
+| `analytics/` | Analytics, compass_artifact.md |
+| `converter_MD_DOCX/` | Converter and this documentation |
 
-## Зависимости
+## Dependencies
 
 - Python 3.8+
 - python-docx
 
 ---
 
-# Художественный формат (screenplay)
+# Fiction format (screenplay)
 
-Стандартный однокол​оночный формат киносценария.
+Standard single-column screenplay format.
 
-## Структура файла сцены
+## Scene file structure
 
 ```markdown
-# Сцена XX: Название сцены
+# Scene XX: Scene Title
 
-ИНТ./НАТ. ЛОКАЦИЯ — ВРЕМЯ СУТОК
+INT./EXT. LOCATION — TIME OF DAY
 
-Описание действия. Настоящее время. Короткие абзацы, максимум 4 строки.
+Action description. Present tense. Short paragraphs, 4 lines max.
 
-ИМЯ ПЕРСОНАЖА
-*(ремарка)*
-Текст диалога.
+CHARACTER NAME
+*(parenthetical)*
+Dialogue text.
 
-ДРУГОЙ ПЕРСОНАЖ
-Текст диалога без ремарки.
+ANOTHER CHARACTER
+Dialogue text without parenthetical.
 
-Следующий блок действия.
+Next action block.
 ```
 
-## Элементы и как их писать
+## Elements and how to write them
 
-### Заголовок сцены
+### Scene heading
 ```
-# Сцена 12: Закрытие чайханы
+# Scene 12: Closing the Teahouse
 ```
-- Всегда `#` (H1)
-- Конвертер ставит UPPERCASE автоматически
+- Always `#` (H1)
+- Converter applies UPPERCASE automatically
 
-### Место и время (slug line)
+### Slug line
 ```
-ИНТ. КАФЕ — ДЕНЬ
+INT. CAFE — DAY
 ```
-- Обычный текст, без форматирования
-- ИНТ. или НАТ. обязательно
-- Время: ДЕНЬ, НОЧЬ, УТРО, ВЕЧЕР
-- Для движения: `ИНТ./НАТ. МАШИНА — НОЧЬ (В ДВИЖЕНИИ)`
+- Plain text, no formatting
+- INT. or EXT. required
+- Time: DAY, NIGHT, MORNING, EVENING
+- For moving vehicles: `INT./EXT. CAR — NIGHT (MOVING)`
 
-### Описание действия
+### Action description
 ```
-Мариам стоит за стойкой. Руки в муке. Фартук.
+Mariam stands behind the counter. Hands in flour. Apron.
 ```
-- Обычный текст, без форматирования
-- Настоящее время, третье лицо
-- Максимум 4 строки в абзаце
-- Первое появление персонажа — имя ЗАГЛАВНЫМИ: `МАРИАМ (45) наливает чай`
-- НЕ использовать кинотермины (КРУПНЫЙ ПЛАН, СРЕДНИЙ ПЛАН и т.д.)
+- Plain text, no formatting
+- Present tense, third person
+- 4 lines max per paragraph
+- First appearance of a character — name in CAPS: `MARIAM (45) pours tea`
+- DO NOT use camera directions (CLOSE-UP, MEDIUM SHOT, etc.)
 
-### Имя персонажа перед репликой
+### Character name before dialogue
 ```
-МАРИАМ
+MARIAM
 ```
-- Обычный текст, ЗАГЛАВНЫМИ буквами
-- На отдельной строке
+- Plain text, ALL CAPS
+- On a separate line
 
-### Имя с ремаркой
+### Name with parenthetical
 ```
-МАРИАМ (тихо)
+MARIAM (quietly)
 ```
-или
+or
 ```
-МАРИАМ
-*(тихо)*
+MARIAM
+*(quietly)*
 ```
-Оба варианта работают. Ремарка — коротко (1-3 слова): тихо, шёпотом, в сторону, V.O., O.S.
+Both formats work. Parenthetical — keep short (1-3 words): quietly, whispered, aside, V.O., O.S.
 
-### Диалог
+### Dialogue
 ```
-Текст диалога персонажа.
+Character's dialogue text.
 ```
-- Обычный текст сразу после имени (или ремарки)
-- Конвертер сам определяет: если строка идёт после имени → это диалог → ставит отступ
-- Между именем и диалогом НЕ должно быть пустой строки
+- Plain text immediately after the name (or parenthetical)
+- Converter auto-detects: if a line follows a name → it's dialogue → applies indent
+- NO blank line between name and dialogue
 
-### Надпись на экране / титр
+### On-screen text / title card
 ```
-## «ТРИ НЕДЕЛИ СПУСТЯ»
+## "THREE WEEKS LATER"
 ```
-- `##` (H2) — по центру, жирный, крупнее
+- `##` (H2) — centered, bold, larger
 
-или курсивом:
+or italic:
 ```
-*Мариам Ташматова погибла через два часа после оглашения приговора.*
+*Mariam Tashmatova died two hours after the verdict was announced.*
 ```
-- `*...*` — по центру, курсив
+- `*...*` — centered, italic
 
-### Закадровый голос / телефон
+### Voice-over / phone
 ```
-МАРАТ (V.O.)
-Текст реплики.
+MARAT (V.O.)
+Dialogue text.
 ```
-Ремарки: V.O. (voice over), O.S. (off screen), в трубке, за кадром.
+Parentheticals: V.O. (voice over), O.S. (off screen), on phone, off camera.
 
-### Палитра / режиссёрские заметки
+### Palette / director's notes
 ```
-> **ПАЛИТРА:** Монохром — чёрный, графитовый, стальной.
+> **PALETTE:** Monochrome — black, graphite, steel.
 ```
-- Блок цитаты `>` — конвертер ставит мелкий курсив (10pt)
-- Использовать редко, только для визуальных указаний
+- Blockquote `>` — converter renders as small italic (10pt)
+- Use sparingly, only for visual direction
 
-### Смена локации внутри сцены
+### Location change within a scene
 ```
 ---
 ```
-- Горизонтальная линия — конвертер пропускает, только для читаемости в редакторе
+- Horizontal rule — converter skips it, for readability in the editor only
 
-## Пробелы между блоками
+## Spacing between blocks
 
-### Правильно:
+### Correct:
 ```
-Описание действия.
+Action description.
 
-ПЕРСОНАЖ
-Диалог.
+CHARACTER
+Dialogue.
 
-ДРУГОЙ ПЕРСОНАЖ
-*(ремарка)*
-Диалог.
+ANOTHER CHARACTER
+*(parenthetical)*
+Dialogue.
 
-Описание следующего действия.
-```
-
-### Неправильно:
-```
-Описание действия.
-
-
-ПЕРСОНАЖ
-
-Диалог.
+Next action description.
 ```
 
-Правила:
-- ОДНА пустая строка между блоками
-- НЕТ пустой строки между именем и диалогом
-- НЕТ пустой строки между именем и ремаркой
-- НЕТ двойных/тройных пустых строк
+### Incorrect:
+```
+Action description.
 
-## Чего НЕ писать в MD-файлах
 
-- `ЗАТЕМНЕНИЕ.` — не нужно
-- `CUT TO:` — не нужно
-- `КРУПНЫЙ ПЛАН:` — описывай действие
-- `КАМЕРА ДВИЖЕТСЯ` — не использовать
-- Числительные цифрами в диалогах — пиши словами: «пятнадцать», не «15»
+CHARACTER
 
-## Формат выходного DOCX (художественный)
+Dialogue.
+```
 
-| Параметр | Значение |
-|----------|----------|
-| Шрифт | Courier New 12pt |
-| Страница | A4 |
-| Поля | верх 1", низ 0.5", лево 1.5", право 1" |
-| Интервал | одинарный |
-| Имя персонажа | отступ 2" слева, bold |
-| Ремарка | отступ 1.5" слева, italic |
-| Диалог | отступ 1" слева |
+Rules:
+- ONE blank line between blocks
+- NO blank line between name and dialogue
+- NO blank line between name and parenthetical
+- NO double/triple blank lines
+
+## What NOT to write in MD files
+
+- `FADE OUT.` — not needed
+- `CUT TO:` — not needed
+- `CLOSE-UP:` — describe the action instead
+- `CAMERA MOVES` — do not use
+- Numerals in dialogue — spell out: "fifteen", not "15"
+
+## Fiction DOCX output format
+
+| Parameter | Value |
+|-----------|-------|
+| Font | Courier New 12pt |
+| Page | A4 |
+| Margins | top 1", bottom 0.5", left 1.5", right 1" |
+| Spacing | single |
+| Character name | 2" left indent, bold |
+| Parenthetical | 1.5" left indent, italic |
+| Dialogue | 1" left indent |
 | Slug line | uppercase |
-| Заголовок сцены | bold, uppercase |
+| Scene heading | bold, uppercase |
 
 ---
 
-# Документальный формат (AV-script)
+# Documentary format (AV-script)
 
-Двухкол​оночный формат: VIDEO слева, AUDIO справа.
+Two-column format: VIDEO on the left, AUDIO on the right.
 
-## Структура файла блока
+## Block file structure
 
 ```markdown
-# Блок 01: Название блока
+# Block 01: Block Title
 
 | VIDEO | AUDIO |
 |-------|-------|
-| WS. Горы, рассвет. | *(NAT SOUND: ветер, птицы)* |
-| MS. Пастух ведёт стадо по тропе. | **V/O:** В долине Суусамыр пастухи выходят до рассвета. |
-| CU. Лицо Айбека. Морщины, загар. | **SOT АЙБЕК:** «Отец привёл меня сюда, когда мне было семь.» |
-| **SUPER:** Айбек Тургунов, пастух, 43 года | |
-| B-ROLL: юрты, дым из тундука, кипящий казан. | *(МУЗЫКА: комуз, тихо)* |
-| | *(SFX: треск огня)* |
+| WS. Mountains, sunrise. | *(NAT SOUND: wind, birds)* |
+| MS. Shepherd leads the flock along the trail. | **V/O:** In the Suusamyr valley, shepherds head out before dawn. |
+| CU. Aibek's face. Wrinkles, sun-weathered skin. | **SOT AIBEK:** "My father brought me here when I was seven." |
+| **SUPER:** Aibek Turgunov, shepherd, 43 years old | |
+| B-ROLL: yurts, smoke from the tunduk, boiling kazan. | *(MUSIC: komuz, soft)* |
+| | *(SFX: crackling fire)* |
 
-Авторский комментарий или переход между темами — обычный текст вне таблицы.
+Author's commentary or transition between themes — plain text outside the table.
 ```
 
-## Элементы и обозначения
+## Elements and labels
 
-### Заголовок блока
+### Block heading
 ```
-# Блок 01: Пастухи Суусамыра
+# Block 01: Shepherds of Suusamyr
 ```
-- `#` (H1), конвертер ставит UPPERCASE
-- Термин «Блок» вместо «Сцена» — документалка не привязана к локациям
+- `#` (H1), converter applies UPPERCASE
+- "Block" instead of "Scene" — documentary is not tied to locations
 
-### Таблица VIDEO | AUDIO
+### VIDEO | AUDIO table
 ```
 | VIDEO | AUDIO |
 |-------|-------|
-| описание кадра | описание звука |
+| shot description | sound description |
 ```
-- **Обязательный** формат для всего содержания блока
-- Каждая строка = один кадр или элемент монтажа
-- Левая колонка — что **видит** зритель
-- Правая колонка — что **слышит** зритель
+- **Required** format for all block content
+- Each row = one shot or editing element
+- Left column — what the viewer **sees**
+- Right column — what the viewer **hears**
 
-### Видеоколонка (VIDEO)
+### Video column (VIDEO)
 
-**Размеры планов:**
-| Сокращение | Значение |
-|-----------|----------|
-| ECU | Сверхкрупный (глаза, руки) |
-| CU | Крупный (лицо) |
-| MS | Средний (по пояс) |
-| WS | Общий (фигура целиком + окружение) |
-| EWS | Дальний (пейзаж) |
-| AERIAL | Аэросъёмка |
+**Shot sizes:**
+| Abbreviation | Meaning |
+|-------------|---------|
+| ECU | Extreme close-up (eyes, hands) |
+| CU | Close-up (face) |
+| MS | Medium shot (waist up) |
+| WS | Wide shot (full figure + surroundings) |
+| EWS | Extreme wide shot (landscape) |
+| AERIAL | Aerial shot |
 
-**Типы контента в видеоколонке:**
-- `CU. Лицо Айбека.` — описание кадра с размером плана
-- `B-ROLL: юрты, дым, казан.` — перебивка
-- `**SUPER:** Айбек, 43 года` — титр поверх видео (жирным)
-- `АРХИВ: хроника 1970-х, стадо на перевале.` — архивные кадры
-- `ГРАФИКА: карта маршрута.` — инфографика, анимация
-- Пустая ячейка `|  |` — звук продолжается на том же видео
+**Content types in video column:**
+- `CU. Aibek's face.` — shot description with size
+- `B-ROLL: yurts, smoke, kazan.` — cutaway footage
+- `**SUPER:** Aibek, 43 years old` — text overlay on video (bold)
+- `ARCHIVE: 1970s footage, herd on the mountain pass.` — archival footage
+- `GRAPHICS: route map.` — infographics, animation
+- Empty cell `|  |` — audio continues over the same video
 
-### Аудиоколонка (AUDIO)
+### Audio column (AUDIO)
 
-**Типы контента:**
-- `**V/O:** Текст закадрового голоса.` — закадровый текст диктора/автора (жирная метка)
-- `**SOT ИМЯ:** «Прямая речь.»` — синхрон, интервью (жирная метка + имя)
-- `*(NAT SOUND: ветер, птицы)*` — естественный звук (курсив в скобках)
-- `*(SFX: выстрел)*` — звуковой эффект (курсив в скобках)
-- `*(МУЗЫКА: комуз, тихо)*` — музыка (курсив в скобках)
-- Пустая ячейка `|  |` — тишина или видео без звука
+**Content types:**
+- `**V/O:** Voice-over narration text.` — narrator/author voice-over (bold label)
+- `**SOT NAME:** "Direct quote."` — sync sound, interview (bold label + name)
+- `*(NAT SOUND: wind, birds)*` — natural sound (italic in parentheses)
+- `*(SFX: gunshot)*` — sound effect (italic in parentheses)
+- `*(MUSIC: komuz, soft)*` — music (italic in parentheses)
+- Empty cell `|  |` — silence or video without sound
 
-### Текст вне таблицы
+### Text outside the table
 ```
-Авторский комментарий между блоками таблицы.
+Author's commentary between table blocks.
 ```
-- Обычный текст между таблицами — авторские заметки, переходы
-- Не является частью AV-script, служит для организации
+- Plain text between tables — author's notes, transitions
+- Not part of the AV-script, used for organization
 
-### Режиссёрские заметки
+### Director's notes
 ```
-> **ЗАМЕТКА:** Снимать на рассвете, естественный свет.
+> **NOTE:** Shoot at sunrise, natural light.
 ```
-- Блок цитаты `>` — не попадает в финальный DOCX
-- Для технических пометок, не для зрителя
+- Blockquote `>` — not included in the final DOCX
+- For technical notes, not for the viewer
 
-### Надпись на экране
+### On-screen text
 ```
-## «ТРИ ГОДА СПУСТЯ»
+## "THREE YEARS LATER"
 ```
-- `##` (H2) — титр-разделитель, по центру
+- `##` (H2) — title card separator, centered
 
-## Формат выходного DOCX (документальный)
+## Documentary DOCX output format
 
-| Параметр | Значение |
-|----------|----------|
-| Шрифт | Courier New 12pt |
-| Страница | A4, альбомная ориентация |
-| Поля | верх 1", низ 0.5", лево 1", право 1" |
-| Таблица | две колонки, VIDEO 55%, AUDIO 45% |
-| Заголовок блока | bold, uppercase, перед таблицей |
-| V/O, SOT | bold метка, обычный текст |
-| NAT SOUND, SFX, МУЗЫКА | italic |
-| SUPER | bold в видеоколонке |
+| Parameter | Value |
+|-----------|-------|
+| Font | Courier New 12pt |
+| Page | A4, landscape orientation |
+| Margins | top 1", bottom 0.5", left 1", right 1" |
+| Table | two columns, VIDEO 55%, AUDIO 45% |
+| Block heading | bold, uppercase, before the table |
+| V/O, SOT | bold label, regular text |
+| NAT SOUND, SFX, MUSIC | italic |
+| SUPER | bold in video column |

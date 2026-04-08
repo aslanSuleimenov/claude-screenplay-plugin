@@ -202,19 +202,7 @@ def main():
     scenes_dir = BASE / "scenes"
     scenes_dir.mkdir(exist_ok=True)
 
-    title_page = scenes_dir / "00_title.md"
-    title_page.write_text(
-        f"# {title.upper()}\n\n"
-        f"**{genre.upper()}**\n\n"
-        f"*{proj_type}*\n\n"
-        f"{logline}\n\n"
-        f"Written by: —\n\n"
-        f"{date.today().year}\n",
-        encoding="utf-8"
-    )
-
     print(f"\n✓ CLAUDE.md filled in (type: {proj_type})")
-    print(f"✓ scenes/00_title.md created")
     print(f"\nDone. Launch Claude Code:\n")
     print(f"  claude\n")
     print(f"First command in Claude: /compass {genre} — {logline}\n")

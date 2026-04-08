@@ -6,6 +6,14 @@ Commands read this file to validate block function and flag missing structural o
 
 ---
 
+## How to use
+
+For each type: **Promise** = what the audience expects to feel. **Must happen** = structural events that cannot be skipped. **Forbidden** = what breaks the contract. **Series engine** = the repeatable mechanism that generates a new episode while the season arc keeps moving. Used by script-doctor for series format analysis.
+
+For series engine theory (types, health tests, failure modes) — see `fiction/genre-mechanics.md` → "Series Engine Theory" section. The principles are universal; the engines below are documentary-specific.
+
+---
+
 ## Portrait / Biographical Essay
 
 **Promise:** The private logic behind a public life. Not what the person did — why they are the way they are.
@@ -17,6 +25,8 @@ Commands read this file to validate block function and flag missing structural o
 - An ending that lands somewhere the opening didn't predict
 
 **Forbidden:** Chronological parade of achievements. Interviews that only confirm what the audience already thinks. A subject who is never surprised, challenged, or revealed.
+
+**Series engine:** Each episode — a new subject whose public image conceals a private contradiction. The season arc is the filmmaker's evolving method: each portrait refines how the camera breaks through the controlled surface. (Anthology: *Abstract: The Art of Design*, *Chef's Table*)
 
 ---
 
@@ -32,6 +42,8 @@ Commands read this file to validate block function and flag missing structural o
 
 **Forbidden:** Voice-over that explains what the images already show. Staged or recreated moments presented as observed. A subject who performs for the camera without the film acknowledging it.
 
+**Series engine:** Each episode — a new period of observation in a world where the camera is a passive witness. The season arc is time itself: accumulated footage reveals patterns invisible in any single episode. (*An American Family*, *Être et avoir*, *24 Hours in A&E*)
+
 ---
 
 ## Essay Film
@@ -45,6 +57,8 @@ Commands read this file to validate block function and flag missing structural o
 - An ending that opens rather than closes — the audience should feel the thinking continued past the last frame
 
 **Forbidden:** A thesis stated and then illustrated. No digression. A filmmaker who is always right. Images used only as decoration for text.
+
+**Series engine:** Each episode — a new angle on the central argument that complicates or contradicts the previous one. The season arc is the essayist's thinking: it must visibly change course, not just accumulate evidence. (*Adam Curtis* series, *HyperNormalisation* as multi-part)
 
 ---
 
@@ -60,6 +74,8 @@ Commands read this file to validate block function and flag missing structural o
 
 **Forbidden:** An investigation that goes exactly as planned. A target who is purely villainous with no complexity. A resolution that answers everything cleanly.
 
+**Series engine:** Each episode — a new lead, witness, or document that reframes the investigation. The season arc is the unraveling: each episode peels a layer, and the picture gets worse before it gets clearer. (*Making a Murderer*, *The Jinx*, *The Staircase*)
+
 ---
 
 ## Mockumentary
@@ -73,6 +89,8 @@ Commands read this file to validate block function and flag missing structural o
 - An ending that either collapses the gap (the fiction becomes real) or deepens it (the absurdity gets darker)
 
 **Forbidden:** Characters who acknowledge the joke. Inconsistent documentary grammar. Satirical targets that are too easy or too obvious.
+
+**Series engine:** Each episode — a new subject filmed in documentary codes, where the gap between the serious form and the absurd content widens. The season arc is the workplace/community itself drifting further from reality while the characters remain oblivious. (*The Office*, *What We Do in the Shadows*, *Documentary Now!*)
 
 ---
 
@@ -88,6 +106,8 @@ Commands read this file to validate block function and flag missing structural o
 
 **Forbidden:** Anthropomorphizing without acknowledgment. Narration that assigns human motivation to animal behavior as fact. Footage staged to look observed.
 
+**Series engine:** Each episode — a new species, ecosystem, or behavioral cycle observed through a specific tension (survival, competition, migration, mating). The season arc is the environment itself: the accumulated episodes build a portrait of a world under pressure. (*Planet Earth*, *Blue Planet*, *Our Planet*)
+
 ---
 
 ## True Crime
@@ -101,3 +121,5 @@ Commands read this file to validate block function and flag missing structural o
 - An ending that is honest about what remains unresolved — true crime rarely closes cleanly
 
 **Forbidden:** The crime used as entertainment without reckoning with its human weight. A perpetrator who is a monster with no psychology. A resolution that satisfies when the reality doesn't.
+
+**Series engine:** Each episode — a new case or a new layer of the central crime that forces the audience to revise their verdict. The season arc is the system behind the crime: individual cases accumulate into an indictment of how justice works or fails. Anthology variant: each season a new crime. (*Serial*, *Making a Murderer*, *Unsolved Mysteries*)
