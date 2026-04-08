@@ -270,9 +270,96 @@ OVERALL STRUCTURE VERDICT
 4. **Theme Stated is often subtle** — it doesn't announce itself. Often a casual line from a mentor figure or minor character
 5. **Proportional scaling is approximate** — scenes vary hugely in length; a very short or very long scene skews the count
 
+## Alternative Frameworks
+
+### 8-Sequence Method (Frank Daniel)
+
+Use when CLAUDE.md specifies sequence method or for complex/ensemble films:
+
+| Seq | Act | Position (%) | Function |
+|-----|-----|-------------|----------|
+| 1 | I | 0-12% | Hook, exposition, status quo. Ends with inciting incident |
+| 2 | I | 12-25% | Hero tries to restore status quo, fails. WANT defined |
+| 3 | IIA | 25-37% | First attempt to solve problem — fails |
+| 4 | IIA | 37-50% | First culmination (midpoint). New info changes rules |
+| 5 | IIB | 50-62% | Consequences of midpoint. Subplots, new characters |
+| 6 | IIB | 62-75% | Second culmination. Easy paths exhausted |
+| 7 | III | 75-87% | Apparent solution becomes problem. Stakes rise |
+| 8 | III | 87-100% | Final resolution of tension from inciting incident |
+
+Each sequence should have its own mini-arc with tension and resolution.
+
+### Truby 22 Steps (Anatomy of Story)
+
+Use for organic, mythic, character-driven stories:
+
+**Core 7 steps** (skeleton): weakness/need → desire → opponent → plan → battle → self-revelation → new equilibrium
+
+Check that these 7 are present regardless of which framework is primary.
+
+### TV Pilot Structure (Save the Cat Writes for TV)
+
+When CLAUDE.md type = series, check pilot-specific elements:
+
+1. **Opening Pitch** (first 2 min / 1-3%): mini-movie pitching the entire show
+2. **Guided Tour** (Set-Up): world rules shown without exposition dumps
+3. **Whiff of Change** (Finale): NOT full arc — hint of transformation, commitment spoken aloud
+4. **Story Engine visible**: reader can immediately see how episode 2, 10, 47 would work
+5. **A/B/C structure**: at least two storylines with thematic echo
+
+### TV Episode Structure
+
+When analyzing individual episodes (not pilots):
+
+Check against Dan Harmon Story Circle (30-min) or 9-beat episode structure (60-min):
+- Cold Open present and effective?
+- Episode has its own complete A-story arc?
+- B-story thematically echoes A-story?
+- Season thread advances?
+- Ends on YES-BUT or NO-AND?
+
+## Genre-Specific Structural Checks
+
+Apply these AFTER the general structure check:
+
+### Horror
+- Scary moment or tension peak every ~10% of script (every 10 pages)
+- Tension/release cycles: build → scare → brief calm → build again
+- Isolation beat present? (characters separated from help)
+- Stakes escalate: each threat worse than the last
+- "All Is Lost" involves genuine mortal danger, not metaphorical loss
+
+### Thriller
+- Information asymmetry: does audience know something characters dont (or vice versa)?
+- Ticking clock: clear deadline with specific consequences?
+- World narrowing: protagonist's options shrink with each act?
+- Reversals: at least 2-3 moments where good becomes bad or vice versa?
+- Catalyst often earlier than standard (~8-10% instead of 12%)
+
+### Comedy
+- Fun and Games section delivers LAUGHS (not just interesting situations)?
+- Comic escalation: each complication funnier/more absurd than the last?
+- Setup-punchline rhythm visible at scene level?
+- B-story provides contrast (often more grounded than absurd A-story)?
+- Act III resolution involves comedic callback or payoff?
+
+### Drama
+- Subtext density: characters rarely say what they feel directly?
+- Emotional beats: pauses/reactions AFTER key moments (not just action)?
+- McKee Gap present in every major scene (expected outcome ≠ actual outcome)?
+- Theme explored from multiple angles through different characters?
+
+### Action
+- Set pieces evenly distributed (not clustered)?
+- Each set piece is a mini-story with its own escalation and climax?
+- Rising action: each set piece larger than the previous?
+- Set pieces serve double duty: spectacle + character development?
+- Breathing room between action sequences?
+
 ## What You Should NOT Do
 
 - Demand exact adherence to 15 beats (they may merge, appear in altered form)
 - Penalize scripts that intentionally subvert structure (art house, non-linear)
 - Confuse emotional highs with structural beats
 - Ignore the project's own outlined structure if present in CLAUDE.md
+- Apply film structure rules to TV episodes or vice versa without adaptation

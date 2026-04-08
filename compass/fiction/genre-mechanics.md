@@ -100,6 +100,15 @@ The argument is not stated in the pilot. It is demonstrated across every episode
 
 **Series engine:** Each episode — a new mission whose cost escalates. The protagonist's body or moral compass erodes; the season arc tracks how much they can lose before the competence no longer compensates.
 
+**Craft mechanics:**
+- Set pieces evenly distributed — not clustered. Each is a mini-story with its own beginning, escalation, climax.
+- Rising action: each set piece larger than the previous. Final set piece is the biggest.
+- Double duty: every set piece must advance CHARACTER, not just provide spectacle.
+- Breathing room: brief calm between action sequences lets audience process.
+- Sentence rhythm in action blocks: short = fast pace, long = reflection. Vary both.
+- White space on page reflects pauses between beats.
+- Page count: 95-115 pages. Visual script = fewer words per page.
+
 ---
 
 ## Adventure
@@ -160,6 +169,16 @@ The argument is not stated in the pilot. It is demonstrated across every episode
 
 **Series engine:** Each episode — a new situation triggered by the protagonist's unchanged flaw. The flaw's cost compounds; the season arc is the accumulating damage that finally forces change.
 
+**Craft mechanics:**
+- Setup-setup-punchline rhythm: two elements establish pattern, third BREAKS it. Escalation is key — each element more absurd.
+- Rule of three is INTENTIONAL in comedy (unlike AI pattern where three items are equally weighted).
+- Comic escalation: each complication funnier/more absurd than the last. Never plateau.
+- B-story provides contrast: if A is absurd, B is more grounded (emotional anchor).
+- Fun and Games section must deliver LAUGHS, not just interesting situations.
+- Dialogue-dominant: ~40% action / 60% dialogue. Characters talk more than act.
+- Page count: 90-110 pages. Shorter than drama because of faster dialogue pace.
+- TV comedy: Dan Harmon Story Circle (8 steps) is the gold standard for 22-min episodes.
+
 ---
 
 ## Coming-of-Age
@@ -204,6 +223,17 @@ The argument is not stated in the pilot. It is demonstrated across every episode
 **Forbidden:** The protagonist's inner life is stated rather than shown. Resolution comes from outside.
 
 **Series engine:** Each episode — a new pressure point that exposes a deeper layer of what the protagonist won't admit. The season arc is the accumulation of pressure until the internal truth can no longer be contained.
+
+**Craft mechanics:**
+- Subtext is EVERYTHING. Characters rarely say what they feel directly. Emotion shown through action, oblique dialogue.
+- Emotional beats: reactions AFTER key moments, not during. Create space (BEAT, PAUSE) — actor manifests the moment.
+- Emotional spine: chain of interwoven emotional beats + philosophy + theme + symbols giving the script depth.
+- McKee Gap in every major scene: difference between what character expects and what actually happens.
+- Theme explored from multiple angles through different characters — not one perspective.
+- Power dynamics shift in every conversation. Who asks questions vs who commands changes mid-scene.
+- Exposition through conflict: Trial by Fire, High-Stakes Argument, Interrogation. Never lectures.
+- Page count: 100-120 pages. 105 is the new 120.
+- Color scripting: assign protagonist a color that evolves with moral transformation (Breaking Bad model).
 
 ---
 
@@ -264,6 +294,17 @@ The argument is not stated in the pilot. It is demonstrated across every episode
 **Forbidden:** The threat is explained away. The protagonist wins cleanly.
 
 **Series engine:** Each episode — a new manifestation of the threat or a new victim. Each survival costs more; the season arc is the shrinking circle of safety until the protagonist understands the threat's true nature.
+
+**Craft mechanics:**
+- Tension/release cycles: build → scare → brief calm → build again. Never sustain tension without release — audience numbs.
+- Scary moment or tension peak every ~10 pages. Significant scare in first 3-5 pages.
+- Lewton Bus technique: prolonged uncertainty → sudden audio/visual shock from unexpected direction.
+- Jump scare rules: must have narrative consequences (changes situation). If scare doesn't change protagonist's position — cut it.
+- 6-step scare methodology: (1) define character goal, (2) define real obstacle, (3) build tension gradually, (4) time the release when maximally vulnerable, (5) ensure narrative consequences, (6) avoid cheap scares.
+- Isolation beat: characters must be separated from help at some point.
+- Monster/ghost distinction: monster = fast, claustrophobic, group dynamics. Ghost = slow burn, solitary protagonist, atmosphere.
+- "All Is Lost" involves genuine mortal danger, not metaphorical loss.
+- Page count: 90-110 pages. Short action blocks during horror sequences.
 
 ---
 
@@ -444,6 +485,16 @@ The argument is not stated in the pilot. It is demonstrated across every episode
 **Forbidden:** The threat is random. The protagonist is passive. The ending explains everything comfortably.
 
 **Series engine:** Each episode — a new revelation that reframes the threat. The season arc is paranoia compounding: each answer generates two new questions, and the protagonist trusts less with every episode until they can't tell ally from enemy.
+
+**Craft mechanics:**
+- Information asymmetry (Hitchcock Bomb Theory): audience knows what character doesn't, OR character knows what audience doesn't. Both create tension differently.
+- Ticking clock: clear deadline with specific consequences. Visual/audio reminders (countdown, ticking). World narrows with each scene.
+- Reversals: at least 2-3 moments where good becomes bad or vice versa. Lead audience in with one expectation, break it.
+- Catalyst often earlier than standard (~8-10% instead of 12%). Thriller audiences expect quick engagement.
+- World narrowing: protagonist's options shrink with each act. Walls closing in. Allies disappear.
+- Power dynamics in dialogue: interrogation scenes, negotiation, confrontation. Balance shifts mid-conversation.
+- Charged dialogue (Tarantino technique): simple words become loaded through context. Milk, gloves, numbers — anything becomes a weapon when audience knows the subtext.
+- Page count: 95-115 pages. Information density higher in dialogue scenes.
 
 ---
 

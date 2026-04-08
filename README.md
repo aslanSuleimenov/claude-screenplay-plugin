@@ -1,6 +1,6 @@
 # Claude Screenplay Plugin
 
-A [Claude Code](https://claude.ai/code) plugin for writing screenplays — fiction films, series, and documentary AV-scripts. One plugin, two formats.
+A [Claude Code](https://claude.ai/code) plugin for writing screenplays — fiction films, TV series, and documentary AV-scripts. Supports features, pilots, series, and limited series.
 
 ---
 
@@ -109,16 +109,17 @@ All auto-detect project type from `CLAUDE.md`.
 
 ### Built-in Analysis Agents (via `/full-check`)
 
-14 specialized agents run automatically via `/full-check`. Use individually via `/analyze` or `/check` for single-scene analysis.
+16 specialized agents run automatically via `/full-check`. Use individually via `/analyze` or `/check` for single-scene analysis.
 
 | Phase | Agents | What they check |
 |-------|--------|-----------------|
 | **1. Foundation** | `action-line-checker`, `timeline-checker` | Spec formatting, filmability, day/night consistency, physical states |
-| **2. Macro Structure** | `structure-checker`, `scene-balance-checker`, `dialogue-ratio-checker` | Save the Cat beats, scene type rhythm (ACTION/DIALOGUE/EXPOSITION), pacing ratios |
+| **2. Macro Structure** | `structure-checker`, `scene-balance-checker`, `dialogue-ratio-checker` | Save the Cat / 8-sequence / Truby beats, scene type rhythm, genre-specific pacing ratios |
 | **3. Continuity & Logic** | `scene-continuity-checker`, `plot-thread-checker`, `tone-checker` | Props/costumes/positions, setup/payoff tracking, genre register |
 | **4. Characters** | `character-ooc-checker` | Dialogue voice, behavioral consistency, ear test |
-| **5. Craft** | `value-shift-checker`, `scene-hook-checker`, `scene-economy-checker`, `subtext-checker`, `visual-storytelling-checker` | McKee value shifts, YES-BUT/NO-AND momentum, enter-late/exit-early, on-the-nose dialogue, visual independence |
-| **6. Synthesis** | `deep-check` | Consolidates all reports, prioritizes fixes, produces dashboard |
+| **5. Craft** | `value-shift-checker`, `scene-hook-checker`, `scene-economy-checker`, `subtext-checker`, `visual-storytelling-checker` | McKee value shifts, YES-BUT/NO-AND momentum, enter-late/exit-early, on-the-nose dialogue (Sorkin/Tarantino/Gerwig techniques), visual independence |
+| **6. Series** | `story-engine-checker`, `pilot-checker` | Story engine health (5-logline test, irreconcilable difference, 3-layer check), pilot laws (Opening Pitch, Guided Tour, Whiff of Change) |
+| **7. Synthesis** | `deep-check` | Consolidates all reports, prioritizes fixes, produces dashboard |
 
 ---
 
@@ -140,7 +141,8 @@ All auto-detect project type from `CLAUDE.md`.
 compass/
 ├── INDEX.md
 ├── fiction/
-│   ├── genre-mechanics.md    ← structural contracts for 26 genres
+│   ├── genre-mechanics.md    ← structural contracts for 26 genres + craft mechanics (horror cycles, thriller asymmetry, comedy rhythm, etc.)
+│   ├── series-mechanics.md   ← TV series: story engines, pilot structure, episode beats, A/B/C storylines, season arcs
 │   ├── thriller.md
 │   ├── drama.md
 │   └── ...26 genres total

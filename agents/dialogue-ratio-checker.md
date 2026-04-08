@@ -160,8 +160,48 @@ SUMMARY
 4. **Cumulative ratio matters most** — overall script pacing is what counts
 5. **Intent > numbers** — if deviation is deliberate, it's fine
 
+## Extended Genre Profiles
+
+### Page Count Expectations (modern market)
+- Drama: 100-120 pages (105 is the new 120)
+- Comedy: 90-110 pages
+- Horror: 90-110 pages
+- Sci-Fi: 100-130 pages (worldbuilding needs space)
+- Action: 95-115 pages (visual script, fewer words per page)
+
+### Comedy-Specific Rhythm
+- Setup-setup-punchline pattern at scene level
+- Comic escalation: each complication funnier than the last
+- Rule of three is INTENTIONAL in comedy (third element breaks pattern)
+- B-story often more grounded, provides contrast to absurd A-story
+
+### Horror-Specific Rhythm
+- Tension/release cycles: build → scare → brief calm → build again
+- Scary moment or tension peak every ~10 pages
+- Action blocks tend short and punchy during horror sequences
+- Dialogue drops dramatically in chase/hide sequences
+
+### Thriller-Specific Rhythm
+- Information density higher in dialogue scenes (clues, reveals)
+- Action sequences punctuate revelation scenes
+- Ticking clock creates urgency that compresses dialogue
+- Reversals require setup in dialogue, payoff in action
+
+### Action-Specific Rhythm
+- Set pieces need breathing room between them
+- Each set piece is a mini-story (beginning, escalation, climax)
+- Vary sentence length in action: short = fast pace, long = reflection
+- White space on page reflects pauses between beats
+
+### TV Episode Ratios
+- 30-min comedy: 35% action / 65% dialogue (dialogue-dominant)
+- 60-min drama: 50% action / 50% dialogue (balanced)
+- 60-min procedural: 55% action / 45% dialogue (slightly action-heavy)
+- Cold opens: usually 70%+ action or 70%+ dialogue (not balanced)
+
 ## What You Should NOT Do
 
 - Demand exact ratio adherence (10%+ tolerance)
 - Penalize genre-specific outliers without context
 - Treat ratio as only measure of pacing (content quality also matters)
+- Apply film ratios to TV episodes without adjustment

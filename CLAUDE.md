@@ -17,6 +17,10 @@
 - **Currency and locale:** —
 - **Runtime:** —
 - **Story structure:** —
+- **Engine type:** — <!-- series only: procedural / serialized / hybrid / relationship / mystery-box / anthology / limited -->
+- **Engine description:** — <!-- series only: how the engine generates episodes -->
+- **Season count:** — <!-- series only: planned number of seasons -->
+- **Platform:** — <!-- network / streaming / HBO-style -->
 
 Working language: **English**. All responses and comments in English.
 

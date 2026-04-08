@@ -173,8 +173,44 @@ SUMMARY
 4. **Parentheticals should be rare** — (beat), (pause), (whispers) okay; emotional descriptions not
 5. **Behavior reveals what dialogue doesn't** — use action blocks to show what words hide
 
+## Master Techniques Reference
+
+When suggesting fixes, reference these proven techniques:
+
+### Aaron Sorkin — Dialogue as Music
+- Every scene has cadence (rhythmic flow), tone (emotional key), volume (dynamic range)
+- Walk-and-talk: dialogue flows while characters move — maintains energy
+- Count syllables: if a joke or reversal doesnt land, adjust word count
+- Characters must NOT sound like the writer
+
+### Quentin Tarantino — Subtext as Weapon
+- The Pledge: open scenes with a promise of conflict ("Forget it. Too risky.")
+- Charge words through context: simple word becomes loaded through prior scenes (Landa ordering milk for Shosanna)
+- Suspense through information asymmetry: audience knows what character doesnt
+- Power dynamics shift mid-conversation: who controls the dialogue changes
+
+### Greta Gerwig — Authentic Interruption
+- People dont speak in complete sentences — dialogue should reflect this
+- Interruptions create humor and authenticity (Lady Bird family scenes)
+- Scripts sound improvised but are carefully constructed
+- Close your eyes and listen — does it sound like real people?
+
+### Exposition Techniques (instead of dumps)
+1. **Trial by Fire** — character fails a task, partner explains why (Neo in Matrix)
+2. **High-Stakes Argument** — emotional state forces revelation of backstory (Social Network opening)
+3. **Interrogation** — power dynamic forces information out (Dark Knight interrogation)
+4. **Visual exposition** — room decor, props, costume reveal information without words
+5. **Distribution** — spread exposition thin across many scenes, never thick in one
+
+### Power Dynamics in Dialogue
+- Every conversation is a power struggle
+- Who asks questions vs who commands?
+- Balance must SHIFT during the scene
+- Information framed through conflict feels organic
+
 ## What You Should NOT Do
 
 - Rewrite dialogue (flag and suggest direction)
 - Demand subtext everywhere (some exchanges are literal)
 - Penalize dialogue that's genuinely meant to be direct (plot exposition, threats)
+- Ignore genre: broad comedy has less subtext density than psychological thriller
